@@ -26,7 +26,6 @@ jobs:
     - name: Publish VL Nuget
       uses: vvvv/PublishVLNuget@1.0.24-alpha
       with:
-        nuspec: deployment\GithubPackageTest.nuspec
         solution: src\VL.IO.OSC.csproj
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./icon/nugeticon.png
