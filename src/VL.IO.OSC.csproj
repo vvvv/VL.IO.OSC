@@ -11,7 +11,7 @@
     <PackageTags>VL, OSC, UDP, OpenSoundControl</PackageTags>
     <RepositoryUrl>https://github.com/vvvv/VL.IO.OSC</RepositoryUrl>
     <PackageIcon>nugeticon.png</PackageIcon>
-    <Version>0.1.0-alpha</Version>
+    <Version>0.1.1-alpha</Version>
   </PropertyGroup>
 
   <ItemGroup>
