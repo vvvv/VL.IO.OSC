@@ -24,7 +24,7 @@ jobs:
       uses: nuget/setup-nuget@v1
 
     - name: Publish VL Nuget
-      uses: vvvv/PublishVLNuget@1.0.24-alpha
+      uses: vvvv/PublishVLNuget@1.0.25-alpha
       with:
         solution: src\VL.IO.OSC.csproj
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
