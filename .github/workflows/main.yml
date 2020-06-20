@@ -28,5 +28,5 @@ jobs:
       with:
         solution: src\VL.IO.OSC.csproj
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./icon/nugeticon.png
+        icon-dst: ./nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
