@@ -27,5 +27,5 @@ jobs:
         csproj: src\VL.IO.OSC.csproj
         nuspec: deployment\VL.IO.OSC.nuspec 
         icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
-        icon-dst: ./nugeticon.png
+        icon-dst: ./deployment/nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
