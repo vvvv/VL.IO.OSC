@@ -1608,6 +1608,8 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="VcZPHDhUBQSOrWLyD3dELO" Name="Break" Kind="OutputPin" />
+                  <ControlPoint Id="BUI4sfzmj0EPNELmbVJKx3" Bounds="474,545" Alignment="Top" />
+                  <ControlPoint Id="SOzv80S63EmMhSRY8G5gnL" Bounds="572,545" Alignment="Top" />
                   <Patch Id="AE70TO2ENssNj5e1ZHhIXC" ManuallySortedPins="true">
                     <Patch Id="B09uCXxkm2SOCKikMS9EC1" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="KrMO1Sr2Ed0MdUm17Di2Nn" Name="Update" ParticipatingElements="JjHzfSnGxZ3LzRO59xyzid,VbrXPyI5jUrOqPmK6N6Fel" ManuallySortedPins="true">
@@ -1650,8 +1652,6 @@
                     </Node>
                     <ControlPoint Id="H3qIAiAhzDOP59kA5wwZTm" Bounds="561,699" />
                   </Patch>
-                  <ControlPoint Id="BUI4sfzmj0EPNELmbVJKx3" Bounds="474,545" Alignment="Top" />
-                  <ControlPoint Id="SOzv80S63EmMhSRY8G5gnL" Bounds="572,545" Alignment="Top" />
                 </Node>
               </Patch>
             </Node>
@@ -6395,7 +6395,7 @@
           <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
         </p:ValueBoxSettings>
       </Pad>
-      <Pad Id="E0tpXIVCmAyPotNQ0YgaVA" Bounds="391,429,245,197" ShowValueBox="true" isIOBox="true" Value="- OSCSender. reactive?&#xD;&#xA;- OSCSender has own framestore&#xD;&#xA;- warning for duplicate S/R port:ip/name &#xD;&#xA;- SendMessage on changed only?!">
+      <Pad Id="E0tpXIVCmAyPotNQ0YgaVA" Bounds="391,429,301,157" ShowValueBox="true" isIOBox="true" Value="TODOs:&#xD;&#xA;- OSCSender. reactive?&#xD;&#xA;- OSCSender must not have own framestore&#xD;&#xA;- cannot decode T/F&#xD;&#xA;- warning for duplicate S/R port:ip/name &#xD;&#xA;- SendMessage on changed only?!">
         <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
           <Choice Kind="TypeFlag" Name="String" />
         </p:TypeAnnotation>
@@ -6634,11 +6634,6 @@
               </p:TypeAnnotation>
             </Pin>
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="TSeygEGKwMLOu0IM4FruPP">
             <Fragment Id="ToXeb42adfHNMIhwm8Qmra" Patch="U2BK367dIH0NGQymgjWokB" Enabled="true" />
             <Fragment Id="HeriVF4SJ8JL2oWvgczf4N" Patch="O1TjuAhhe41LZcQ2y1zBjS" Enabled="true" />
@@ -6683,6 +6678,7 @@
           <Link Id="SJ2N99leJGwN9qxOqmj91L" Ids="Szk9WqSkglZPkoMnGuSVyr,QIZggn0rTxTOiswFlHyMv9" />
         </Patch>
       </Node>
+      <Canvas Id="NIrq8PiXNjXN8mvo2btD47" Name="Experimental" Position="203,345" BordersChecked="false" />
     </Canvas>
     <!--
 
@@ -6708,6 +6704,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2020.1.7" />
-  <PlatformDependency Id="BMS2DaHrxD4MzY4epLSyI6" Location="./lib/netstandard2.0/VL.IO.OSC2.dll" />
   <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2020.1.7" />
+  <PlatformDependency Id="NwIByPafWAjPujXSRmU8Ba" Location="./lib/netstandard2.0/VL.IO.OSC2.dll" />
 </Document>
