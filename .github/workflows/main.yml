@@ -25,6 +25,7 @@ jobs:
       uses: vvvv/PublishVLNuget@1.0.27
       with:
         csproj: src\VL.IO.OSC.csproj
-        nuspec: deployment\VL.IO.OSC.nuspec https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
+        nuspec: deployment\VL.IO.OSC.nuspec 
+        icon-src: https://raw.githubusercontent.com/vvvv/PublicContent/master/nugeticon.png
         icon-dst: ./nugeticon.png
         nuget-key: ${{ secrets.NUGET_KEY }}
