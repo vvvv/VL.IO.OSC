@@ -12,6 +12,11 @@
     <RepositoryUrl>https://github.com/vvvv/VL.IO.OSC</RepositoryUrl>
     <PackageIcon>nugeticon.png</PackageIcon>
     <Version>0.1.1-alpha</Version>
+    <AssemblyName>VL.IO.OSC2</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>..\lib</OutputPath>
   </PropertyGroup>
 
   <ItemGroup>
