@@ -470,7 +470,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="278,883,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="278,883,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -479,6 +479,49 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="612,905,86,26" Id="TzgmVlzynrGLkcXxzJdRfB">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="SendMessage (Empty)" />
+            </p:NodeReference>
+            <Pin Id="DBTjEJyzdglMiF75hcsyMM" Name="Input" Kind="StateInputPin" />
+            <Pin Id="B5oGgX1uHqHMxIC1sW73EJ" Name="Address" Kind="InputPin" />
+            <Pin Id="JLmTNUK5TL8PBUhOackoQu" Name="Bundled Per Frame" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Tdd8Gieig4tOvorTZtmJXE" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="BjT9VRIcfCLN8xy3Wpgzdi" Name="Apply" Kind="InputPin" />
+          </Node>
+          <Pad Id="FOEjsCLqs1oNxPZ1tFqtmO" Comment="Address" Bounds="640,851,36,15" ShowValueBox="true" isIOBox="true" Value="/bang">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="SJFe1iL5YISMeXxuNN6qEs" Comment="Apply" Bounds="695,873,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="UTgaCJhunK9OJGGSpccTv2" Bounds="577,806,289,24" ShowValueBox="true" isIOBox="true" Value="Send message without arguments">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JCsRTMRDVFLNjxOBxyIO9e" Bounds="698,922,151,19" ShowValueBox="true" isIOBox="true" Value="&lt; SendMessage (Empty)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
           </Pad>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
@@ -521,6 +564,9 @@
         <Link Id="T0khHu4RTbAPlNe3nPoErr" Ids="NdV3HG4juTQN9ewL5OPYVE,Q5Fh7F5LbYuP2ORq7mj2NB" />
         <Link Id="SQgUM01Al9iNEVRR0Qs2ao" Ids="DXozrM656sYOFvBHIsXieU,MNdio6zF2jpPtIVZTQUFrv" />
         <Link Id="KqZLNEBNXdAMokhObmrPHk" Ids="DIGN7hTa8cJNNt6xZpiRaP,KfYex2ZMadrPHwDPfqXlI5" />
+        <Link Id="SEqcjxpFUo7NWgfU38ClLP" Ids="Ltgif7DrweHMYI7Ozxc7Qf,DBTjEJyzdglMiF75hcsyMM" />
+        <Link Id="AzlIfkDIyBOOR1iuAOySoT" Ids="FOEjsCLqs1oNxPZ1tFqtmO,B5oGgX1uHqHMxIC1sW73EJ" />
+        <Link Id="BqApCZMIPjzOGDGB1Yao32" Ids="SJFe1iL5YISMeXxuNN6qEs,BjT9VRIcfCLN8xy3Wpgzdi" />
       </Patch>
     </Node>
   </Patch>

@@ -429,6 +429,52 @@
               <Link Id="IMLcPZQ8gtlPhERSR4nLUl" Ids="RmHFdiLbaSuOzFNc6wMcHT,BVOWKk0yVVmLDLRUVRCBXA" IsHidden="true" />
             </Patch>
           </Node>
+          <Node Bounds="496,904,73,19" Id="DFqvxhvWcEAPmPiQbsvt6B">
+            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OSCReceiver (Empty)" />
+            </p:NodeReference>
+            <Pin Id="TKFbWMv9vIROr5gk2mmphu" Name="OSC Server" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.SimpleOSC.vl">
+                <Choice Kind="TypeFlag" Name="OSCUdpReceiverIpPort" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="Ucjgx4KY4eEOLoGT3GkE8t" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MCxue1HWGzvO3c1yWl8iPz" Comment="OSC Server" Bounds="498,873,65,15" ShowValueBox="true" isIOBox="true" Value="Server 1">
+            <p:TypeAnnotation LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+              <Choice Kind="TypeFlag" Name="OSCUdpReceiverIpPort" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="KejkAt2yzJWOao9Q5DX6H4" Comment="On Data" Bounds="498,950,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VXAZ0HbHnKvNRiR3T5tefj" Bounds="489,807,162,52" ShowValueBox="true" isIOBox="true" Value="Receive a message without arguments">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">12</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KxpXjmeHibJLU2R9z6nym6" Comment="Address" Bounds="580,891,35,15" ShowValueBox="true" isIOBox="true" Value="/bang">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="ChYQQ35PlzlQGasYjdYyjt" Bounds="572,919,146,19" ShowValueBox="true" isIOBox="true" Value="&lt; OSCReceiver (Empty)">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -459,6 +505,9 @@
         <Link Id="ME5o7f2z94ZMNdhs2tmzG3" Ids="NmZXcwRuPH8OT8kTaPU4Os,JfMfkfkUbbPPpnXqZzKMch" />
         <Link Id="NrXn2MyhvUWPPpenuY4fwK" Ids="UCSNw0e9HVlNndb6E2sQX7,B3zFxd0TTRXNdZStiUdi7z" />
         <Link Id="Dg5SUzApQbpOsO8xXcXp5b" Ids="IPCQq7TizqUNpLZYKPlcs9,Nji1mUTzuarL8RFQJMwD20" />
+        <Link Id="K7803sgoPAPL5eZlbttYuM" Ids="MCxue1HWGzvO3c1yWl8iPz,TKFbWMv9vIROr5gk2mmphu" />
+        <Link Id="IrCyr7e3VaiOaXzbIeclUG" Ids="Ucjgx4KY4eEOLoGT3GkE8t,KejkAt2yzJWOao9Q5DX6H4" />
+        <Link Id="DELPOrQY9alLONXLyNjmuE" Ids="KxpXjmeHibJLU2R9z6nym6,S1hV8EGnkS2OAdSDXkWxzI" />
       </Patch>
     </Node>
   </Patch>
