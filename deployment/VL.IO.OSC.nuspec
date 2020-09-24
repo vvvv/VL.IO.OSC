@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.OSC</id>
-    <version>2020.1.102-alpha</version>
+    <version>2020.2.0-alpha</version>
     <title>VL.IO.OSC</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
