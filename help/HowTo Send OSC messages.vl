@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.1.7.184" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.1.7" />
+<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.2.2.281" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.2" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -122,7 +122,6 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="SC8ybnLANW2P9JogIIgJ5b" Name="Name" Kind="InputPin" />
             <Pin Id="Gb45dw5QoT6LdlupyEHOaE" Name="Maximum Bundle Size" Kind="InputPin" />
             <Pin Id="NEj27l4drkuO8cXi63Dxhe" Name="Enabled" Kind="InputPin" />
             <Pin Id="IjLoyefJUjcLOA3jkIVLpY" Name="Output" Kind="OutputPin" />
@@ -135,8 +134,8 @@
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
             <Pin Id="Siv63MMka1wQBoph7WmVGO" Name="Input" Kind="StateInputPin" />
-            <Pin Id="FsujhpPfZqkOlW54yCLqiK" Name="Address" Kind="InputPin" />
             <Pin Id="KfYex2ZMadrPHwDPfqXlI5" Name="Arguments" Kind="InputPin" />
+            <Pin Id="FsujhpPfZqkOlW54yCLqiK" Name="Address" Kind="InputPin" />
             <Pin Id="LmZjlYuEEj3MDekzWdseIm" Name="Bundled Per Frame" Kind="InputPin">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -156,8 +155,8 @@
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
             <Pin Id="IVBqqyiq8qWNeni9LWkt2M" Name="Input" Kind="StateInputPin" />
-            <Pin Id="EBEXQafgcjqNnfwlJrQb79" Name="Address" Kind="InputPin" />
             <Pin Id="M8ZnuLDcoC8NthSu2MzFwo" Name="Arguments" Kind="InputPin" />
+            <Pin Id="EBEXQafgcjqNnfwlJrQb79" Name="Address" Kind="InputPin" />
             <Pin Id="PwApDRFRlogO2aADRWHQjS" Name="Bundled Per Frame" Kind="InputPin" />
             <Pin Id="PRY317ba0NMN4yaRh4FAt7" Name="Apply" Kind="InputPin" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -192,8 +191,8 @@
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
             <Pin Id="RiuJV14EbzINTJLhJnuMQj" Name="Input" Kind="StateInputPin" />
-            <Pin Id="RbLkSubNaDfLrvwMuvxxZd" Name="Address" Kind="InputPin" />
             <Pin Id="MDWaQjjV0eOMt2WFgXcKSM" Name="Arguments" Kind="InputPin" />
+            <Pin Id="RbLkSubNaDfLrvwMuvxxZd" Name="Address" Kind="InputPin" />
             <Pin Id="EUimZ6x0x6DNc2OTjU4H3K" Name="Bundled Per Frame" Kind="InputPin" />
             <Pin Id="QNxEpT16CYQMBzOlq3gApL" Name="Apply" Kind="InputPin" />
             <Pin Id="MVk4lBf9iGdLveF8xLLeHj" Name="Output" Kind="StateOutputPin" />
@@ -237,8 +236,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DP95JH8knhvObRtnHHFL24" Bounds="203,102,286,37" ShowValueBox="true" isIOBox="true" Value="Use an OSCClient to specify the target server by providing target IP or Hostname and Port">
-            <p:TypeAnnotation>
+          <Pad Id="DP95JH8knhvObRtnHHFL24" Bounds="203,102,286,37" ShowValueBox="true" isIOBox="true" Value="Use an OSCClient to specify the target server by providing target IP (or Hostname) and Port">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -470,7 +469,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="278,883,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="278,883,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -558,7 +557,6 @@
         <Link Id="CwDSIY5IM9AM3GnfPp5vFu" Ids="V8mDvUj89mSPZX3O24tU33,PGFPAgX5NMAQPzrjX4fQkf" />
         <Link Id="IqcBMnLgUwJNWb8puSgwgQ" Ids="P1PGDtHtyzCPR1Npd8tE1b,HrJYNoVp7x7QWzsRkjl1C3" />
         <Link Id="LaZdg3oIZtaM5qVYEyqfHb" Ids="CgetAV9YUMeMXPAoRvwCKI,Mqz0eMWIebrN7xmKvBGONq" />
-        <Link Id="SZp6tD7KinTLOYMnJ6zpM8" Ids="NW9IN8HKWU4QKFRiQwJGAk,M8ZnuLDcoC8NthSu2MzFwo" />
         <Link Id="VdcIOFAfDqgLKUolvQc7bD" Ids="AvgU9W6lQlZPXt3oyY6UmD,BaUZ3NaG8Z7OUbO0mlm1z3" />
         <Link Id="VrZGbKf5t9eLoMREgZAJaQ" Ids="TunDVt5jE4VQbYRMcTgFxk,Dq8mGUyDqv3QDr8Fya86k4" />
         <Link Id="T0khHu4RTbAPlNe3nPoErr" Ids="NdV3HG4juTQN9ewL5OPYVE,Q5Fh7F5LbYuP2ORq7mj2NB" />
@@ -567,9 +565,10 @@
         <Link Id="SEqcjxpFUo7NWgfU38ClLP" Ids="Ltgif7DrweHMYI7Ozxc7Qf,DBTjEJyzdglMiF75hcsyMM" />
         <Link Id="AzlIfkDIyBOOR1iuAOySoT" Ids="FOEjsCLqs1oNxPZ1tFqtmO,B5oGgX1uHqHMxIC1sW73EJ" />
         <Link Id="BqApCZMIPjzOGDGB1Yao32" Ids="SJFe1iL5YISMeXxuNN6qEs,BjT9VRIcfCLN8xy3Wpgzdi" />
+        <Link Id="TE8bU40IjqKNcG79wPmtN5" Ids="NW9IN8HKWU4QKFRiQwJGAk,M8ZnuLDcoC8NthSu2MzFwo" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.1.7" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.2" />
   <NugetDependency Id="Vi5WMS9ZFm5PiOyW6ApLv3" Location="VL.IO.OSC" Version="2020.1.4" />
 </Document>
