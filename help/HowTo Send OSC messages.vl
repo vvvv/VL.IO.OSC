@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.2.2.281" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.2" />
+<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.2.4.333" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.4" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -117,11 +117,7 @@
               <Choice Kind="ProcessAppFlag" Name="OSCClient" />
             </p:NodeReference>
             <Pin Id="Momfn0i7J2AQc8CmIdYGSL" Name="Server" Kind="InputPin" />
-            <Pin Id="L31jFRExRLAMxuZy4iKFiS" Name="Port" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Integer32" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="L31jFRExRLAMxuZy4iKFiS" Name="Port" Kind="InputPin" />
             <Pin Id="Gb45dw5QoT6LdlupyEHOaE" Name="Maximum Bundle Size" Kind="InputPin" />
             <Pin Id="NEj27l4drkuO8cXi63Dxhe" Name="Enabled" Kind="InputPin" />
             <Pin Id="IjLoyefJUjcLOA3jkIVLpY" Name="Output" Kind="OutputPin" />
@@ -136,11 +132,7 @@
             <Pin Id="Siv63MMka1wQBoph7WmVGO" Name="Input" Kind="StateInputPin" />
             <Pin Id="KfYex2ZMadrPHwDPfqXlI5" Name="Arguments" Kind="InputPin" />
             <Pin Id="FsujhpPfZqkOlW54yCLqiK" Name="Address" Kind="InputPin" />
-            <Pin Id="LmZjlYuEEj3MDekzWdseIm" Name="Bundled Per Frame" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="LmZjlYuEEj3MDekzWdseIm" Name="Bundled Per Frame" Kind="InputPin" />
             <Pin Id="Vzecz6Jry9EPx8LlGy4yRj" Name="Apply" Kind="InputPin" />
             <Pin Id="Ltgif7DrweHMYI7Ozxc7Qf" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -455,11 +447,7 @@
             <Pin Id="PXZVKhMV73KMGhhqFDJjg2" Name="State Input" Kind="StateInputPin" />
             <Pin Id="QBgaoOKFI7pO0QrxBsil2s" Name="Input" Kind="InputPin" />
             <Pin Id="Dq8mGUyDqv3QDr8Fya86k4" Name="Maximum Bundle Size" Kind="InputPin" />
-            <Pin Id="Q5Fh7F5LbYuP2ORq7mj2NB" Name="Apply" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="Q5Fh7F5LbYuP2ORq7mj2NB" Name="Apply" Kind="InputPin" />
             <Pin Id="SPRXKvtGHOLPd2RVSasgLa" Name="Output" Kind="StateOutputPin" />
             <Pin Id="AvgU9W6lQlZPXt3oyY6UmD" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
@@ -486,13 +474,9 @@
             </p:NodeReference>
             <Pin Id="DBTjEJyzdglMiF75hcsyMM" Name="Input" Kind="StateInputPin" />
             <Pin Id="B5oGgX1uHqHMxIC1sW73EJ" Name="Address" Kind="InputPin" />
-            <Pin Id="JLmTNUK5TL8PBUhOackoQu" Name="Bundled Per Frame" Kind="InputPin">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="Tdd8Gieig4tOvorTZtmJXE" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="JLmTNUK5TL8PBUhOackoQu" Name="Bundled Per Frame" Kind="InputPin" />
             <Pin Id="BjT9VRIcfCLN8xy3Wpgzdi" Name="Apply" Kind="InputPin" />
+            <Pin Id="Tdd8Gieig4tOvorTZtmJXE" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="FOEjsCLqs1oNxPZ1tFqtmO" Comment="Address" Bounds="640,851,36,15" ShowValueBox="true" isIOBox="true" Value="/bang">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -569,6 +553,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.2" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.4" />
   <NugetDependency Id="Vi5WMS9ZFm5PiOyW6ApLv3" Location="VL.IO.OSC" Version="2020.1.4" />
 </Document>

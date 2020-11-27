@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2020.2.2.281" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.2" />
+<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2020.2.4.333" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.4" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -96,7 +96,7 @@
             <Pin Id="QnWjhHEjye4NC0fqbG1bFS" Name="Data Preview" Kind="OutputPin" />
             <Pin Id="CpYv9TU5yG3MHP00EoEfBd" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="HvwBQt9nq2UPGxycX6xRKa" Comment="Data Preview" Bounds="92,315,143,40" ShowValueBox="true" isIOBox="true">
+          <Pad Id="HvwBQt9nq2UPGxycX6xRKa" Comment="Data Preview" Bounds="99,236,140,24" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item></Item>
             </p:Value>
@@ -126,7 +126,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JdtCl5K3TUbLRTvT4LccYB" Bounds="242,342,184,40" ShowValueBox="true" isIOBox="true" Value="See if the server receives any osc messages">
+          <Pad Id="JdtCl5K3TUbLRTvT4LccYB" Bounds="242,262,157,40" ShowValueBox="true" isIOBox="true" Value="See if the server receives any osc messages">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -144,7 +144,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="E8JnLjtENKaMkpI4Bw1DrS" Comment="Address" Bounds="131,510,59,15" ShowValueBox="true" isIOBox="true" Value="/foo">
+          <Pad Id="E8JnLjtENKaMkpI4Bw1DrS" Comment="Address" Bounds="119,511,47,15" ShowValueBox="true" isIOBox="true" Value="/foo">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -171,7 +171,7 @@
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="AsGj1Wf0g7qL6z2SZXydMh" Comment="Address" Bounds="126,709,35,15" ShowValueBox="true" isIOBox="true" Value="/zwar">
+          <Pad Id="AsGj1Wf0g7qL6z2SZXydMh" Comment="Address" Bounds="87,710,35,15" ShowValueBox="true" isIOBox="true" Value="/zwar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -211,13 +211,15 @@
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
             </p:NodeReference>
             <Pin Id="M7yObQXvE3uPGlQPmiP4Iu" Name="Input" Kind="InputPin" />
-            <Pin Id="Ne5CEgvyBHsOTB6OGoTrVg" Name="Output" Kind="OutputPin" />
             <Pin Id="Vr1I3bLvRitO5pDyKReDwr" Name="Address" Kind="InputPin" DefaultValue="/foo">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="JvZ98tAQyM2P56GQf25pWS" Name="Learn" Kind="InputPin" />
+            <Pin Id="Ne5CEgvyBHsOTB6OGoTrVg" Name="Output" Kind="OutputPin" />
             <Pin Id="KedKtJjM3vSN3nqxcqetDG" Name="On Data" Kind="OutputPin" />
+            <Pin Id="L8Qjz3kUTxXOKkU4CJvThe" Name="Is Learning" Kind="OutputPin" />
           </Node>
           <Pad Id="Q9XOQXV4fAiLl5DO5twy2T" Comment="On Data" Bounds="783,657,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="660,648,45,26" Id="UL84ZmlAtsZNevbJZtTJzD">
@@ -246,7 +248,7 @@
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="JYPoenyaSMrLluBQJUximd" Comment="Address" Bounds="722,593,90,15" ShowValueBox="true" isIOBox="true" Value="/mydata">
+          <Pad Id="JYPoenyaSMrLluBQJUximd" Comment="Address" Bounds="696,585,90,15" ShowValueBox="true" isIOBox="true" Value="/mydata">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -267,8 +269,8 @@
                   <Choice Kind="OperationCallFlag" Name="DataToArgs" />
                   <CategoryReference Kind="Category" Name="OSC" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
-                <Pin Id="TgY0stWNZS1MPiXXaCUMT2" Name="Data" Kind="InputPin" />
                 <Pin Id="TTLIEQjoDulNbMVBe5pjxX" Name="TypeTags" Kind="InputPin" />
+                <Pin Id="TgY0stWNZS1MPiXXaCUMT2" Name="Data" Kind="InputPin" />
                 <Pin Id="T1gG7pWnlQQP48j4fYGzi7" Name="TypeTag Index" Kind="InputPin" />
                 <Pin Id="KOK1FuZyJVINDa560PRyQb" Name="Byte Index" Kind="InputPin" />
                 <Pin Id="KBLsc8AKSTzLq2hrtKL9by" Name="Args" Kind="OutputPin" />
@@ -287,8 +289,8 @@
                   <Choice Kind="OperationCallFlag" Name="DataToArgs" />
                   <CategoryReference Kind="Category" Name="OSC" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
-                <Pin Id="TZ5r1jxHUwYORxTkn8UjXE" Name="Data" Kind="InputPin" />
                 <Pin Id="DdsI2yatM4LMhjy67wpkvH" Name="TypeTags" Kind="InputPin" />
+                <Pin Id="TZ5r1jxHUwYORxTkn8UjXE" Name="Data" Kind="InputPin" />
                 <Pin Id="QWOJrNV1ClFMO1CWs1ss6C" Name="TypeTag Index" Kind="InputPin" />
                 <Pin Id="U8YZNCzq1x7MJzvsd89ayy" Name="Byte Index" Kind="InputPin" />
                 <Pin Id="EJUak2jMY1AMkfw0hFiwAg" Name="Args" Kind="OutputPin" />
@@ -301,8 +303,8 @@
                   <Choice Kind="OperationCallFlag" Name="DataToArgs" />
                   <CategoryReference Kind="Category" Name="OSC" NeedsToBeDirectParent="true" />
                 </p:NodeReference>
-                <Pin Id="BtBoCtXvm09QAqfELFArnb" Name="Data" Kind="InputPin" />
                 <Pin Id="Rjp54n6EeG6MYDT2KYqf8m" Name="TypeTags" Kind="InputPin" />
+                <Pin Id="BtBoCtXvm09QAqfELFArnb" Name="Data" Kind="InputPin" />
                 <Pin Id="IvwMpsJEG53NIuaOmivbmr" Name="TypeTag Index" Kind="InputPin" />
                 <Pin Id="BnwO3iRaepjMa1WPsfEzOE" Name="Byte Index" Kind="InputPin" />
                 <Pin Id="VmkkrZIGicDPX8S4dDYN2K" Name="Args" Kind="OutputPin" />
@@ -361,12 +363,18 @@
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver (Empty)" />
             </p:NodeReference>
             <Pin Id="IghV0GOSgj6NY8liiNuJE1" Name="Input" Kind="InputPin" />
-            <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin">
+            <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin" DefaultValue="/1/push11">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="B6Innsw1GZMNFZr8NZ3fzG" Name="Learn" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Ucjgx4KY4eEOLoGT3GkE8t" Name="On Data" Kind="OutputPin" />
+            <Pin Id="EHK3gllWKfYNwNuW3hD4mr" Name="Is Learning" Kind="OutputPin" />
           </Node>
           <Pad Id="KejkAt2yzJWOao9Q5DX6H4" Comment="On Data" Bounds="395,792,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="VXAZ0HbHnKvNRiR3T5tefj" Bounds="380,660,162,52" ShowValueBox="true" isIOBox="true" Value="Receive a message without arguments">
@@ -378,7 +386,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KxpXjmeHibJLU2R9z6nym6" Comment="Address" Bounds="490,718,35,15" ShowValueBox="true" isIOBox="true" Value="/bang">
+          <Pad Id="KxpXjmeHibJLU2R9z6nym6" Comment="Address" Bounds="429,725,35,15" ShowValueBox="true" isIOBox="true" Value="/bang">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -400,8 +408,14 @@
             </p:NodeReference>
             <Pin Id="N9vteaO0VIKL9j0zN6Cfry" Name="Input" Kind="InputPin" />
             <Pin Id="DZ1Y06iuc7kP304nVnR2dn" Name="Address" Kind="InputPin" />
+            <Pin Id="TiE98xNpPdhPAfMg0KOIWl" Name="Learn" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="ImVE3Iu9oH7N9xOOW0vyLp" Name="Output" Kind="OutputPin" />
             <Pin Id="KD5miT7KRbBNADRQMHLXju" Name="On Data" Kind="OutputPin" />
+            <Pin Id="QVsfRTUnPGuNipsrGG6Klh" Name="Is Learning" Kind="OutputPin" />
           </Node>
           <Node Bounds="51,735,73,19" Id="N5VoDkulThKN1mTkC5vSpE">
             <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
@@ -410,9 +424,41 @@
             </p:NodeReference>
             <Pin Id="SBtPSh4Z09WMUI6rBweC5y" Name="Input" Kind="InputPin" />
             <Pin Id="QtGidL55WqbO5WjjIuHPv5" Name="Address" Kind="InputPin" />
+            <Pin Id="Nuz2xnaxieHOYpevps9tXP" Name="Learn" Kind="InputPin" />
             <Pin Id="Cfv76Ezbb57NSPdB8GDQzy" Name="Output" Kind="OutputPin" />
             <Pin Id="GmtVbUqUdtsQXn9RMzkMT9" Name="On Data" Kind="OutputPin" />
+            <Pin Id="KzGYNnmQjGFLroArM2Xyqq" Name="Is Learning" Kind="OutputPin" />
           </Node>
+          <Node Bounds="625,195,65,19" Id="DUBUv9p5xz8PukvsRQ0Vsn">
+            <p:NodeReference LastCategoryFullName="IO.Net" LastSymbolSource="VL.CoreLib.IO.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="IPs" />
+            </p:NodeReference>
+            <Pin Id="AwRgJVa8gm0MpVr7IieL6j" Name="Update" Kind="InputPin" />
+            <Pin Id="Pf5k1JczmrBLXohgpnji2B" Name="Address" Kind="OutputPin" />
+            <Pin Id="SQz0970upILN0q26ebSgTX" Name="Name" Kind="OutputPin" />
+            <Pin Id="PNLh72t0xskPCKLoYndBgC" Name="Description" Kind="OutputPin" />
+            <Pin Id="S4URS5CufubNmjZ9UXQto0" Name="Is Up" Kind="OutputPin" />
+          </Node>
+          <Pad Id="EKusbSOtdxDQBAgCiBDmAN" Comment="Address" Bounds="627,250,82,49" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="EbrGm5wJornP9MK7b1L5Po" Comment="Name" Bounds="787,250,55,49" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item></Item>
+            </p:Value>
+          </Pad>
+          <Pad Id="DQQP1FE1hhHMON9UcNl3tH" Bounds="618,149,292,42" ShowValueBox="true" isIOBox="true" Value="Here you see your PCs IP addresses. Send data to these, so the OSCServer can receive it.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -433,11 +479,9 @@
         <Link Id="NrXn2MyhvUWPPpenuY4fwK" Ids="UCSNw0e9HVlNndb6E2sQX7,B3zFxd0TTRXNdZStiUdi7z" />
         <Link Id="Dg5SUzApQbpOsO8xXcXp5b" Ids="IPCQq7TizqUNpLZYKPlcs9,Nji1mUTzuarL8RFQJMwD20" />
         <Link Id="IrCyr7e3VaiOaXzbIeclUG" Ids="Ucjgx4KY4eEOLoGT3GkE8t,KejkAt2yzJWOao9Q5DX6H4" />
-        <Link Id="DELPOrQY9alLONXLyNjmuE" Ids="KxpXjmeHibJLU2R9z6nym6,S1hV8EGnkS2OAdSDXkWxzI" />
         <Link Id="BFRXKsWMJfeQNvojMJ9SLE" Ids="KedKtJjM3vSN3nqxcqetDG,Q9XOQXV4fAiLl5DO5twy2T" />
         <Link Id="J1LDv5B4aalQPeHjepiHic" Ids="Ne5CEgvyBHsOTB6OGoTrVg,FgfpatNbD1SO1Uz8hjcD1j" />
         <Link Id="TGhS98E2G9WMGBv7fhjLKR" Ids="Aub3njymVhlNxr0R0OFjn5,N9vteaO0VIKL9j0zN6Cfry" />
-        <Link Id="TKSpEVvHPWiN8r5brbTWLg" Ids="E8JnLjtENKaMkpI4Bw1DrS,DZ1Y06iuc7kP304nVnR2dn" />
         <Link Id="JBpgINY7DqDLma7ffon8eo" Ids="ImVE3Iu9oH7N9xOOW0vyLp,RKN44IP84meNcR3QlnVaHe" />
         <Link Id="DcUh7n7JuPrQPl8we4hMYz" Ids="KD5miT7KRbBNADRQMHLXju,IqwgHJ4dMULOlkdQwt6hFo" />
         <Link Id="GKQbwK0d5LlNuSIPNwPcdB" Ids="Aub3njymVhlNxr0R0OFjn5,SBtPSh4Z09WMUI6rBweC5y" />
@@ -446,9 +490,12 @@
         <Link Id="TQkUVJho3KJQFuoCGuyrqC" Ids="Cfv76Ezbb57NSPdB8GDQzy,FjyxIp0ZIaANLQMiFihcsf" />
         <Link Id="VMDJ3U3SDChO2ZK63KBdz5" Ids="Aub3njymVhlNxr0R0OFjn5,IghV0GOSgj6NY8liiNuJE1" />
         <Link Id="NQqyxsH7wVYL4MPcTz8yaQ" Ids="Aub3njymVhlNxr0R0OFjn5,M7yObQXvE3uPGlQPmiP4Iu" />
+        <Link Id="EqDnSJBXEtcP3MAMbsSOM0" Ids="Pf5k1JczmrBLXohgpnji2B,EKusbSOtdxDQBAgCiBDmAN" />
+        <Link Id="LAVsDyoliMBOODlkYtDG67" Ids="SQz0970upILN0q26ebSgTX,EbrGm5wJornP9MK7b1L5Po" />
+        <Link Id="LIGNr03XC48OHeriuYR7o6" Ids="E8JnLjtENKaMkpI4Bw1DrS,DZ1Y06iuc7kP304nVnR2dn" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.2" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.4" />
   <NugetDependency Id="Vi5WMS9ZFm5PiOyW6ApLv3" Location="VL.IO.OSC" Version="2020.1.3" />
 </Document>

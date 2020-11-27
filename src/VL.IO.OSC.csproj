@@ -12,7 +12,7 @@
     <RepositoryUrl>https://github.com/vvvv/VL.IO.OSC</RepositoryUrl>
     <PackageIcon></PackageIcon>
     <Version>0.1.1-alpha</Version>
-    <AssemblyName>VL.IO.OSC2</AssemblyName>
+    <AssemblyName>VL.IO.OSC</AssemblyName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
