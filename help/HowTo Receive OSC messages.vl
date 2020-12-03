@@ -366,11 +366,7 @@
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver (Empty)" />
             </p:NodeReference>
             <Pin Id="IghV0GOSgj6NY8liiNuJE1" Name="Input" Kind="InputPin" />
-            <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin" DefaultValue="/1/push11">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pin>
+            <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin" />
             <Pin Id="B6Innsw1GZMNFZr8NZ3fzG" Name="Learn" Kind="InputPin" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -496,6 +492,7 @@
         <Link Id="EqDnSJBXEtcP3MAMbsSOM0" Ids="Pf5k1JczmrBLXohgpnji2B,EKusbSOtdxDQBAgCiBDmAN" />
         <Link Id="LAVsDyoliMBOODlkYtDG67" Ids="SQz0970upILN0q26ebSgTX,EbrGm5wJornP9MK7b1L5Po" />
         <Link Id="LIGNr03XC48OHeriuYR7o6" Ids="E8JnLjtENKaMkpI4Bw1DrS,DZ1Y06iuc7kP304nVnR2dn" />
+        <Link Id="GOukcXSF7iJNKG9isLXPhC" Ids="KxpXjmeHibJLU2R9z6nym6,S1hV8EGnkS2OAdSDXkWxzI" />
       </Patch>
     </Node>
   </Patch>

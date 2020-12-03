@@ -163,7 +163,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="149,504,75,19" Id="CJdzv0BOVW7O9opnCaPBXN">
+          <Node Bounds="140,545,75,19" Id="CJdzv0BOVW7O9opnCaPBXN">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LinearSpread" />
@@ -190,7 +190,7 @@
             <Pin Id="QNxEpT16CYQMBzOlq3gApL" Name="Apply" Kind="InputPin" />
             <Pin Id="MVk4lBf9iGdLveF8xLLeHj" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="OPIX0XIY7QdQQj3pPkS5ba" Comment="Address" Bounds="127,476,38,15" ShowValueBox="true" isIOBox="true" Value="/zwar">
+          <Pad Id="OPIX0XIY7QdQQj3pPkS5ba" Comment="Address" Bounds="122,519,38,15" ShowValueBox="true" isIOBox="true" Value="/zwar">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -458,12 +458,7 @@
             <Pin Id="AvgU9W6lQlZPXt3oyY6UmD" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
           <Pad Id="BaUZ3NaG8Z7OUbO0mlm1z3" Comment="Bundle Size Exceeded" Bounds="252,948,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TunDVt5jE4VQbYRMcTgFxk" Comment="Maximum Bundle Size" Bounds="278,860,35,15" ShowValueBox="true" isIOBox="true" Value="36">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="323,879,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="323,879,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -548,7 +543,6 @@
         <Link Id="IqcBMnLgUwJNWb8puSgwgQ" Ids="P1PGDtHtyzCPR1Npd8tE1b,HrJYNoVp7x7QWzsRkjl1C3" />
         <Link Id="LaZdg3oIZtaM5qVYEyqfHb" Ids="CgetAV9YUMeMXPAoRvwCKI,Mqz0eMWIebrN7xmKvBGONq" />
         <Link Id="VdcIOFAfDqgLKUolvQc7bD" Ids="AvgU9W6lQlZPXt3oyY6UmD,BaUZ3NaG8Z7OUbO0mlm1z3" />
-        <Link Id="VrZGbKf5t9eLoMREgZAJaQ" Ids="TunDVt5jE4VQbYRMcTgFxk,Dq8mGUyDqv3QDr8Fya86k4" />
         <Link Id="T0khHu4RTbAPlNe3nPoErr" Ids="NdV3HG4juTQN9ewL5OPYVE,Q5Fh7F5LbYuP2ORq7mj2NB" />
         <Link Id="SQgUM01Al9iNEVRR0Qs2ao" Ids="DXozrM656sYOFvBHIsXieU,MNdio6zF2jpPtIVZTQUFrv" />
         <Link Id="KqZLNEBNXdAMokhObmrPHk" Ids="DIGN7hTa8cJNNt6xZpiRaP,KfYex2ZMadrPHwDPfqXlI5" />
