@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.2.4.333" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.4" />
+<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.3.0.71" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.3.0-0071-ga1d0c69498" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -119,6 +119,7 @@
             <Pin Id="Momfn0i7J2AQc8CmIdYGSL" Name="Server" Kind="InputPin" />
             <Pin Id="L31jFRExRLAMxuZy4iKFiS" Name="Port" Kind="InputPin" />
             <Pin Id="Gb45dw5QoT6LdlupyEHOaE" Name="Maximum Bundle Size" Kind="InputPin" />
+            <Pin Id="FALkaaY0uSSPuBzd3Yw8IW" Name="Cap at Max Bundle Size" Kind="InputPin" />
             <Pin Id="NEj27l4drkuO8cXi63Dxhe" Name="Enabled" Kind="InputPin" />
             <Pin Id="IjLoyefJUjcLOA3jkIVLpY" Name="Output" Kind="OutputPin" />
             <Pin Id="BQChT25EoTaNt5QY1lNiD3" Name="Is Open" Kind="OutputPin" />
@@ -447,17 +448,22 @@
             <Pin Id="PXZVKhMV73KMGhhqFDJjg2" Name="State Input" Kind="StateInputPin" />
             <Pin Id="QBgaoOKFI7pO0QrxBsil2s" Name="Input" Kind="InputPin" />
             <Pin Id="Dq8mGUyDqv3QDr8Fya86k4" Name="Maximum Bundle Size" Kind="InputPin" />
+            <Pin Id="CLq8rkuhym6MIKVOnVYEW4" Name="Cap at Max Bundle Size" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="Q5Fh7F5LbYuP2ORq7mj2NB" Name="Apply" Kind="InputPin" />
             <Pin Id="SPRXKvtGHOLPd2RVSasgLa" Name="Output" Kind="StateOutputPin" />
             <Pin Id="AvgU9W6lQlZPXt3oyY6UmD" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
           <Pad Id="BaUZ3NaG8Z7OUbO0mlm1z3" Comment="Bundle Size Exceeded" Bounds="252,948,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="TunDVt5jE4VQbYRMcTgFxk" Comment="Maximum Bundle Size" Bounds="278,860,35,15" ShowValueBox="true" isIOBox="true" Value="1024">
+          <Pad Id="TunDVt5jE4VQbYRMcTgFxk" Comment="Maximum Bundle Size" Bounds="278,860,35,15" ShowValueBox="true" isIOBox="true" Value="36">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="278,883,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="323,879,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -553,6 +559,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.4" />
-  <NugetDependency Id="Vi5WMS9ZFm5PiOyW6ApLv3" Location="VL.IO.OSC" Version="2020.1.4" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.3.0-0071-ga1d0c69498" />
+  <NugetDependency Id="Pszwzhh6ZUuMwjuLErrlU0" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
