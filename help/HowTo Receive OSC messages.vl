@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2020.2.4.333" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.2.4" />
+<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2020.3.0.108" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -85,25 +85,28 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCServer" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="ChjylNSHfFPPPNswm1mlhk" Name="Listening IP" Kind="InputPin" />
             <Pin Id="UYyuYNjOlvtN8pcrOWxlPN" Name="Port" Kind="InputPin" DefaultValue="5555">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="NzHdqUfyjP2MYnPC0OBdyz" Name="Enable Data Preview" Kind="InputPin" DefaultValue="True">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="UNChaqM3BOfQO2DCswUxB1" Name="Reset Data Preview" Kind="InputPin" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
             <Pin Id="SqzLxcSh7UzLcCjY8mpPlJ" Name="Enabled" Kind="InputPin" />
             <Pin Id="Aub3njymVhlNxr0R0OFjn5" Name="Data" Kind="OutputPin" />
-            <Pin Id="QnWjhHEjye4NC0fqbG1bFS" Name="Data Preview" Kind="OutputPin" />
+            <Pin Id="FoFNv0oIsbUPYKkvQbQTJK" Name="Data Preview" Kind="OutputPin" />
             <Pin Id="CpYv9TU5yG3MHP00EoEfBd" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="HvwBQt9nq2UPGxycX6xRKa" Comment="Data Preview" Bounds="99,236,140,24" ShowValueBox="true" isIOBox="true">
-            <p:ValueBoxSettings>
-              <p:maxvisibleentries p:Type="Int32">10</p:maxvisibleentries>
-            </p:ValueBoxSettings>
-            <p:Value>
-              <Item></Item>
-            </p:Value>
-          </Pad>
           <Pad Id="IqwgHJ4dMULOlkdQwt6hFo" Comment="On Data" Bounds="153,593,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Mf9zoO23QCcNFLuzcn0flZ" Comment="Listening IP" Bounds="70,106,41,15" ShowValueBox="true" isIOBox="true" Value="0.0.0.0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -115,7 +118,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QxH6a1vmPabQO7LZvg9CYQ" Comment="Enabled" Bounds="150,168,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="QxH6a1vmPabQO7LZvg9CYQ" Comment="Enabled" Bounds="178,169,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -129,7 +132,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JdtCl5K3TUbLRTvT4LccYB" Bounds="242,262,157,40" ShowValueBox="true" isIOBox="true" Value="See if the server receives any osc messages">
+          <Pad Id="JdtCl5K3TUbLRTvT4LccYB" Bounds="315,260,189,76" ShowValueBox="true" isIOBox="true" Value="See all the messages the server received, their typetags and the time past since they were last received">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -365,6 +368,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver (Empty)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IghV0GOSgj6NY8liiNuJE1" Name="Input" Kind="InputPin" />
             <Pin Id="S1hV8EGnkS2OAdSDXkWxzI" Name="Address" Kind="InputPin" />
             <Pin Id="B6Innsw1GZMNFZr8NZ3fzG" Name="Learn" Kind="InputPin" DefaultValue="False">
@@ -405,6 +409,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="N9vteaO0VIKL9j0zN6Cfry" Name="Input" Kind="InputPin" />
             <Pin Id="DZ1Y06iuc7kP304nVnR2dn" Name="Address" Kind="InputPin" />
             <Pin Id="TiE98xNpPdhPAfMg0KOIWl" Name="Learn" Kind="InputPin" DefaultValue="False">
@@ -458,6 +463,11 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="StYLC17C1rPPJKc4K87Rxy" Comment="Data Preview" Bounds="122,228,172,103" ShowValueBox="true" isIOBox="true">
+            <p:Value>
+              <Item />
+            </p:Value>
+          </Pad>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -466,7 +476,6 @@
           <Fragment Id="S6Yjv9tjJLpLShAdNNLxM3" Patch="FfkjD7adBn3Mmnz9bzbyqp" Enabled="true" />
           <Fragment Id="Ubk8GBOF9FMM2R6lNKOylp" Patch="U8ctedt3nhwMo9ip2EHh0L" />
         </ProcessDefinition>
-        <Link Id="VKBoizhUvg1OVKQyZUjxA3" Ids="QnWjhHEjye4NC0fqbG1bFS,HvwBQt9nq2UPGxycX6xRKa" />
         <Link Id="T6siLUk1Fq2LuzHl0qkeV9" Ids="Mf9zoO23QCcNFLuzcn0flZ,ChjylNSHfFPPPNswm1mlhk" />
         <Link Id="BODigENrvvvMNIRXkAoSOb" Ids="UD8mZ9c3AbdOsTDAcIH4JJ,UYyuYNjOlvtN8pcrOWxlPN" />
         <Link Id="QGsLxK3plIcPA4DmXUElLv" Ids="QxH6a1vmPabQO7LZvg9CYQ,SqzLxcSh7UzLcCjY8mpPlJ" />
@@ -493,9 +502,10 @@
         <Link Id="LAVsDyoliMBOODlkYtDG67" Ids="SQz0970upILN0q26ebSgTX,EbrGm5wJornP9MK7b1L5Po" />
         <Link Id="LIGNr03XC48OHeriuYR7o6" Ids="E8JnLjtENKaMkpI4Bw1DrS,DZ1Y06iuc7kP304nVnR2dn" />
         <Link Id="GOukcXSF7iJNKG9isLXPhC" Ids="KxpXjmeHibJLU2R9z6nym6,S1hV8EGnkS2OAdSDXkWxzI" />
+        <Link Id="IoqHmR3gcnWMvWfhPP0Osb" Ids="FoFNv0oIsbUPYKkvQbQTJK,StYLC17C1rPPJKc4K87Rxy" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.2.4" />
-  <NugetDependency Id="F2TeU4TlgDLNnZNk1gb3OX" Location="VL.IO.OSC" Version="0.0.0.0" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.3.0-0108-g92c47c2bfc" />
+  <NugetDependency Id="PK4jQovDTPFMNmgvVNYVCh" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
