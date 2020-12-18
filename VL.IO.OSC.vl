@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Ek3EoYZlK4iMYPNUaoZJ6b" LanguageVersion="2020.3.0.112" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2020.3.0-0112-g83fed8fa8c" />
+<Document xmlns:p="property" Id="Ek3EoYZlK4iMYPNUaoZJ6b" LanguageVersion="2020.3.0.117" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2020.3.0-0117-g7ff15c23b7" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -3529,9 +3529,9 @@
               <Link Id="PlCgKGpRfQhNGFCWHputfh" Ids="Gru5d3pGdv1LYj6TOlEwTq,Db7eZzeCYuQP4Q8ICN0SDD" />
               <Link Id="J70Ode5NRJpQQqV2NkUIH4" Ids="ALPmfQcYOuwPUV0a5I3549,L0lDtYMgDTjP39JfRGBjhM" />
               <Pin Id="Me4BeLU3ClpMyEVVoQi3pL" Name="Byte Count" Kind="InputPin" />
-              <ControlPoint Id="IigrS91sLLfQOUzWUCHU5K" Bounds="556,1450" />
+              <ControlPoint Id="IigrS91sLLfQOUzWUCHU5K" Bounds="577,1459" />
               <Link Id="FkhZg6oOo29NORMwHyL9bw" Ids="Me4BeLU3ClpMyEVVoQi3pL,IigrS91sLLfQOUzWUCHU5K" IsHidden="true" />
-              <Node Bounds="564,1475,25,19" Id="AhU7c7kpEyDMP6JEXsRvBb">
+              <Node Bounds="586,1534,25,19" Id="AhU7c7kpEyDMP6JEXsRvBb">
                 <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="+" />
@@ -3542,7 +3542,7 @@
               </Node>
               <Link Id="F4sbTyPM7HcPzUuaRCgQpq" Ids="IigrS91sLLfQOUzWUCHU5K,Fd6Nx8TzTElO5ddTXP1Xhx" />
               <Link Id="VnFFcQFmpUkMUZJgp3ICjs" Ids="TYcd1Z1z7IZMH7VSFh1BJj,DpyG56YUHulNXvAqeRrSjv" />
-              <Node Bounds="464,1490,36,19" Id="Q0PM7A5A0M6QdeX8rNULWo">
+              <Node Bounds="441,1524,36,19" Id="Q0PM7A5A0M6QdeX8rNULWo">
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Skip" />
@@ -3555,7 +3555,7 @@
               <Link Id="SxDelaX1z8rN5DpcYxktFC" Ids="ABK0oW7KDwCLuhJZnddRyq,HdEAVhwY1hdOHVVQpMYqdz" />
               <Link Id="JmjGSqEbcZmMURyUg98tDf" Ids="B0UgWa4H5HkM2feuA1fUBv,HHMH1BSAqovM2hyFqzjes7" />
               <Link Id="CfJZAoF6GlyM69E7qqou9W" Ids="Qm9aUDH6JghLupBGngAS8A,KvcWszYgm4DPUXwUTnyqAo" />
-              <Node Bounds="467,1550,38,19" Id="K2jl1TBqmngN1C5Ss4J1ul">
+              <Node Bounds="438,1579,38,19" Id="K2jl1TBqmngN1C5Ss4J1ul">
                 <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Take" />
@@ -3565,7 +3565,6 @@
                 <Pin Id="BgX5CyayXEcLHazoiRBVvf" Name="Count" Kind="InputPin" />
                 <Pin Id="B3pyjPOCKzcMucsvR7OJH2" Name="Output" Kind="OutputPin" />
               </Node>
-              <Link Id="EFUgZoP6sZtLOaEGpIg0fz" Ids="IigrS91sLLfQOUzWUCHU5K,BgX5CyayXEcLHazoiRBVvf" />
               <Link Id="R3UrdsFkFsjP7UNJQfFENh" Ids="B3pyjPOCKzcMucsvR7OJH2,EgYBOrRstmSPBzsvgTTDko" />
               <Node Bounds="433,1614,83,26" Id="Uac7CG3xknYLWmvzIsCIX2">
                 <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
@@ -3596,6 +3595,29 @@
                 </p:ValueBoxSettings>
               </Pad>
               <Link Id="C1WFJAOuNHtLn2Q8uPTtrE" Ids="HBIiorpxAjpMLc6DofxbP4,C3fJy9vuLA2LKtMCVdFRUL" />
+              <Node Bounds="532,1514" Id="FJbgFLbgu95LKmZx3p1MRf">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="Aosz9YecbAhMm0qsN5v7ye" Name="Input" Kind="InputPin" />
+                <Pin Id="KhvMxMF6G5eQHI7BqViOX2" Name="Input 2" Kind="InputPin" />
+                <Pin Id="FJ3BFLbzWGFNVb2CHs1cdC" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="CYgxeLpgqiwOjKzOqMqP74" Ids="B0UgWa4H5HkM2feuA1fUBv,Aosz9YecbAhMm0qsN5v7ye" />
+              <Link Id="TLaSUwncBj9Of0PvmFKjf4" Ids="HBIiorpxAjpMLc6DofxbP4,KhvMxMF6G5eQHI7BqViOX2" />
+              <Node Bounds="486,1550,25,19" Id="K91fhipnMiHP1UiTjq1jay">
+                <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="-" />
+                </p:NodeReference>
+                <Pin Id="LDOzZibc5Y8QW4r7EPZq8F" Name="Input" Kind="InputPin" />
+                <Pin Id="TnLPm8GKCoEO2g4vUXstNl" Name="Input 2" Kind="InputPin" />
+                <Pin Id="UJ4hGjthTTANAlUYdsr7l0" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="Jzrigzojmn9LRBgcZbzqwq" Ids="IigrS91sLLfQOUzWUCHU5K,LDOzZibc5Y8QW4r7EPZq8F" />
+              <Link Id="Kg76oyBp3USL5xtfTf4Evr" Ids="FJ3BFLbzWGFNVb2CHs1cdC,TnLPm8GKCoEO2g4vUXstNl" />
+              <Link Id="EmOgcbgcyoTP16HkGOrSM2" Ids="UJ4hGjthTTANAlUYdsr7l0,BgX5CyayXEcLHazoiRBVvf" />
             </Patch>
           </Node>
         </Canvas>
@@ -9047,8 +9069,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2020.3.0-0112-g83fed8fa8c" />
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2020.3.0-0112-g83fed8fa8c" />
-  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2020.3.0-0112-g83fed8fa8c" />
+  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2020.3.0-0117-g7ff15c23b7" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2020.3.0-0117-g7ff15c23b7" />
+  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2020.3.0-0117-g7ff15c23b7" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
 </Document>
