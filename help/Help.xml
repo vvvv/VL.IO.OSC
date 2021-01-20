@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Pack>
+	<UriItem title="HowTo Send OSC messages" link="https://youtu.be/CSt_39fNonQ" mediaType="video" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Send OSC messages.vl" tags="udp opensoundcontrol"/>
+	<UriItem title="HowTo Receive OSC messages" link="https://youtu.be/i5Yy6DS3Imo" mediaType="video" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Receive OSC messages.vl" tags="udp opensoundcontrol"/>
+</Pack>
