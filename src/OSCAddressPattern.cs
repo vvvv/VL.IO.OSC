@@ -42,37 +42,53 @@ namespace OSC
         const char StringSetOpen = '{';
         const char StringSetClose = '}';
         const char StringSetSeparator = ',';
-        bool matchRegex;
-        string pattern;
 
-        public MessagePattern(string pattern)
+        public static bool IsMatch(ReadOnlySpan<char> pattern, ReadOnlySpan<char> part)
         {
-            matchRegex = false;
+            if (NeedsRegex(pattern))
+            {
+                var x = BuildPattern(pattern);
+                return Regex.IsMatch(part.ToString(), x);
+            }
+            else return part.SequenceEqual(pattern);
+        }
+
+        static string BuildPattern(ReadOnlySpan<char> pattern)
+        {
             var characterSet = false;
             var regexBuilder = new StringBuilder();
             foreach (var c in pattern)
             {
                 switch (c)
                 {
-                    case SingleWildcard: regexBuilder.Append('.'); matchRegex = true; break;
-                    case MultipleWildcard: regexBuilder.Append(".*"); matchRegex = true; break;
-                    case CharacterSetOpen: regexBuilder.Append('['); characterSet = true; matchRegex = true; break;
+                    case SingleWildcard: regexBuilder.Append('.'); break;
+                    case MultipleWildcard: regexBuilder.Append(".*"); break;
+                    case CharacterSetOpen: regexBuilder.Append('['); characterSet = true; break;
                     case CharacterSetClose: regexBuilder.Append(']'); characterSet = false; break;
                     case CharacterSetNegation: regexBuilder.Append(characterSet ? '^' : c); break;
-                    case StringSetOpen: regexBuilder.Append('('); matchRegex = true; break;
+                    case StringSetOpen: regexBuilder.Append('('); break;
                     case StringSetSeparator: regexBuilder.Append('|'); break;
                     case StringSetClose: regexBuilder.Append(')'); break;
                     default: regexBuilder.Append(c); break;
                 }
             }
 
-            this.pattern = regexBuilder.ToString();
+            return regexBuilder.ToString();
         }
 
-        public bool IsMatch(string part)
+        static bool NeedsRegex(ReadOnlySpan<char> pattern)
         {
-            if (matchRegex) return Regex.IsMatch(part, pattern);
-            else return part == pattern;
+            foreach (var c in pattern)
+            {
+                switch (c)
+                {
+                    case SingleWildcard: return true;
+                    case MultipleWildcard: return true;
+                    case CharacterSetOpen: return true;
+                    case StringSetOpen: return true;
+                }
+            }
+            return false;
         }
     }
 }
