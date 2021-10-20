@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2020.3.0.108" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
+<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2021.4.0.545" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.0-0540-gc6b1fcd814" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -34,17 +34,17 @@
             <Fragment Id="T9NNiZGIVgwLg3mDdZXuqh" Patch="RKa41HkCGO6Ovyvqwvn6ul" />
           </ProcessDefinition>
           <Slot Id="QzOYUuo5uKzOY6e3luiR6U" Name="Int">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Slot>
           <Slot Id="LUi1gh7EgDfLNRyFBsQ9Oh" Name="Vec">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Slot>
           <Slot Id="B4GBWQafZA3NrgyEbRiZeq" Name="Col">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Slot>
@@ -179,6 +179,7 @@
             </p:NodeReference>
             <Pin Id="Qfc1DCnjq7CNmC9SIuiRPE" Name="Center" Kind="InputPin" />
             <Pin Id="ODRmZL4cCHMNl6dJUIa9J3" Name="Width" Kind="InputPin" />
+            <Pin Id="IjDoZdyquEuNmWC7uE0kpE" Name="Alignment" Kind="InputPin" />
             <Pin Id="RJwvo26KJZNPQslSqRv0rI" Name="Phase" Kind="InputPin" />
             <Pin Id="F8LxRApaPGQNXyWWLT3Cxi" Name="Count" Kind="InputPin" DefaultValue="41">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -262,10 +263,10 @@
           </Pad>
           <ControlPoint Id="QBDkSMVNBaWMc54Rlk6tlp" Bounds="756,296" />
           <Node Bounds="268,524,109,26" Id="NMBd0RfDEpZMlk14XnuRh0">
-            <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" />
-              <Choice Kind="OperationCallFlag" Name="Join" />
+              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" />
+              <Choice Kind="OperationCallFlag" Name="Create" />
             </p:NodeReference>
             <Pin Id="BH35ulWrczPNTSYbLIjADT" Name="Item 1" Kind="InputPin" />
             <Pin Id="MNdio6zF2jpPtIVZTQUFrv" Name="Item 2" Kind="InputPin" />
@@ -320,7 +321,6 @@
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="RyEsmE9hGiqQToo2tXuDoE" IsGeneric="true">
-              <Pin Id="HAj2Ha4uBXgPwRXaW6NHnT" Name="Args" Kind="InputPin" />
               <ControlPoint Id="HCGiGJ7ibL2LvhtQOBpMqT" Bounds="1136,550" />
               <Link Id="GeuFXtDFrMPLo4j2u8KaBN" Ids="HAj2Ha4uBXgPwRXaW6NHnT,HCGiGJ7ibL2LvhtQOBpMqT" IsHidden="true" />
               <Node Bounds="1056,623,71,19" Id="AdIlZfq2UqANLGhC4w0tN8">
@@ -341,18 +341,11 @@
                 <Pin Id="PDOudzljPUjMEc1i7Hswga" Name="Args" Kind="InputPin" />
                 <Pin Id="UxQ8NLwdbUFO40JbbHmBGF" Name="Context" Kind="OutputPin" />
               </Node>
-              <Pin Id="O8qpsB71YKSOMzWcEWCdbM" Name="Context" Kind="InputPin">
-                <p:TypeAnnotation>
-                  <Choice Kind="TypeFlag" Name="SerializationContext" />
-                  <FullNameCategoryReference ID="IO.OSC" />
-                </p:TypeAnnotation>
-              </Pin>
               <ControlPoint Id="DH6MjyA825HLiTf5czyrNm" Bounds="1058,548" />
               <Link Id="Og4tAY2lSV2QGCuoApju2y" Ids="O8qpsB71YKSOMzWcEWCdbM,DH6MjyA825HLiTf5czyrNm" IsHidden="true" />
               <Link Id="JAHG1J1AhJtMp4XnKvmB3K" Ids="DH6MjyA825HLiTf5czyrNm,VIlW6Jrjn0iQWbySDSfncY" />
               <Link Id="OX4c6IKnNEuMdi0G4EYIu8" Ids="PQFoL0YzW9INwSejbrPIkv,OAYPCtZ8StOLZWZoSrsQKa" />
               <ControlPoint Id="NMG0C2tWZQlPFmQAlco7Rp" Bounds="1058,732" />
-              <Pin Id="BLLebfxFgY2OP5LXaugRbH" Name="Context" Kind="OutputPin" Bounds="1020,789" />
               <Link Id="VWgj2W2l0QmPGctIzracLT" Ids="NMG0C2tWZQlPFmQAlco7Rp,BLLebfxFgY2OP5LXaugRbH" IsHidden="true" />
               <Node Bounds="1134,574,45,26" Id="KvoQZ9K9HkWQLL9YHAODuA">
                 <p:NodeReference LastCategoryFullName="Main.MyData" LastSymbolSource="HowTo SimpleOSCTester.vl">
@@ -380,6 +373,14 @@
               <Link Id="EZB3mYDZeBjLndyOG3Jl2Q" Ids="UxQ8NLwdbUFO40JbbHmBGF,RYR8OHEx7c0Mhdwo8NkHVT" />
               <Link Id="GBQkXrF0IU5McFOF6YWcEI" Ids="DBcoVRKjMzbNqJozmzCTk6,JDskQUOU6ChQJnBP4Leuh5" />
               <Link Id="PZW2CzZyw7gMVL7nmXZiaK" Ids="AMld11Vbq56OHdnTUmuiWA,NMG0C2tWZQlPFmQAlco7Rp" />
+              <Pin Id="O8qpsB71YKSOMzWcEWCdbM" Name="Context" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="SerializationContext" />
+                  <FullNameCategoryReference ID="IO.OSC" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="HAj2Ha4uBXgPwRXaW6NHnT" Name="Args" Kind="InputPin" />
+              <Pin Id="BLLebfxFgY2OP5LXaugRbH" Name="Context" Kind="OutputPin" Bounds="1020,789" />
             </Patch>
           </Node>
           <Node Bounds="207,801,107,19" Id="NSB6DUiAxAfNUtk6dj2sC7">
@@ -561,6 +562,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.3.0-0108-g92c47c2bfc" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.0-0540-gc6b1fcd814" />
   <NugetDependency Id="DcbnPRoJhzUO3yAg6Xi2U5" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>

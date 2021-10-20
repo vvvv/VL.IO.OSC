@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2020.3.0.108" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2020.3.0-0108-g92c47c2bfc" />
+<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2021.4.0.545" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.0-0540-gc6b1fcd814" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -34,17 +34,17 @@
             <Fragment Id="T9NNiZGIVgwLg3mDdZXuqh" Patch="RKa41HkCGO6Ovyvqwvn6ul" />
           </ProcessDefinition>
           <Slot Id="QzOYUuo5uKzOY6e3luiR6U" Name="Int">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Slot>
           <Slot Id="LUi1gh7EgDfLNRyFBsQ9Oh" Name="Vec">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Slot>
           <Slot Id="B4GBWQafZA3NrgyEbRiZeq" Name="Col">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Slot>
@@ -156,10 +156,10 @@
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="PMz6jrs5niWOn2uOHreY7x" Comment="On Data" Bounds="192,799,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="86,788,70,26" Id="MzFJZ6aY8pFQHg1HCOOBhc">
-            <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
+          <Node Bounds="86,788,29,26" Id="MzFJZ6aY8pFQHg1HCOOBhc">
+            <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" />
+              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" />
               <Choice Kind="OperationCallFlag" Name="Split" />
             </p:NodeReference>
             <Pin Id="FjyxIp0ZIaANLQMiFihcsf" Name="Input" Kind="StateInputPin" />
@@ -224,8 +224,8 @@
             </Pin>
             <Pin Id="JvZ98tAQyM2P56GQf25pWS" Name="Learn" Kind="InputPin" />
             <Pin Id="Ne5CEgvyBHsOTB6OGoTrVg" Name="Output" Kind="OutputPin" />
-            <Pin Id="KedKtJjM3vSN3nqxcqetDG" Name="On Data" Kind="OutputPin" />
             <Pin Id="L8Qjz3kUTxXOKkU4CJvThe" Name="Is Learning" Kind="OutputPin" />
+            <Pin Id="KedKtJjM3vSN3nqxcqetDG" Name="On Data" Kind="OutputPin" />
           </Node>
           <Pad Id="Q9XOQXV4fAiLl5DO5twy2T" Comment="On Data" Bounds="783,657,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="660,648,45,26" Id="UL84ZmlAtsZNevbJZtTJzD">
@@ -284,10 +284,8 @@
                 <Pin Id="FmQ2iSJKK4WM6vidr7mz2e" Name="Next Byte Index" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="CVRbBiKDWxHO0mVlwn3Og9" Bounds="939,594" />
-              <Pin Id="GsDwzekWyxNPw2xL8p1WZd" Name="Data" Kind="InputPin" Bounds="370,796" />
               <Link Id="KyxgBOpSKO3N1zTzYZ8jcN" Ids="GsDwzekWyxNPw2xL8p1WZd,CVRbBiKDWxHO0mVlwn3Og9" IsHidden="true" />
               <ControlPoint Id="L8kUAAHSrbsLIksMPseJzT" Bounds="1157,593" />
-              <Pin Id="Uj5hBPsmPjpLPe9IzisXgW" Name="Byte Index" Kind="InputPin" Bounds="480,823" />
               <Link Id="AR7kaKk7jptN4Lxqglwsae" Ids="Uj5hBPsmPjpLPe9IzisXgW,L8kUAAHSrbsLIksMPseJzT" IsHidden="true" />
               <Node Bounds="958,670,85,19" Id="OuRO0mxyqoxMslnGyvJ1Qc">
                 <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
@@ -318,7 +316,6 @@
                 <Pin Id="DTvbodzNKWqPnnNXl7vhRY" Name="Next Byte Index" Kind="OutputPin" />
               </Node>
               <ControlPoint Id="Tv0mwMlVLDzOR79cBJDVqH" Bounds="1062,750" />
-              <Pin Id="EgEn4nDDpYVO5GaQEWyGNN" Name="Next Byte Index" Kind="OutputPin" Bounds="424,985" />
               <Link Id="VbbuSgIkVhTPRA7lfOxbhl" Ids="Tv0mwMlVLDzOR79cBJDVqH,EgEn4nDDpYVO5GaQEWyGNN" IsHidden="true" />
               <Node Bounds="938,739,46,26" Id="VNULqWD5iAZNXgwzSK4raq">
                 <p:NodeReference LastCategoryFullName="Main.MyData" LastSymbolSource="HowTo SimpleOSCTester.vl">
@@ -333,7 +330,6 @@
               </Node>
               <ControlPoint Id="T2DFVm4qUHPN6dln40HUL9" Bounds="940,789" />
               <Link Id="NrPQVe6ZvVWMTmF90svANS" Ids="VSFkJ6XZhEkPqFriMMJ8Pq,T2DFVm4qUHPN6dln40HUL9" />
-              <Pin Id="EvhXZLcdnetP6H7h5OOezk" Name="Args" Kind="OutputPin" Bounds="765,1149" />
               <Link Id="LNxgQ9N82yFLq4gVLTta1w" Ids="T2DFVm4qUHPN6dln40HUL9,EvhXZLcdnetP6H7h5OOezk" IsHidden="true" />
               <Link Id="HvjmEqOvxzDPdLif85wOwn" Ids="CVRbBiKDWxHO0mVlwn3Og9,TgY0stWNZS1MPiXXaCUMT2" />
               <Link Id="T1I9oVrfnpmOUbnX7Kiv9I" Ids="L8kUAAHSrbsLIksMPseJzT,KOK1FuZyJVINDa560PRyQb" />
@@ -347,20 +343,24 @@
               <Link Id="A7o9RJjpMjTQV8CCg9jqcq" Ids="DTvbodzNKWqPnnNXl7vhRY,Tv0mwMlVLDzOR79cBJDVqH" />
               <ControlPoint Id="BaSgvH5whorLz9tqmYJ8Aj" Bounds="987,596" />
               <Link Id="KzaFLnB7m6ILsFoPArHIiX" Ids="BaSgvH5whorLz9tqmYJ8Aj,TTLIEQjoDulNbMVBe5pjxX" />
-              <Pin Id="OqPPidOSe2SMUECCgArvZz" Name="TypeTags" Kind="InputPin" Bounds="1025,588" />
               <Link Id="T1UEFgZMCgWNW4WEWS4bWM" Ids="OqPPidOSe2SMUECCgArvZz,BaSgvH5whorLz9tqmYJ8Aj" IsHidden="true" />
               <Link Id="O1Z7DQFAFK8LiD20fumo3v" Ids="BaSgvH5whorLz9tqmYJ8Aj,DdsI2yatM4LMhjy67wpkvH" />
               <Link Id="VMwxrEGdajuPqtnLmleeHa" Ids="BaSgvH5whorLz9tqmYJ8Aj,Rjp54n6EeG6MYDT2KYqf8m" />
               <ControlPoint Id="Mpt8o1fedKKLwUzrSEjv4u" Bounds="1057,596" />
               <Link Id="MvxDunH1YtgO0EL9MMnsq2" Ids="Mpt8o1fedKKLwUzrSEjv4u,T1gG7pWnlQQP48j4fYGzi7" />
-              <Pin Id="HjzYzyUqg7VNpvl3ZOAHwF" Name="TypeTag Index" Kind="InputPin" Bounds="1096,587" />
               <Link Id="RI51coP3aAjNRIfBDU4xuC" Ids="HjzYzyUqg7VNpvl3ZOAHwF,Mpt8o1fedKKLwUzrSEjv4u" IsHidden="true" />
               <Link Id="QoqBgyR9Zi8LuVL1Xxozf4" Ids="AhzuAZUKwbwNYBIukxXSh3,QWOJrNV1ClFMO1CWs1ss6C" />
               <Link Id="KtMXTwZtEYBPi6AKHyMoNc" Ids="DgpGnSuIVTyOghdwRWosEh,IvwMpsJEG53NIuaOmivbmr" />
               <ControlPoint Id="RmHFdiLbaSuOzFNc6wMcHT" Bounds="1023,773" />
               <Link Id="DH0jlqNFd8oMFwcBHizAqu" Ids="S8WIKEMCppHLG3SfceFlLG,RmHFdiLbaSuOzFNc6wMcHT" />
-              <Pin Id="BVOWKk0yVVmLDLRUVRCBXA" Name="Next TypeTag Index" Kind="OutputPin" Bounds="1064,765" />
               <Link Id="IMLcPZQ8gtlPhERSR4nLUl" Ids="RmHFdiLbaSuOzFNc6wMcHT,BVOWKk0yVVmLDLRUVRCBXA" IsHidden="true" />
+              <Pin Id="GsDwzekWyxNPw2xL8p1WZd" Name="Data" Kind="InputPin" Bounds="370,796" />
+              <Pin Id="OqPPidOSe2SMUECCgArvZz" Name="TypeTags" Kind="InputPin" Bounds="1025,588" />
+              <Pin Id="HjzYzyUqg7VNpvl3ZOAHwF" Name="TypeTag Index" Kind="InputPin" Bounds="1096,587" />
+              <Pin Id="Uj5hBPsmPjpLPe9IzisXgW" Name="Byte Index" Kind="InputPin" Bounds="480,823" />
+              <Pin Id="EvhXZLcdnetP6H7h5OOezk" Name="Args" Kind="OutputPin" Bounds="765,1149" />
+              <Pin Id="BVOWKk0yVVmLDLRUVRCBXA" Name="Next TypeTag Index" Kind="OutputPin" Bounds="1064,765" />
+              <Pin Id="EgEn4nDDpYVO5GaQEWyGNN" Name="Next Byte Index" Kind="OutputPin" Bounds="424,985" />
             </Patch>
           </Node>
           <Node Bounds="393,746,52,19" Id="DFqvxhvWcEAPmPiQbsvt6B">
@@ -418,8 +418,8 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="ImVE3Iu9oH7N9xOOW0vyLp" Name="Output" Kind="OutputPin" />
-            <Pin Id="KD5miT7KRbBNADRQMHLXju" Name="On Data" Kind="OutputPin" />
             <Pin Id="QVsfRTUnPGuNipsrGG6Klh" Name="Is Learning" Kind="OutputPin" />
+            <Pin Id="KD5miT7KRbBNADRQMHLXju" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="51,735,73,19" Id="N5VoDkulThKN1mTkC5vSpE">
             <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
@@ -430,8 +430,8 @@
             <Pin Id="QtGidL55WqbO5WjjIuHPv5" Name="Address" Kind="InputPin" />
             <Pin Id="Nuz2xnaxieHOYpevps9tXP" Name="Learn" Kind="InputPin" />
             <Pin Id="Cfv76Ezbb57NSPdB8GDQzy" Name="Output" Kind="OutputPin" />
-            <Pin Id="GmtVbUqUdtsQXn9RMzkMT9" Name="On Data" Kind="OutputPin" />
             <Pin Id="KzGYNnmQjGFLroArM2Xyqq" Name="Is Learning" Kind="OutputPin" />
+            <Pin Id="GmtVbUqUdtsQXn9RMzkMT9" Name="On Data" Kind="OutputPin" />
           </Node>
           <Node Bounds="625,195,65,19" Id="DUBUv9p5xz8PukvsRQ0Vsn">
             <p:NodeReference LastCategoryFullName="IO.Net" LastSymbolSource="VL.CoreLib.IO.vl">
@@ -506,6 +506,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2020.3.0-0108-g92c47c2bfc" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.0-0540-gc6b1fcd814" />
   <NugetDependency Id="PK4jQovDTPFMNmgvVNYVCh" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
