@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.0.545" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.0-0540-gc6b1fcd814" />
+<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.0.613" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.0-0602-g8ed5e0ce29" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -4426,12 +4426,12 @@
     ************************ ArgsToData ************************
 
 -->
-          <Node Name="ArgsToData" Bounds="142,2407,155,189" Id="SR6nTBzPASOQAgrGNv3C2l">
+          <Node Name="ArgsToData" Bounds="142,2407,224,189" Id="SR6nTBzPASOQAgrGNv3C2l">
             <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="H27k6LbRDMEMS3D6h5GkE7">
-              <ControlPoint Id="Q71UdNxwj76Nc34MvkM5Z2" Bounds="240,2430" />
+              <ControlPoint Id="Q71UdNxwj76Nc34MvkM5Z2" Bounds="299,2432" />
               <Link Id="COEAyGNehp7PHfDb56zlwu" Ids="CqNUHT43VTxNbfkOXtHFvS,Q71UdNxwj76Nc34MvkM5Z2" IsHidden="true" />
               <ControlPoint Id="SsJ4b27FVzTLDyk0QNX3Ou" Bounds="157,2425" />
               <Link Id="BbV0up1CWaKLD1Qa9PGwmc" Ids="OdKC7WRSR8CO4fajzf54bn,SsJ4b27FVzTLDyk0QNX3Ou" IsHidden="true" />
@@ -4455,15 +4455,33 @@
               <ControlPoint Id="BG2Hj1afQkHQYO1M4iaI6X" Bounds="156,2579" />
               <Link Id="QXJTgPJWupfOtt0wanLm8r" Ids="OGcao3myaUQQCZ5dOAoaKQ,BG2Hj1afQkHQYO1M4iaI6X" />
               <Link Id="LA98FVoHbk7LVNkd20tsW6" Ids="BG2Hj1afQkHQYO1M4iaI6X,C8ROlwSDki3MZBENq7TrxO" IsHidden="true" />
-              <Link Id="DWqxIB89FEKLMydaa38RMh" Ids="Q71UdNxwj76Nc34MvkM5Z2,VhhdwNAOwhcL3rTpVKr9Uu" />
               <Pin Id="OdKC7WRSR8CO4fajzf54bn" Name="Context" Kind="InputPin">
                 <p:TypeAnnotation>
                   <Choice Kind="TypeFlag" Name="SerializationContext" />
                   <FullNameCategoryReference ID="IO.OSC" />
                 </p:TypeAnnotation>
               </Pin>
-              <Pin Id="CqNUHT43VTxNbfkOXtHFvS" Name="Args" Kind="InputPin" />
+              <Pin Id="CqNUHT43VTxNbfkOXtHFvS" Name="Args" Kind="InputPin">
+                <p:TypeAnnotation>
+                  <Choice Kind="TypeFlag" Name="MutableArray" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="TypeFlag" Name="Byte" />
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pin>
               <Pin Id="C8ROlwSDki3MZBENq7TrxO" Name="Context" Kind="OutputPin" Bounds="489,944" />
+              <Node Bounds="297,2470,57,19" Id="AH0hEIOKlnxNtwW0Z8CbTd">
+                <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <Choice Kind="OperationCallFlag" Name="PackBlob" />
+                </p:NodeReference>
+                <Pin Id="UCcbZG85N2POB0nThFAVsi" Name="Input" Kind="InputPin" />
+                <Pin Id="Vjl2GRCXFOMPbETYdfgrwd" Name="Output" Kind="OutputPin" />
+              </Node>
+              <Link Id="AyB6hSv57FCLSep6sX3olx" Ids="Q71UdNxwj76Nc34MvkM5Z2,UCcbZG85N2POB0nThFAVsi" />
+              <Link Id="Epz8THcm1YxOcmqUNT6JKw" Ids="Vjl2GRCXFOMPbETYdfgrwd,VhhdwNAOwhcL3rTpVKr9Uu" />
             </Patch>
           </Node>
           <!--
@@ -10645,8 +10663,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2021.4.0-0540-gc6b1fcd814" />
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2021.4.0-0540-gc6b1fcd814" />
-  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2021.4.0-0540-gc6b1fcd814" />
+  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2021.4.0-0602-g8ed5e0ce29" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2021.4.0-0602-g8ed5e0ce29" />
+  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2021.4.0-0602-g8ed5e0ce29" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
 </Document>
