@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2021.4.0.545" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.0-0540-gc6b1fcd814" />
+<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2021.4.7.863" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.7-0854-g6e27633250" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -265,8 +265,8 @@
           <Node Bounds="268,524,109,26" Id="NMBd0RfDEpZMlk14XnuRh0">
             <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" />
-              <Choice Kind="OperationCallFlag" Name="Create" />
+              <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
+              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="BH35ulWrczPNTSYbLIjADT" Name="Item 1" Kind="InputPin" />
             <Pin Id="MNdio6zF2jpPtIVZTQUFrv" Name="Item 2" Kind="InputPin" />
@@ -516,6 +516,15 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="IYltejl07QnOqbP4CmdiPI" Bounds="776,98,504,270" ShowValueBox="true" isIOBox="true" Value="The following wildcards can be used in addresses to send to multiple receivers:&#xD;&#xA;&#xD;&#xA;- '?’ matches any single character&#xD;&#xA;- '*’ matches any sequence of zero or more characters&#xD;&#xA;- A string of characters in square brackets (e.g., “[string]”) imatches any character in the string. Inside square brackets, the minus sign (-) and exclamation point (!) have special meanings:&#xD;&#xA;    - Two characters separated by a minus sign indicate the range of characters between the given two in ASCII collating sequence. (A minus sign at the end of the string has no special meaning.)&#xD;&#xA;    - An exclamation point at the beginning of a bracketed string negates the sense of the list, meaning that the list matches any character not in the list. (An exclamation point anywhere besides the first character after the open bracket has no special meaning.)&#xD;&#xA;    - A comma-separated list of strings enclosed in curly braces (e.g., “{foo,bar}”) matches any of the strings in the list.&#xD;&#xA; ">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -562,6 +571,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.0-0540-gc6b1fcd814" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.7-0854-g6e27633250" />
   <NugetDependency Id="DcbnPRoJhzUO3yAg6Xi2U5" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>

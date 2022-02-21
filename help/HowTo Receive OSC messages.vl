@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2021.4.0.545" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.0-0540-gc6b1fcd814" />
+<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2021.4.7.863" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.7-0854-g6e27633250" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -159,8 +159,8 @@
           <Node Bounds="86,788,29,26" Id="MzFJZ6aY8pFQHg1HCOOBhc">
             <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" />
-              <Choice Kind="OperationCallFlag" Name="Split" />
+              <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
+              <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="FjyxIp0ZIaANLQMiFihcsf" Name="Input" Kind="StateInputPin" />
             <Pin Id="GUYZRAgJfV9M8cmTCdlL9e" Name="Item 1" Kind="OutputPin" />
@@ -444,7 +444,7 @@
             <Pin Id="PNLh72t0xskPCKLoYndBgC" Name="Description" Kind="OutputPin" />
             <Pin Id="S4URS5CufubNmjZ9UXQto0" Name="Is Up" Kind="OutputPin" />
           </Node>
-          <Pad Id="EKusbSOtdxDQBAgCiBDmAN" Comment="Address" Bounds="627,250,82,49" ShowValueBox="true" isIOBox="true">
+          <Pad Id="EKusbSOtdxDQBAgCiBDmAN" Comment="Address" Bounds="627,250,93,50" ShowValueBox="true" isIOBox="true">
             <p:Value>
               <Item></Item>
             </p:Value>
@@ -506,6 +506,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.0-0540-gc6b1fcd814" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.7-0854-g6e27633250" />
   <NugetDependency Id="PK4jQovDTPFMNmgvVNYVCh" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
