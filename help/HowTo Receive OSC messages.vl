@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2021.4.7.863" Version="0.128">
-  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.7-0854-g6e27633250" />
+<Document xmlns:p="property" Id="RgzMhGYHaIoLCNxIdurX95" LanguageVersion="2021.4.8.947" Version="0.128">
+  <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.8" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
       <!--
@@ -404,23 +404,6 @@
               </p:TypeArguments>
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="83,537,73,19" Id="EV1kWwebALVOCYVfwlq0rL">
-            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
-            </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="N9vteaO0VIKL9j0zN6Cfry" Name="Input" Kind="InputPin" />
-            <Pin Id="DZ1Y06iuc7kP304nVnR2dn" Name="Address" Kind="InputPin" />
-            <Pin Id="TiE98xNpPdhPAfMg0KOIWl" Name="Learn" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                <Choice Kind="TypeFlag" Name="Boolean" />
-              </p:TypeAnnotation>
-            </Pin>
-            <Pin Id="ImVE3Iu9oH7N9xOOW0vyLp" Name="Output" Kind="OutputPin" />
-            <Pin Id="QVsfRTUnPGuNipsrGG6Klh" Name="Is Learning" Kind="OutputPin" />
-            <Pin Id="KD5miT7KRbBNADRQMHLXju" Name="On Data" Kind="OutputPin" />
-          </Node>
           <Node Bounds="51,735,73,19" Id="N5VoDkulThKN1mTkC5vSpE">
             <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -468,6 +451,19 @@
               <Item />
             </p:Value>
           </Pad>
+          <Node Bounds="83,537,73,19" Id="CBACv19KBPCPgryGHLcyds">
+            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OSCReceiver" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="LJBICSketUrLl4ybCyuGX7" Name="Input" Kind="InputPin" />
+            <Pin Id="J1PkJDaKiOwMXWHnNqEq30" Name="Address" Kind="InputPin" />
+            <Pin Id="GPmA1jHspf3LaS31YiCIf0" Name="Learn" Kind="InputPin" />
+            <Pin Id="MHzW6iMEUlgMFxKxKGykXK" Name="Output" Kind="OutputPin" />
+            <Pin Id="MkNz63HpizhNdc65dX0LeF" Name="Is Learning" Kind="OutputPin" />
+            <Pin Id="ArdVwPLJ6qpLnwKLs5rtjD" Name="On Data" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -489,9 +485,6 @@
         <Link Id="IrCyr7e3VaiOaXzbIeclUG" Ids="Ucjgx4KY4eEOLoGT3GkE8t,KejkAt2yzJWOao9Q5DX6H4" />
         <Link Id="BFRXKsWMJfeQNvojMJ9SLE" Ids="KedKtJjM3vSN3nqxcqetDG,Q9XOQXV4fAiLl5DO5twy2T" />
         <Link Id="J1LDv5B4aalQPeHjepiHic" Ids="Ne5CEgvyBHsOTB6OGoTrVg,FgfpatNbD1SO1Uz8hjcD1j" />
-        <Link Id="TGhS98E2G9WMGBv7fhjLKR" Ids="Aub3njymVhlNxr0R0OFjn5,N9vteaO0VIKL9j0zN6Cfry" />
-        <Link Id="JBpgINY7DqDLma7ffon8eo" Ids="ImVE3Iu9oH7N9xOOW0vyLp,RKN44IP84meNcR3QlnVaHe" />
-        <Link Id="DcUh7n7JuPrQPl8we4hMYz" Ids="KD5miT7KRbBNADRQMHLXju,IqwgHJ4dMULOlkdQwt6hFo" />
         <Link Id="GKQbwK0d5LlNuSIPNwPcdB" Ids="Aub3njymVhlNxr0R0OFjn5,SBtPSh4Z09WMUI6rBweC5y" />
         <Link Id="FSDGaLTR3r4O7op0XdTOJU" Ids="AsGj1Wf0g7qL6z2SZXydMh,QtGidL55WqbO5WjjIuHPv5" />
         <Link Id="CDwEGYc45gcOccpHYCtgki" Ids="GmtVbUqUdtsQXn9RMzkMT9,PMz6jrs5niWOn2uOHreY7x" />
@@ -500,12 +493,15 @@
         <Link Id="NQqyxsH7wVYL4MPcTz8yaQ" Ids="Aub3njymVhlNxr0R0OFjn5,M7yObQXvE3uPGlQPmiP4Iu" />
         <Link Id="EqDnSJBXEtcP3MAMbsSOM0" Ids="Pf5k1JczmrBLXohgpnji2B,EKusbSOtdxDQBAgCiBDmAN" />
         <Link Id="LAVsDyoliMBOODlkYtDG67" Ids="SQz0970upILN0q26ebSgTX,EbrGm5wJornP9MK7b1L5Po" />
-        <Link Id="LIGNr03XC48OHeriuYR7o6" Ids="E8JnLjtENKaMkpI4Bw1DrS,DZ1Y06iuc7kP304nVnR2dn" />
         <Link Id="GOukcXSF7iJNKG9isLXPhC" Ids="KxpXjmeHibJLU2R9z6nym6,S1hV8EGnkS2OAdSDXkWxzI" />
         <Link Id="IoqHmR3gcnWMvWfhPP0Osb" Ids="FoFNv0oIsbUPYKkvQbQTJK,StYLC17C1rPPJKc4K87Rxy" />
+        <Link Id="NKZpBfn0u5ONqGqT1fcOmd" Ids="Aub3njymVhlNxr0R0OFjn5,LJBICSketUrLl4ybCyuGX7" />
+        <Link Id="VngeZKXW2XbNLB62upDaL5" Ids="MHzW6iMEUlgMFxKxKGykXK,RKN44IP84meNcR3QlnVaHe" />
+        <Link Id="QIwTyATxBfaMikn15Y1W24" Ids="E8JnLjtENKaMkpI4Bw1DrS,J1PkJDaKiOwMXWHnNqEq30" />
+        <Link Id="VgCA5ZYvx3GNL5JQNEherJ" Ids="ArdVwPLJ6qpLnwKLs5rtjD,IqwgHJ4dMULOlkdQwt6hFo" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.7-0854-g6e27633250" />
+  <NugetDependency Id="RXlDIKwF9NONL4X6Sk8Q0q" Location="VL.Skia" Version="2021.4.8" />
   <NugetDependency Id="PK4jQovDTPFMNmgvVNYVCh" Location="VL.IO.OSC" Version="0.0.0.0" />
 </Document>
