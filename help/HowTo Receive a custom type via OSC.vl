@@ -318,6 +318,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCReceiver (Object)" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="JsKvEAVIMGSMm8JHx9Rl0L" Name="Input" Kind="InputPin" />
             <Pin Id="LTKFsEq7edCLGGawyOELVy" Name="Object Out" Kind="OutputPin" />
             <Pin Id="EgVWl9lZ7ZlN6dCdI5cDDj" Name="Object In" Kind="InputPin" />
