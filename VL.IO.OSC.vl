@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.10.1021" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.10-1021-g8bbd4c6f55" />
+<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.9" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -1200,8 +1200,8 @@
                         <Node Bounds="485,904,70,26" Id="RGFLAhMNxHTN2DSxpDZirb">
                           <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                            <Choice Kind="OperationCallFlag" Name="Split" />
-                            <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" NeedsToBeDirectParent="true" />
+                            <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
+                            <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                           </p:NodeReference>
                           <Pin Id="LWwFBhdDN0nOMUrRI1jQWp" Name="Input" Kind="StateInputPin" />
                           <Pin Id="SxMiFPTnY8ML2MgiDhL5LO" Name="Item 1" Kind="OutputPin" />
@@ -1254,6 +1254,7 @@
                   </p:NodeReference>
                   <Pin Id="R2CjYVPNmBDO9zJvxYmsGb" Name="Input" Kind="StateInputPin" />
                   <Pin Id="Rm2mAoWDOTuNKFWlKi40nL" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="H2WWG9ZHfv3LMqW23agL6i" Name="Apply" Kind="InputPin" />
                 </Node>
                 <Node Bounds="490,686,83,26" Id="IvlDHH2XD6uOyqZQGT4dad">
                   <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
@@ -1311,7 +1312,7 @@
                           <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
-                            <Choice Kind="OperationCallFlag" Name="Create" />
+                            <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                           </p:NodeReference>
                           <Pin Id="NwDRKFmzPYVOoAp80HXKZf" Name="Item 1" Kind="InputPin" />
                           <Pin Id="GceQTWrp1ANPbbUzvHpKd8" Name="Item 2" Kind="InputPin" />
@@ -1360,6 +1361,7 @@
               <ControlPoint Id="A6ONwD8W82SL47Yje7lagQ" Bounds="444,1124" Alignment="Bottom" />
               <ControlPoint Id="T2domR7aeKmNXpWUjBxNz8" Bounds="404,600" Alignment="Top" />
             </Node>
+            <ControlPoint Id="Ewzj4L0E9U6OYAXMS2ezDh" Bounds="703,600" />
           </Canvas>
           <Patch Id="TuOkxV9syBxPwRTvVZB6JZ" Name="Create" />
           <Patch Id="NPwec6eTeoYO8uqHWVKkZr" Name="Update" ManuallySortedPins="true">
@@ -1374,6 +1376,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="BW1aqDkFEILONSETbCIoaF" Name="Sort Data Preview" Kind="InputPin" Bounds="703,599" />
             <Pin Id="MFV8Jj2EI1zMJQS5GVv3pQ" Name="Reset Data Preview" Kind="InputPin" Bounds="787,388" DefaultValue="False">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
@@ -1462,6 +1465,8 @@
           <Link Id="E0MNoWhE1kFNLwmIl9zU0t" Ids="OxDfi01LpVXPElw2wDLXXC,JPKxoNzajSZP8i7KjjXtzs" />
           <Link Id="CTS3GF6Raq8OP0P77H2juy" Ids="Hw90uzKmtAAOG0wOWTQDAK,Uea1bJz9yVIN9jO1KsRam9" />
           <Link Id="RveScHlHYfwOqbYlOJHENj" Ids="McD0rxChkpRLOYuk7MplTj,NwQzLfrV2AGOAePvv75MPU" />
+          <Link Id="G3X0lw997A6PG2xMaNu1jD" Ids="Ewzj4L0E9U6OYAXMS2ezDh,H2WWG9ZHfv3LMqW23agL6i" />
+          <Link Id="IjRcGGZXYqgLP8Ol0URBTW" Ids="BW1aqDkFEILONSETbCIoaF,Ewzj4L0E9U6OYAXMS2ezDh" IsHidden="true" />
         </Patch>
       </Node>
       <Canvas Id="TshVZcgFWPzMtRWbg0h9kk" Name="Internal" Position="669,222">
@@ -2814,7 +2819,7 @@
                 <ControlPoint Id="KgYQSV4AcatNrzwnxZti1C" Bounds="777,383" Name="Messages" Alignment="Top" />
                 <ControlPoint Id="C37wQxmlIlTNp4kmocKJRF" Bounds="841,1154" Name="Messages" Alignment="Bottom" />
                 <Patch Id="NvLJzQH6IRiMnRCd0CRem0" IsGeneric="true">
-                  <Pad Id="NaPFLDbfuEBM5R3OrezRmv" Comment="Iteration Count" Bounds="330,431,30,19" ShowValueBox="true" isIOBox="true" Value="999">
+                  <Pad Id="NaPFLDbfuEBM5R3OrezRmv" Comment="forever" Bounds="330,431,39,-5" ShowValueBox="true" isIOBox="true" Value="9999">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                       <Choice Kind="TypeFlag" Name="Integer32" />
                       <CategoryReference Kind="Category" Name="Primitive" />
@@ -3871,7 +3876,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="JT62HWHwJNKMpY2Zxqnq0R" Name="Input" Kind="StateInputPin" />
                 <Pin Id="AhPhCdYh2S2OI67OIo2kD0" Name="Item 1" Kind="OutputPin" />
@@ -4038,8 +4043,8 @@
               <Node Bounds="628,307,70,26" Id="I0NGWqdoSyQQaHrPWkLny1">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
-                  <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" NeedsToBeDirectParent="true" />
+                  <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="FzUMiXeXE3aM7kLuAmidJO" Name="Input" Kind="StateInputPin" />
                 <Pin Id="DslLP3JDNZwOujUllvCrua" Name="Item 1" Kind="OutputPin" />
@@ -4617,8 +4622,8 @@
               <Node Bounds="848,306,70,26" Id="Cm1O24u9U3oQajoMd8bmhH">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (4 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Tuple (4 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="MrBajnrMsq7N3cDXI7I5jE" Name="Input" Kind="StateInputPin" />
                 <Pin Id="TdgZFImcuFbLh9X3BpAfKI" Name="Item 1" Kind="OutputPin" />
@@ -4701,8 +4706,8 @@
               <Node Bounds="1058,306,70,26" Id="AfIXlG8NBcoNKzfa22vD1w">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (5 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Tuple (5 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="SCEQHixnGw7NQDHeZsdpAX" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HWypCOaZ3RzM9AjHt0eXDL" Name="Item 1" Kind="OutputPin" />
@@ -4797,8 +4802,8 @@
               <Node Bounds="1268,306,70,26" Id="VAhOAaEwL4MN3vU3JcwxO8">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (6 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Tuple (6 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="BC3LjKHckRDQIzFtnnNsut" Name="Input" Kind="StateInputPin" />
                 <Pin Id="UeeZW21ljmaMUzDl8gHVeo" Name="Item 1" Kind="OutputPin" />
@@ -4905,8 +4910,8 @@
               <Node Bounds="1498,306,70,26" Id="NHr1Dk4U3PqNaztQgTRqIA">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (7 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Tuple (7 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="B2JLFY4OvPgPCy0p9ObaTk" Name="Input" Kind="StateInputPin" />
                 <Pin Id="GIO4UmQI2vMQGUmIDtYzlZ" Name="Item 1" Kind="OutputPin" />
@@ -5025,8 +5030,8 @@
               <Node Bounds="1738,306,125,26" Id="SBVwdZrBZhXNiNlIAVMxlT">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (8 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="Tuple (8 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="TytDFcAm3WMMcHXw6r8YA2" Name="Input" Kind="StateInputPin" />
                 <Pin Id="MLvUMA9QqmcNyuNGsX95Qt" Name="Item 1" Kind="OutputPin" />
@@ -5158,7 +5163,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="IeQM5G9m3BIM9fzTC1pi4o" Name="Input" Kind="StateInputPin" />
                 <Pin Id="HNuobmKQRDwMza0Vio6OBf" Name="Item 1" Kind="OutputPin" />
@@ -5217,8 +5222,8 @@
               <Node Bounds="639,767,70,26" Id="E77bYs5SwjTM6lFg4dGCOo">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="NDrSgkfvShCOW7RHswCyDY" Name="Input" Kind="StateInputPin" />
                 <Pin Id="IKMy7jmbngGN9I7TZlRF2N" Name="Item 1" Kind="OutputPin" />
@@ -5289,8 +5294,8 @@
               <Node Bounds="859,766,70,26" Id="CxA4WDwMktZPfoyxJUWEw4">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (4 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (4 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="NDFk87RlNCRNl2XSqaKvez" Name="Input" Kind="StateInputPin" />
                 <Pin Id="CzYHlTaDcMEOpo9sO8hYSV" Name="Item 1" Kind="OutputPin" />
@@ -5373,8 +5378,8 @@
               <Node Bounds="1069,766,85,26" Id="TurCs7yj7f5NoIUS2kkuS1">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (5 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (5 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="HBjrbOY8X9LM9CqMzD0mpU" Name="Input" Kind="StateInputPin" />
                 <Pin Id="EfYcIl6FrsXNMlGbgFpK2G" Name="Item 1" Kind="OutputPin" />
@@ -5469,8 +5474,8 @@
               <Node Bounds="1279,766,105,26" Id="LtE9htl5LnIN6QtUQs1uJR">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (6 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (6 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="V2K6naVmjhkPQABuiLNFe7" Name="Input" Kind="StateInputPin" />
                 <Pin Id="ERO4sWEr4A7O7qFPAy0GAd" Name="Item 1" Kind="OutputPin" />
@@ -5577,8 +5582,8 @@
               <Node Bounds="1509,766,125,26" Id="QzWQsfkoUT2PlrNeovMlMc">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (7 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (7 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="De4yl6YcjVCQHOtvXtf6Ed" Name="Input" Kind="StateInputPin" />
                 <Pin Id="R7Bjs16ZNeUM4vrac8lq8O" Name="Item 1" Kind="OutputPin" />
@@ -5697,8 +5702,8 @@
               <Node Bounds="1749,766,145,26" Id="LpjcNF0rHGyMBzyft4D1BV">
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (8 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (8 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Split)" />
                 </p:NodeReference>
                 <Pin Id="JPWdYUtbpXUMqa9F6XAjfy" Name="Input" Kind="StateInputPin" />
                 <Pin Id="TYFW6W65TzENKaTekA5bRG" Name="Item 1" Kind="OutputPin" />
@@ -6252,7 +6257,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="Tuple (2 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="CG3G6R4Qwl2MVFIMRDfm1o" Name="Item 1" Kind="InputPin" />
                 <Pin Id="M2fbj8pihOZOxo06W06qtW" Name="Item 2" Kind="InputPin" />
@@ -6622,8 +6627,8 @@
               <Node Bounds="529,1008,70,26" Id="H0Dwum5U0LeMjmAeGh4gxe">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (3 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="A24H446JfQONtJGm9Q7Xxn" Name="Item 1" Kind="InputPin" />
                 <Pin Id="IpKIdpQMJJuNNBSn2XNd1K" Name="Item 2" Kind="InputPin" />
@@ -7421,8 +7426,8 @@
               <Node Bounds="892,1065,70,26" Id="SYJFQSyKvGGM6dd083utGj">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (4 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (4 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="LkXq8eEjsRZOvA8K0W1LxL" Name="Item 1" Kind="InputPin" />
                 <Pin Id="HZiNJ2Qe7JiPBf06bpV0by" Name="Item 2" Kind="InputPin" />
@@ -7562,8 +7567,8 @@
               <Node Bounds="1308,1103,85,26" Id="DfUG6MGaZu0NeheFj07QFv">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (5 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (5 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="DA1N8QwuboXOESlCbghbyR" Name="Item 1" Kind="InputPin" />
                 <Pin Id="Hn5YV1UYNMSPoJhb9GJ4dd" Name="Item 2" Kind="InputPin" />
@@ -7722,8 +7727,8 @@
               <Node Bounds="1703,1111,105,26" Id="C4u73AWyOMaPOBzZ6LpQoh">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (6 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (6 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="GjQeBZMIXJcPrst4Ov9dk5" Name="Item 1" Kind="InputPin" />
                 <Pin Id="T83LSHMrq6HM0mwAKAnV2U" Name="Item 2" Kind="InputPin" />
@@ -7901,8 +7906,8 @@
               <Node Bounds="2162,1160,125,26" Id="POgrs0jxO7gQMTgcsc83jj">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (7 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (7 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="TThQGCsH2n1OadeSpsnTk0" Name="Item 1" Kind="InputPin" />
                 <Pin Id="Kv8AH5ueZV5NY0tDpZCsOD" Name="Item 2" Kind="InputPin" />
@@ -8099,8 +8104,8 @@
               <Node Bounds="2627,1231,145,26" Id="Rva363tJIrSMpfq7lOQU2P">
                 <p:NodeReference LastCategoryFullName="Primitive.Tuple (8 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Join" />
                   <CategoryReference Kind="RecordType" Name="Tuple (8 Items)" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Tuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="MJ7moAUS0PhP7rvzXi1Ymd" Name="Item 1" Kind="InputPin" />
                 <Pin Id="KgBHy5GXuxtLIYoMZCUxVv" Name="Item 2" Kind="InputPin" />
@@ -8317,7 +8322,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (2 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (2 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="VIAAVrqYVuXMYXqszncznX" Name="Item 1" Kind="InputPin" />
                 <Pin Id="OjRhv31wL1TPcInJNKskjR" Name="Item 2" Kind="InputPin" />
@@ -8420,7 +8425,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="Snl5aolOFePMSRnqr4B6YM" Name="Item 1" Kind="InputPin" />
                 <Pin Id="JO47vDlc1RJLXI3jeTg1pM" Name="Item 2" Kind="InputPin" />
@@ -8542,7 +8547,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (4 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (4 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="EqFjYkBZLTzMMlPknaR1VH" Name="Item 1" Kind="InputPin" />
                 <Pin Id="KVJo1KVXNKMPkGj1uBuKwL" Name="Item 2" Kind="InputPin" />
@@ -8683,7 +8688,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (5 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (5 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="OR5TvrI9gusPBNip3eQZBB" Name="Item 1" Kind="InputPin" />
                 <Pin Id="AG5CSzG9IW8Pkt9FIb0xWI" Name="Item 2" Kind="InputPin" />
@@ -8843,7 +8848,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (6 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (6 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="FkajJfPsUa7N4axbdD7lml" Name="Item 1" Kind="InputPin" />
                 <Pin Id="TGR5R0TvtKpPM8nvTiy5dV" Name="Item 2" Kind="InputPin" />
@@ -9022,7 +9027,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (7 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (7 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="PbCKqXyyP1BMAgKBD5kbyM" Name="Item 1" Kind="InputPin" />
                 <Pin Id="P5RPoVIKJldLzitnzXLL0z" Name="Item 2" Kind="InputPin" />
@@ -9220,7 +9225,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (8 Items)" LastSymbolSource="CoreLibBasics.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="ValueTuple (8 Items)" />
-                  <Choice Kind="OperationCallFlag" Name="Create" />
+                  <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
                 </p:NodeReference>
                 <Pin Id="SzZYYJ1BQYQL3Ks38zoSzV" Name="Item 1" Kind="InputPin" />
                 <Pin Id="RhZtec9sD20N5Q7t321HMC" Name="Item 2" Kind="InputPin" />
@@ -11310,8 +11315,8 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2021.4.10-1021-g8bbd4c6f55" />
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2021.4.10-1021-g8bbd4c6f55" />
-  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2021.4.10-1021-g8bbd4c6f55" />
+  <NugetDependency Id="BRI1by1CrieP2IbgZKHuqq" Location="VL.Skia" Version="2021.4.9" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2021.4.9" />
+  <NugetDependency Id="BN7vxCsXiyZLLmCMsmdAAt" Location="VL.Lang" Version="2021.4.9" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
 </Document>
