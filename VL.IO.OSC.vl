@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.9.982" Version="0.128">
   <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.9" />
-<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.11.1146" Version="0.128">
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
