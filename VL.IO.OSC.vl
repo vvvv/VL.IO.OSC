@@ -10065,7 +10065,7 @@
     ************************ OSCReceiver (Reactive) ************************
 
 -->
-        <Node Name="OSCReceiver (Reactive)" Bounds="149,201" Id="OdTddaZvpAJO4k20op1eVP" Summary="Receives the arguments from the specified OSC address" Remarks="Connect to an OSCServer">
+        <Node Name="OSCReceiver (Reactive)" Bounds="149,201" Id="OdTddaZvpAJO4k20op1eVP" Summary="Receives the arguments from the specified OSC address" Remarks="Connect to an OSCServer or OSCClient">
           <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
             <Choice Kind="ContainerDefinition" Name="Process" />
           </p:NodeReference>
@@ -11034,7 +11034,7 @@
     ************************ OSCReceiver (Empty) ************************
 
 -->
-      <Node Name="OSCReceiver (Empty)" Bounds="433,330" Id="LnzLcAjeWNJMJ7nV6jWaiA" Summary="Receives messages without arguments from the specified OSC address" Remarks="Connect to an OSCServer">
+      <Node Name="OSCReceiver (Empty)" Bounds="433,330" Id="LnzLcAjeWNJMJ7nV6jWaiA" Summary="Receives messages without arguments from the specified OSC address" Remarks="Connect to an OSCServer or OSCClient">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -11107,7 +11107,7 @@
     ************************ OSCReceiver ************************
 
 -->
-      <Node Name="OSCReceiver" Bounds="434,275" Id="SfJDk17Od8wMmTO3AiRe99" Summary="Receives the arguments from the specified OSC address" Remarks="Connect to an OSCServer">
+      <Node Name="OSCReceiver" Bounds="434,275" Id="SfJDk17Od8wMmTO3AiRe99" Summary="Receives the arguments from the specified OSC address" Remarks="Connect to an OSCServer or OSCClient">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
