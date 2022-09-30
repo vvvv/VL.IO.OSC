@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.9.982" Version="0.128">
   <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.9" />
+<Document xmlns:p="property" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2021.4.11.1146" Version="0.128">
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -912,6 +913,24 @@
               <Pin Id="HbkSkDQWY1aNB50sa4H1Jo" Name="Now" Kind="OutputPin" />
             </Node>
             <Pad Id="IapAH03Y0GTMndBiJfEWeh" Bounds="870,520" />
+            <Node Bounds="-775,406,54,19" Id="DCVCVFlgY9yLDZ3eMUHuF6">
+              <p:NodeReference LastCategoryFullName="IO.Socket" LastSymbolSource="VL.CoreLib.IO.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Receiver (Datagram)" />
+              </p:NodeReference>
+              <Pin Id="Q00MUeQEa42PqbqoZfYwYO" Name="Local Socket" Kind="InputPin" />
+              <Pin Id="D6umbBfT47nNXz39IWRLQf" Name="Datagrams" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="-775,436,91,19" Id="MWT6a9CjJRgMxmbs4TVCMh">
+              <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <FullNameCategoryReference ID="IO.OSC" />
+                <Choice Kind="ProcessAppFlag" Name="ToOSCMessages (Reactive)" />
+              </p:NodeReference>
+              <Pin Id="EeN3ypAtqyTQSQ9L8AZMXA" Name="Input" Kind="InputPin" />
+              <Pin Id="UGFuNtgtAZDQWYWnu1E8yA" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="NeRKmo6uu9dP0GB2eKPqO5" Bounds="-773,483" />
           </Canvas>
           <Patch Id="LQDhm8l8hswOi3TdetvBNs" Name="Create (Internal)" ParticipatingElements="IST5RNegAyyLVTkZIyA34x,NHaPJlT7dWHLAOOioXUpF5" />
           <Patch Id="CAw4X3LIAUdNnaE42FLkgm" Name="Update (Internal)" ManuallySortedPins="true">
@@ -933,6 +952,7 @@
             <Pin Id="FogAGIgJqWQPPZQvMB9wuT" Name="Is Open" Kind="OutputPin" />
             <Pin Id="OMCa5bSAuS0LAoLaC3lPQe" Name="Bundle Size Exceeded" Kind="OutputPin" Bounds="856,1347" />
             <Pin Id="G2euMtUKW0JOhYDNJIwkaZ" Name="Enabled" Kind="InputPin" />
+            <Pin Id="SLdtpIFtUy5PO15eNjbdap" Name="Data" Kind="OutputPin" Bounds="-145,377" />
           </Patch>
           <ProcessDefinition Id="G5seSauStMYLs35PSzf3h2" HasStateOut="true">
             <Fragment Id="QJiKWEnP5SXMB7P1KOO1zG" Patch="LQDhm8l8hswOi3TdetvBNs" Enabled="true" />
@@ -1083,6 +1103,10 @@
           <Link Id="MBjHwELahQHQRMm3Jie7HI" Ids="NO26EnW1GaMM7lBEgdrsJ5,Co4rhUazvyiPksqViNDTlt" />
           <Link Id="BpqBvzPrKn7OrW1j12PpGB" Ids="NO26EnW1GaMM7lBEgdrsJ5,IapAH03Y0GTMndBiJfEWeh" />
           <Link Id="Nj36TZT8031MlJb7Hl4kD2" Ids="IapAH03Y0GTMndBiJfEWeh,LGDCDm9OxhgQbsFaq5Jatj" />
+          <Link Id="RdxIohBS3QnM1vI6pL73uK" Ids="Iq8dvFYRfNHLX5vvxi15Hd,Q00MUeQEa42PqbqoZfYwYO" />
+          <Link Id="TMVdcJrLfEWNSvLx7sZKZm" Ids="D6umbBfT47nNXz39IWRLQf,EeN3ypAtqyTQSQ9L8AZMXA" />
+          <Link Id="N7A7GAPqktwNQ9jdoMm9Qe" Ids="UGFuNtgtAZDQWYWnu1E8yA,NeRKmo6uu9dP0GB2eKPqO5" />
+          <Link Id="KnRjyP6ZTdBLh0TjBcRSdA" Ids="NeRKmo6uu9dP0GB2eKPqO5,SLdtpIFtUy5PO15eNjbdap" IsHidden="true" />
         </Patch>
       </Node>
       <!--
