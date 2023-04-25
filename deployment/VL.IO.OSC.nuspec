@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.OSC</id>
-    <version>1.0.18</version>
+    <version>1.0.19</version>
     <title>VL.IO.OSC</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
