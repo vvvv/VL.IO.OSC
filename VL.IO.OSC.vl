@@ -884,6 +884,23 @@
             <ControlPoint Id="OA1mib3RxjEPBDHJL2vR0K" Bounds="1407,700" />
             <Pad Id="VUiEUYQbZf4P4UPiBTITxr" Bounds="1474,722" />
             <ControlPoint Id="RAs5TzoDCtSQKJ0eoHGffA" Bounds="1474,698" />
+            <Node Bounds="131,240,54,19" Id="C3d2w3W6dEtPMBKRAptPRG">
+              <p:NodeReference LastCategoryFullName="IO.Socket" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="Receiver (Datagram)" />
+              </p:NodeReference>
+              <Pin Id="G14gSlJB9o7OasTFciJa9N" Name="Local Socket" Kind="InputPin" />
+              <Pin Id="ECm23JcH9lvM1dCcKT9mfY" Name="Datagrams" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="131,277,91,19" Id="IB2O2nwLlOEOfa3qWFnWkc">
+              <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="ToOSCMessages (Reactive)" />
+              </p:NodeReference>
+              <Pin Id="KoDzG3VJnOeLGuBZpk5lwF" Name="Input" Kind="InputPin" />
+              <Pin Id="GqV5fhntvu5NmgD6FIoFib" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Oo6s1FvZdUxPjYALMndJp7" Bounds="133,319" />
           </Canvas>
           <ProcessDefinition Id="G5seSauStMYLs35PSzf3h2" HasStateOut="true">
             <Fragment Id="QJiKWEnP5SXMB7P1KOO1zG" Patch="LQDhm8l8hswOi3TdetvBNs" Enabled="true" />
@@ -991,6 +1008,7 @@
           <Link Id="KwzYQh4MXUNOO1isqv7Xut" Ids="GnjnuKsRVlELDSwSuxm0TN,DNhYYHSmBuNQRo43UkZvQA" IsHidden="true" />
           <Patch Id="LQDhm8l8hswOi3TdetvBNs" Name="Create (Internal)" ParticipatingElements="IST5RNegAyyLVTkZIyA34x,NHaPJlT7dWHLAOOioXUpF5" />
           <Patch Id="CAw4X3LIAUdNnaE42FLkgm" Name="Update (Internal)" ManuallySortedPins="true">
+            <Pin Id="He6xN3vtq2lQBdkRtBOPRt" Name="Data" Kind="OutputPin" Bounds="191,332" Visibility="Optional" />
             <Pin Id="FogAGIgJqWQPPZQvMB9wuT" Name="Is Open" Kind="OutputPin" />
             <Pin Id="OMCa5bSAuS0LAoLaC3lPQe" Name="Bundle Size Exceeded" Kind="OutputPin" Bounds="856,1347" />
             <Pin Id="LcwJPFidbUzNbLUQCOfpSB" Name="Server" Kind="InputPin" DefaultValue="127.0.0.1" Summary="Send messages to a single target. Ignored in case optional &quot;Servers&quot; and &quot;Ports&quot; inputs are used.">
@@ -1091,6 +1109,10 @@
           <Link Id="DrzrWh3DNklLZbI43kKqbD" Ids="VUiEUYQbZf4P4UPiBTITxr,DP1LsadPm6LQLTjdYJvE9a" />
           <Link Id="A0dyBkY2KjdQbTQxlndbty" Ids="H0Xlka73UTpQMQqtM6yNoB,EjdyfemyEBxNbhBgRqPMRQ" />
           <Link Id="Eksj0pDMxmYPwyxNdZaCQS" Ids="EjdyfemyEBxNbhBgRqPMRQ,Py3YfsmDhJRPAjbQTmKZ7y" />
+          <Link Id="G0uJiEkKpA6OGUA9OJ8Z8f" Ids="Iq8dvFYRfNHLX5vvxi15Hd,G14gSlJB9o7OasTFciJa9N" />
+          <Link Id="SmMJNUPLEmkOabRZdNyh8p" Ids="ECm23JcH9lvM1dCcKT9mfY,KoDzG3VJnOeLGuBZpk5lwF" />
+          <Link Id="O0IT85mb4SnLp0NBALyjel" Ids="GqV5fhntvu5NmgD6FIoFib,Oo6s1FvZdUxPjYALMndJp7" />
+          <Link Id="UNf1IInVbbIL77yOlvTszk" Ids="Oo6s1FvZdUxPjYALMndJp7,He6xN3vtq2lQBdkRtBOPRt" IsHidden="true" />
         </Patch>
       </Node>
       <!--
