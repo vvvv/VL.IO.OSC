@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.2-0007-g945164c148" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.2-0007-g945164c148" />
+  <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
+    <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="A9gIOYjuvV8PlqpXEBMhXB">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="NPrUYr3Vn65OhJGgmHk8kP">
+        <Canvas Id="GKBMbDDvoCROlCfLe71JUT" CanvasType="Group">
+          <Pad Id="MpjaxZLS26dNVHreKCGIwf" Comment="" Bounds="168,397,82,27" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:precision p:Type="Int32">4</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="166,354,82,19" Id="Ht7jmtkzfsaOnZHMw6mEgy">
+            <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
+            </p:NodeReference>
+            <Pin Id="RdhBSl7XiBkNd3tyVya2KE" Name="Path" Kind="InputPin" />
+            <Pin Id="SBXvG7LXE4IOBmwau2gEaU" Name="Value" Kind="InputPin" />
+            <Pin Id="NTR4jp6PhMRLH3YPRWmTEk" Name="Channel" Kind="OutputPin" />
+            <Pin Id="JzEDMQ8aOK0N4v5RYUijZK" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SIdRjU51khSQCoXY3UQOso" Comment="Path" Bounds="168,331,35,15" ShowValueBox="true" isIOBox="true" Value="a">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Uuj39LQ1ghLOG5N4SRtj0z" Comment="" Bounds="333,397,82,27" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:precision p:Type="Int32">4</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="331,354,82,19" Id="VICvcsvLdiEPNKixoh2kxm">
+            <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
+            </p:NodeReference>
+            <Pin Id="DrZTIJ3avnfL8TS4sDEftM" Name="Path" Kind="InputPin" />
+            <Pin Id="RPuuknmbvP7PChSjIqHNdG" Name="Value" Kind="InputPin" />
+            <Pin Id="CZThKGElJgHLXKc9NJHLQw" Name="Channel" Kind="OutputPin" />
+            <Pin Id="TaRDDnTcrUbNgZZa9Zcr9q" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Qdwk4wTRViPPLcQVuAhlxS" Comment="Path" Bounds="333,331,35,15" ShowValueBox="true" isIOBox="true" Value="b">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Cl8UunRoBw1MbZ6qpQ5Y0t" Comment="" Bounds="498,397,82,27" ShowValueBox="true" isIOBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:precision p:Type="Int32">4</p:precision>
+              <p:stepsize p:Type="Single">0.01</p:stepsize>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="496,354,82,19" Id="UnSZaZaqWwaLb8Re0PECMY">
+            <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
+            </p:NodeReference>
+            <Pin Id="LY0PY1PgbQsMOk5kQJ0TUH" Name="Path" Kind="InputPin" />
+            <Pin Id="KJQ92mnsjOGPt9yTHtduA4" Name="Value" Kind="InputPin" />
+            <Pin Id="IGAD4SNcCEVPoU3vmgmVVy" Name="Channel" Kind="OutputPin" />
+            <Pin Id="KgQfcWBgFisMPKHOFKHt8C" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LVKOhABJhsTMYsj2lSCEzx" Comment="Path" Bounds="498,331,35,15" ShowValueBox="true" isIOBox="true" Value="c">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="EiHhls296K1MGTSBabnrW1" Bounds="102,99,305,21" ShowValueBox="true" isIOBox="true" Value="1) Add a Reference to VL.IO.Midi package">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GK5vvXAgrVfNizGIk1pUQ3" Bounds="102,157,291,24" ShowValueBox="true" isIOBox="true" Value="2) Add MidiControllerModule to your patch:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ICfVTqEqJI9Og9rkABypLu" Bounds="102,259,345,19" ShowValueBox="true" isIOBox="true" Value="3) Add Global Channels (e.g. via Global Channel Browser)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JuH4UHLPgvJOam9X387oAf" Bounds="102,511,771,25" ShowValueBox="true" isIOBox="true" Value="4) Use Global Channel nodes (make sure that you saved your channels by hitting save button in Global Channel Browser)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NDTQgiU9AhqMi1orgCf9iF" Bounds="109,701,549,131" ShowValueBox="true" isIOBox="true" Value="All of those channels are set to Receive currently. &#xD;&#xA;So we get the values from the Midi Controller and use it in our patch.&#xD;&#xA;&#xD;&#xA;But you can also send to some Midi Controllers...&#xD;&#xA;You can edit a Midi Controller Binding by clicking it. &#xD;&#xA;Use SendAndReceive and adjust your Output Device.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="NOZgcZXzu05N3POzTqFB6O" Name="" Bounds="89,678,607,161">
+            <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
+          </Overlay>
+          <Node Bounds="327,211,69,19" Id="Akl1uvwclm8MENyXoAUIZG">
+            <p:NodeReference LastCategoryFullName="IO.Midi.Modules" LastDependency="VL.IO.OSC.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="OSCModule" />
+            </p:NodeReference>
+            <Pin Id="Fj2xZ9vVPCvPmpTWsJNbnk" Name="Model" Kind="InputPin">
+              <p:DefaultValue />
+            </Pin>
+            <Pin Id="DIWXZRjl9XcO0T1L2TfZkD" Name="Update" Kind="ApplyPin" />
+          </Node>
+        </Canvas>
+        <Patch Id="CPjqaGO113jPocorJ7hdE9" Name="Create" />
+        <Patch Id="F4CiIuwbKLVQCMVruCdLWc" Name="Update" />
+        <ProcessDefinition Id="EG3N2dQHUonNw5pLFX4lrM">
+          <Fragment Id="QnPcOd9JcelQYXBWyDr9LW" Patch="CPjqaGO113jPocorJ7hdE9" Enabled="true" />
+          <Fragment Id="SfdQURNO3h0MgIRVlEPkmP" Patch="F4CiIuwbKLVQCMVruCdLWc" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="HxgbfxO72JdLhX9aJSN1O4" Ids="JzEDMQ8aOK0N4v5RYUijZK,MpjaxZLS26dNVHreKCGIwf" />
+        <Link Id="PD67XiY8s91LburoSKfFv8" Ids="SIdRjU51khSQCoXY3UQOso,RdhBSl7XiBkNd3tyVya2KE" />
+        <Link Id="EP00TcxV98eOwoH9gdesuv" Ids="TaRDDnTcrUbNgZZa9Zcr9q,Uuj39LQ1ghLOG5N4SRtj0z" />
+        <Link Id="JV36v7lD2cIOhq7LxALCNd" Ids="Qdwk4wTRViPPLcQVuAhlxS,DrZTIJ3avnfL8TS4sDEftM" />
+        <Link Id="ANWY69De4JdOxWceXvOP09" Ids="KgQfcWBgFisMPKHOFKHt8C,Cl8UunRoBw1MbZ6qpQ5Y0t" />
+        <Link Id="Vgwgdmqa6leNjwj0v90hLh" Ids="LVKOhABJhsTMYsj2lSCEzx,LY0PY1PgbQsMOk5kQJ0TUH" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="Et3tSGSp7iPNZE4NLve40o" Location="VL.IO.OSC" Version="0.0.0" />
+</Document>

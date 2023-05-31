@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2022.5.0-0000-g8eda339b77" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2021.4.12" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2023.5.2-0007-g945164c148" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2023.5.2-0007-g945164c148" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -11690,6 +11690,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2021.4.12" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2023.5.2-0007-g945164c148" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
+  <DocumentDependency Id="MuhU0meXSvvO7Stf6e4f5W" Location="./OSCModule.vl" IsForward="true" />
 </Document>
