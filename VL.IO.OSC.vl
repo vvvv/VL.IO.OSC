@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2023.5.2-0007-g945164c148" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2023.5.2-0007-g945164c148" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="Bx9aFHFOZjuOHfIbMh6cIZ" LanguageVersion="2023.5.2-0016-g7a8f596b6a" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2023.5.2-0016-g7a8f596b6a" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -10630,7 +10630,7 @@
                   </Node>
                 </Patch>
               </Node>
-              <Node Bounds="589,84,51,26" Id="QKP9OSfBIObQZVWbWMPi1N">
+              <Node Bounds="589,84,51,19" Id="QKP9OSfBIObQZVWbWMPi1N">
                 <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="Reference" />
@@ -10649,7 +10649,7 @@
                 <Pin Id="GiortgS4x3PLTjvLRBdHCU" Name="Output" Kind="OutputPin" />
               </Node>
               <Pad Id="Nh8XxjEgOOEPWVLZOQbQ1X" SlotId="PqkADzBKf4bNNi4QM3shbA" Bounds="709,140" />
-              <Node Bounds="707,84,51,26" Id="ESnJHgwpII5LJWKmQ3lebf">
+              <Node Bounds="707,84,51,19" Id="ESnJHgwpII5LJWKmQ3lebf">
                 <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="Create" />
@@ -10682,7 +10682,7 @@
                 <Pin Id="VssmJQ1wUUVNLL3ByPhUAH" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="Vrj6FnutbIPMV2eN3I5wV4" Name="Data" Kind="OutputPin" />
               </Node>
-              <Node Bounds="308,1105,184,353" Id="Oqr4IH3J6U6OsxzDBUZo0j">
+              <Node Bounds="308,1105,184,371" Id="Oqr4IH3J6U6OsxzDBUZo0j">
                 <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <Choice Kind="ProcessAppFlag" Name="ForEach" />
@@ -10698,7 +10698,7 @@
                     <Pin Id="DePKngRdH2wP0aND71ndJm" Name="Output 1" Kind="OutputPin" />
                   </Patch>
                   <ControlPoint Id="HwlhzSkKPZHP2T2SBI7Mai" Bounds="363,1134" />
-                  <ControlPoint Id="KkSwtQhbhV1OcGkQdUVvaa" Bounds="343,1451" />
+                  <ControlPoint Id="KkSwtQhbhV1OcGkQdUVvaa" Bounds="341,1469" />
                   <Node Bounds="429,1128,51,26" Id="AECycthnXXhOJch5DUCpwv">
                     <p:NodeReference LastCategoryFullName="Primitive.Reference" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -10726,7 +10726,7 @@
                       <CategoryReference Kind="Category" Name="Primitive" />
                     </p:NodeReference>
                     <Pin Id="KxkkKiHa28GLHoD9XlbEQn" Name="Break" Kind="OutputPin" />
-                    <ControlPoint Id="Knkxu7zOYvsPpYyenjBeVN" Bounds="423,1281" Alignment="Top" />
+                    <ControlPoint Id="Knkxu7zOYvsPpYyenjBeVN" Bounds="423,1280" Alignment="Top" />
                     <Patch Id="RCwhih21JjPMZs8sl8LDQi" ManuallySortedPins="true">
                       <Patch Id="I7BswEn36uFOhZXBlcXgGz" Name="Create" ManuallySortedPins="true" />
                       <Patch Id="D4QFCRQSKLhNsOmexMP8hQ" Name="Update" ManuallySortedPins="true" />
@@ -11690,7 +11690,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2023.5.2-0007-g945164c148" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2023.5.2-0016-g7a8f596b6a" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
   <DocumentDependency Id="MuhU0meXSvvO7Stf6e4f5W" Location="./OSCModule.vl" IsForward="true" />
 </Document>
