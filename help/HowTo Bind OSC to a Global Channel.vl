@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.2-0020-gc041842068" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0016-g8ff5885e97" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.2-0020-gc041842068" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -120,9 +120,7 @@
             </p:NodeReference>
             <Pin Id="Fj2xZ9vVPCvPmpTWsJNbnk" Name="Model" Kind="InputPin">
               <p:DefaultValue>
-                <Item Binding_Type="Receive" Channel_Path="a" Listening_IP="127.0.0.1" Maximum_Bundle_Size="1024" Receiver_Address="/foo" Receiver_Port="4446" />
-                <Item Binding_Type="Receive" Channel_Path="b" Listening_IP="127.0.0.1" Maximum_Bundle_Size="1024" Receiver_Address="/foo2" Receiver_Port="4446" />
-                <Item Binding_Type="Receive" Channel_Path="c" Listening_IP="127.0.0.1" Maximum_Bundle_Size="1024" Receiver_Address="/foo2" Receiver_Port="4446" />
+                <Item Binding_Type="Receive" Channel_Path="zwar" Listening_IP="127.0.0.1" Maximum_Bundle_Size="1024" Receiver_Address="/zwar" Receiver_Port="4446" />
               </p:DefaultValue>
             </Pin>
           </Node>
@@ -151,6 +149,50 @@
               <p:stepsize p:Type="Single">0.01</p:stepsize>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="723,306,82,19" Id="MjnXFxaLX57PGsvEsw2cFy">
+            <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
+            </p:NodeReference>
+            <Pin Id="FTY7qCIP3PFL2B2zwdbr4Y" Name="Path" Kind="InputPin" />
+            <Pin Id="RQp7NxEh7COQRdWZUz5xyb" Name="Value" Kind="InputPin" />
+            <Pin Id="SNtzIRqucmWMSzwT4kydqu" Name="Channel" Kind="OutputPin" />
+            <Pin Id="IIlzAZ31zmiQTVe3bU7J7F" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Rc44w2rSwEoMXbD8JZ3xnT" Comment="Path" Bounds="725,220,35,15" ShowValueBox="true" isIOBox="true" Value="zwar">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="876,234,135,26" Id="KTMSwGjpPDvQRr0LTgA5rV">
+            <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="TryGetChannel" />
+            </p:NodeReference>
+            <Pin Id="VVUs3jS1dk8NWglsQlUFRf" Name="Key" Kind="InputPin" DefaultValue="" />
+            <Pin Id="UyZpeXWzlkPLvEejvk1Qwg" Name="Result" Kind="OutputPin" />
+            <Pin Id="NfrwBLwm2HNNkwCrL7sSqI" Name="Success" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="876,283,144,26" Id="RupLPP3yfOvLiMtbtncApb">
+            <p:NodeReference LastCategoryFullName="Reactive.Channel (Ungeneric)" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <FullNameCategoryReference ID="Reactive.Channel (Ungeneric)" />
+              <Choice Kind="OperationCallFlag" Name="ClrTypeOfValues" />
+            </p:NodeReference>
+            <Pin Id="PQGxxwhPAxVNamPcqtTyp9" Name="Input" Kind="StateInputPin" />
+            <Pin Id="DTBrwM6umKaP39mtPXgijV" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="LBPH4bkpQgrPGMz0XcBShb" Name="Clr Type Of Values" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SdW8HyirenRLgGcWXNqw2a" Comment="" Bounds="770,367,132,95" ShowValueBox="true">
+            <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Spread" />
+              <p:TypeArguments>
+                <TypeReference>
+                  <Choice Kind="TypeFlag" Name="Vector2" />
+                </TypeReference>
+              </p:TypeArguments>
+            </p:TypeAnnotation>
+          </Pad>
         </Canvas>
         <Patch Id="CPjqaGO113jPocorJ7hdE9" Name="Create" />
         <Patch Id="F4CiIuwbKLVQCMVruCdLWc" Name="Update" />
@@ -164,6 +206,10 @@
         <Link Id="JV36v7lD2cIOhq7LxALCNd" Ids="Qdwk4wTRViPPLcQVuAhlxS,DrZTIJ3avnfL8TS4sDEftM" />
         <Link Id="OP70Ay901GLPcYwjDiB1yb" Ids="JTgBccxikoNO8AsNBGjS78,NZWXZniEQ2YPmZ9BOjKD0X" />
         <Link Id="EkEHPrCUOjyMaWqiEXug5o" Ids="IGbE8lli8C8NrxAKntdIFF,E10khNI9UoLPAxL2bHl3jN" />
+        <Link Id="Qjb9a9yOpSwLANThOcmfGm" Ids="Rc44w2rSwEoMXbD8JZ3xnT,FTY7qCIP3PFL2B2zwdbr4Y" />
+        <Link Id="Ve0C4yDpVNkNAVgRG27K3p" Ids="Rc44w2rSwEoMXbD8JZ3xnT,VVUs3jS1dk8NWglsQlUFRf" />
+        <Link Id="OgX7xlWgb7VOJ05UIdmMUI" Ids="UyZpeXWzlkPLvEejvk1Qwg,PQGxxwhPAxVNamPcqtTyp9" />
+        <Link Id="TIjsW3Nc7oaPmOhwXIneDe" Ids="IIlzAZ31zmiQTVe3bU7J7F,SdW8HyirenRLgGcWXNqw2a" />
       </Patch>
     </Node>
   </Patch>

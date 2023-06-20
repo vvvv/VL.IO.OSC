@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2021.4.7.863" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="HSxf9bZ6z3IMw79dccZBsx" LanguageVersion="2023.5.3-0016-g8ff5885e97" Version="0.128">
   <NugetDependency Id="P0R369bokpAPMN6cZoWzt3" Location="VL.CoreLib" Version="2021.4.7-0854-g6e27633250" />
   <Patch Id="RNg6extPzPdMdaB97BQ37w">
     <Canvas Id="R5d8ZEkbFhON8aOGcSTrTu" DefaultCategory="Main" CanvasType="FullCategory">
@@ -9,7 +9,7 @@
 
 -->
       <Node Name="MyData" Bounds="336,426" Id="UBMxiGcTGTmOOj0hplwI29">
-        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+        <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
           <Choice Kind="RecordDefinition" Name="Record" />
         </p:NodeReference>
         <Patch Id="KwH0uUPLQzQQSVLksW6YsP">
@@ -81,27 +81,27 @@
       <Patch Id="F6bMGMgTHPoPEe8DxyI4dl">
         <Canvas Id="PmDdIrCHfkPMfuIfVkKRDY" CanvasType="Group">
           <Pad Id="JUIMp2qAo3wPnqTTyrskgL" Comment="Address" Bounds="130,295,35,15" ShowValueBox="true" isIOBox="true" Value="/foo">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="LFAs9NXyl2gOyWZf3LhSfa" Comment="Input" Bounds="802,586,35,15" ShowValueBox="true" isIOBox="true" Value="42">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="HHDW8NV7V2NLucImX1qaV0" Comment="" Bounds="947,585,35,15" ShowValueBox="true" isIOBox="true" Value="1, 0.8067977, 0.3100002, 1">
-            <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="N81D5B5amNpN7AkyZkQaqB" Comment="" Bounds="890,573,37,28" ShowValueBox="true" isIOBox="true" Value="0.42, 0.42">
-            <p:TypeAnnotation LastCategoryFullName="2D" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="819,632,46,26" Id="Pc7skTKD8dpOHjnyjza92m">
-            <p:NodeReference LastCategoryFullName="Main.MyData" LastSymbolSource="HowTo SimpleOSCTester.vl">
+            <p:NodeReference LastCategoryFullName="Main.MyData" LastDependency="HowTo Send OSC messages.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Create" />
               <CategoryReference Kind="RecordType" Name="MyData" NeedsToBeDirectParent="true" />
@@ -111,8 +111,8 @@
             <Pin Id="IqDASHdKl8HLcflPNxhDzR" Name="Col" Kind="InputPin" />
             <Pin Id="Std9ZJSXzSaLJNG8UnodNE" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="101,198,62,19" Id="F4vuuIGsoVOMLGiv2ydeeF">
-            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+          <Node Bounds="101,198,65,19" Id="F4vuuIGsoVOMLGiv2ydeeF">
+            <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCClient" />
             </p:NodeReference>
@@ -125,8 +125,8 @@
             <Pin Id="BQChT25EoTaNt5QY1lNiD3" Name="Is Open" Kind="OutputPin" />
             <Pin Id="VtQpR8Vq2VgLSpFZYEig0j" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
-          <Node Bounds="101,365,69,26" Id="N2d6QKJAAg4L6213ULcEHt">
-            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+          <Node Bounds="101,365,85,26" Id="N2d6QKJAAg4L6213ULcEHt">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
@@ -135,20 +135,20 @@
             <Pin Id="FsujhpPfZqkOlW54yCLqiK" Name="Address" Kind="InputPin" />
             <Pin Id="KfYex2ZMadrPHwDPfqXlI5" Name="Arguments" Kind="InputPin" />
             <Pin Id="LmZjlYuEEj3MDekzWdseIm" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="Vzecz6Jry9EPx8LlGy4yRj" Name="Apply" Kind="InputPin" />
             <Pin Id="Ltgif7DrweHMYI7Ozxc7Qf" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="DdOXFfvY97BOU6hDJpdvoS" Comment="Apply" Bounds="220,352,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="DdOXFfvY97BOU6hDJpdvoS" Comment="Apply" Bounds="220,352,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="101,654,85,26" Id="TwbKws1cNyFNdESIZRkMk9">
-            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
@@ -156,24 +156,24 @@
             <Pin Id="EBEXQafgcjqNnfwlJrQb79" Name="Address" Kind="InputPin" />
             <Pin Id="M8ZnuLDcoC8NthSu2MzFwo" Name="Arguments" Kind="InputPin" />
             <Pin Id="PwApDRFRlogO2aADRWHQjS" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="PRY317ba0NMN4yaRh4FAt7" Name="Apply" Kind="InputPin" DefaultValue="False">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="VmbE1GzR2FKLhiFweIY44z" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="UW3vmgIl4phLA8sgbonKzG" Comment="Address" Bounds="808,690,54,15" ShowValueBox="true" isIOBox="true" Value="/mydata">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="140,545,75,19" Id="CJdzv0BOVW7O9opnCaPBXN">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+          <Node Bounds="140,545,85,19" Id="CJdzv0BOVW7O9opnCaPBXN">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LinearSpread" />
             </p:NodeReference>
@@ -181,15 +181,15 @@
             <Pin Id="ODRmZL4cCHMNl6dJUIa9J3" Name="Width" Kind="InputPin" />
             <Pin Id="IjDoZdyquEuNmWC7uE0kpE" Name="Alignment" Kind="InputPin" />
             <Pin Id="RJwvo26KJZNPQslSqRv0rI" Name="Phase" Kind="InputPin" />
-            <Pin Id="F8LxRApaPGQNXyWWLT3Cxi" Name="Count" Kind="InputPin" DefaultValue="41">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <Pin Id="F8LxRApaPGQNXyWWLT3Cxi" Name="Count" Kind="InputPin" DefaultValue="40">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="NHcJ4JxCpeBLq3NEOV7CW9" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="779,737,85,26" Id="Nq6zTzPkpMPMx9qQ2CJuyv">
-            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
@@ -197,7 +197,7 @@
             <Pin Id="RbLkSubNaDfLrvwMuvxxZd" Name="Address" Kind="InputPin" />
             <Pin Id="MDWaQjjV0eOMt2WFgXcKSM" Name="Arguments" Kind="InputPin" />
             <Pin Id="EUimZ6x0x6DNc2OTjU4H3K" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
@@ -205,37 +205,37 @@
             <Pin Id="MVk4lBf9iGdLveF8xLLeHj" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="OPIX0XIY7QdQQj3pPkS5ba" Comment="Address" Bounds="122,519,38,15" ShowValueBox="true" isIOBox="true" Value="/zwar">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="MF3qud5gpZeL8kedm153y8" Comment="Apply" Bounds="183,610,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="B5jtzb7fVu0N8eSmbO9SOc" Comment="Apply" Bounds="891,725,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="B5jtzb7fVu0N8eSmbO9SOc" Comment="Apply" Bounds="891,725,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="PGQHDG3gDFYLq5HYJOIIl0" Comment="Server" Bounds="103,102,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="KnDf4gI7y3LQENJFjYwqo5" Comment="Port" Bounds="123,123,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="V6ab4bA34UlNNrXAbgGvlU" Comment="Enabled" Bounds="183,166,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="R1EY27NFl9oO90QO6DGVVP" Bounds="113,253,166,25" ShowValueBox="true" isIOBox="true" Value="Send a single value">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -244,7 +244,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="DP95JH8knhvObRtnHHFL24" Bounds="203,102,286,37" ShowValueBox="true" isIOBox="true" Value="Use an OSCClient to specify the target server by providing target IP (or Hostname) and Port">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -252,8 +252,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Nv2y1XeS4sKMwOnF6WCHZt" Bounds="113,437,212,24" ShowValueBox="true" isIOBox="true" Value="Send a spread of values">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="Nv2y1XeS4sKMwOnF6WCHZt" Bounds="113,437,212,25" ShowValueBox="true" isIOBox="true" Value="Send a spread of values">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -262,8 +262,8 @@
             </p:ValueBoxSettings>
           </Pad>
           <ControlPoint Id="QBDkSMVNBaWMc54Rlk6tlp" Bounds="756,296" />
-          <Node Bounds="268,524,109,26" Id="NMBd0RfDEpZMlk14XnuRh0">
-            <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastSymbolSource="CoreLibBasics.vl">
+          <Node Bounds="268,524,109,19" Id="NMBd0RfDEpZMlk14XnuRh0">
+            <p:NodeReference LastCategoryFullName="Primitive.ValueTuple (3 Items)" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="ValueTuple (Create)" />
               <CategoryReference Kind="RecordType" Name="ValueTuple (3 Items)" NeedsToBeDirectParent="true" />
@@ -274,17 +274,17 @@
             <Pin Id="NW9IN8HKWU4QKFRiQwJGAk" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="OyoA1GDV7qtM1RkoNW21za" Comment="" Bounds="270,488,35,15" ShowValueBox="true" isIOBox="true" Value="23">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="URNSZx91TG4MI3p1fn5fQX" Comment="" Bounds="397,482,35,15" ShowValueBox="true" isIOBox="true" Value="0.5899995, 0.3050287, 0.1829, 1">
-            <p:TypeAnnotation LastCategoryFullName="Color" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="RGBA" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="GtWzcJ5q1DTPxh78uO3ycL" Bounds="396,523,227,44" ShowValueBox="true" isIOBox="true" Value="You can also mix types in one message by sending them as tuples">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -293,7 +293,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="JJSfjwXKevKOoTqM56zENO" Bounds="774,415,212,25" ShowValueBox="true" isIOBox="true" Value="Send a custom datatype ">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -302,7 +302,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="RWSOmny61e5P7K4AK9PlFa" Bounds="778,455,214,64" ShowValueBox="true" isIOBox="true" Value="Provide an override of the ArgsToData operation that splits your data into its component args.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -317,14 +317,14 @@
 
 -->
           <Node Name="ArgsToData" Bounds="1044,530,147,219" Id="BRNQNS2u1OiMMt1n40xQxX">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
               <Choice Kind="OperationDefinition" Name="Operation" />
             </p:NodeReference>
             <Patch Id="RyEsmE9hGiqQToo2tXuDoE" IsGeneric="true">
               <ControlPoint Id="HCGiGJ7ibL2LvhtQOBpMqT" Bounds="1136,550" />
               <Link Id="GeuFXtDFrMPLo4j2u8KaBN" Ids="HAj2Ha4uBXgPwRXaW6NHnT,HCGiGJ7ibL2LvhtQOBpMqT" IsHidden="true" />
               <Node Bounds="1056,623,71,19" Id="AdIlZfq2UqANLGhC4w0tN8">
-                <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+                <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ArgsToData" />
                 </p:NodeReference>
@@ -333,7 +333,7 @@
                 <Pin Id="PQFoL0YzW9INwSejbrPIkv" Name="Context" Kind="OutputPin" />
               </Node>
               <Node Bounds="1056,659,71,19" Id="HiEgLhJA3d4MGRcoJZWXU2">
-                <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+                <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ArgsToData" />
                 </p:NodeReference>
@@ -348,7 +348,7 @@
               <ControlPoint Id="NMG0C2tWZQlPFmQAlco7Rp" Bounds="1058,732" />
               <Link Id="VWgj2W2l0QmPGctIzracLT" Ids="NMG0C2tWZQlPFmQAlco7Rp,BLLebfxFgY2OP5LXaugRbH" IsHidden="true" />
               <Node Bounds="1134,574,45,26" Id="KvoQZ9K9HkWQLL9YHAODuA">
-                <p:NodeReference LastCategoryFullName="Main.MyData" LastSymbolSource="HowTo SimpleOSCTester.vl">
+                <p:NodeReference LastCategoryFullName="Main.MyData" LastDependency="HowTo Send OSC messages.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="RecordType" Name="MyData" />
                   <Choice Kind="OperationCallFlag" Name="Split" />
@@ -362,7 +362,7 @@
               <Link Id="IHj7Ed4h3ZGMz4GSStp9Gy" Ids="U2J0gxh4y20MyTfOxD0NJt,RUsjqkmUGpDMs7J3ha9waG" />
               <Link Id="TGwZpAHpFFOMXZboyfz8QX" Ids="HbTKMauZxn3OktzviS1eQq,PDOudzljPUjMEc1i7Hswga" />
               <Node Bounds="1056,692,71,19" Id="Ucp7AccNUwGOYQMEYikuF6">
-                <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+                <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <Choice Kind="OperationCallFlag" Name="ArgsToData" />
                 </p:NodeReference>
@@ -374,7 +374,7 @@
               <Link Id="GBQkXrF0IU5McFOF6YWcEI" Ids="DBcoVRKjMzbNqJozmzCTk6,JDskQUOU6ChQJnBP4Leuh5" />
               <Link Id="PZW2CzZyw7gMVL7nmXZiaK" Ids="AMld11Vbq56OHdnTUmuiWA,NMG0C2tWZQlPFmQAlco7Rp" />
               <Pin Id="O8qpsB71YKSOMzWcEWCdbM" Name="Context" Kind="InputPin">
-                <p:TypeAnnotation>
+                <p:TypeAnnotation LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
                   <Choice Kind="TypeFlag" Name="SerializationContext" />
                   <FullNameCategoryReference ID="IO.OSC" />
                 </p:TypeAnnotation>
@@ -384,7 +384,7 @@
             </Patch>
           </Node>
           <Node Bounds="207,801,107,19" Id="NSB6DUiAxAfNUtk6dj2sC7">
-            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="EncodeOSCMessage" />
             </p:NodeReference>
@@ -393,12 +393,12 @@
             <Pin Id="P1PGDtHtyzCPR1Npd8tE1b" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="TsbF0WZ3NSdN58YHejLZyz" Comment="Address" Bounds="208,755,35,15" ShowValueBox="true" isIOBox="true" Value="/foo2">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="320,803,107,19" Id="TxiFEZOuukPPURl5gIpl65">
-            <p:NodeReference LastCategoryFullName="IO.OSC" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="EncodeOSCMessage" />
             </p:NodeReference>
@@ -407,22 +407,22 @@
             <Pin Id="CgetAV9YUMeMXPAoRvwCKI" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="P8UE5iBvxQFQSpS1oBR3ic" Comment="Address" Bounds="321,764,35,15" ShowValueBox="true" isIOBox="true" Value="/bar">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="V8mDvUj89mSPZX3O24tU33" Comment="Arguments" Bounds="313,728,35,15" ShowValueBox="true" isIOBox="true" Value="0.42">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="OZUnNw67R3mOePFTtMvznU" Comment="Arguments" Bounds="434,729,34,15" ShowValueBox="true" isIOBox="true" Value="vvvv">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="207,853,39,19" Id="SAo5Feo4kUlMUUGudU5587">
-            <p:NodeReference LastCategoryFullName="Collections.Spread" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Cons" />
               <CategoryReference Kind="RecordType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -432,12 +432,12 @@
             <Pin Id="TqmLfnGTBtwM9RmDt0ss13" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="DIGN7hTa8cJNNt6xZpiRaP" Comment="Arguments" Bounds="179,326,35,15" ShowValueBox="true" isIOBox="true" Value="0.42">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="RtGYR51W6PCP8teORRQG0y" Bounds="208,677,196,25" ShowValueBox="true" isIOBox="true" Value="Send custom bundles">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -446,14 +446,14 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="186,896,69,26" Id="HKI0FsAXEdxONNqRFCnnQP">
-            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendBundle" />
             </p:NodeReference>
             <Pin Id="PXZVKhMV73KMGhhqFDJjg2" Name="State Input" Kind="StateInputPin" />
             <Pin Id="QBgaoOKFI7pO0QrxBsil2s" Name="Input" Kind="InputPin" />
             <Pin Id="Dq8mGUyDqv3QDr8Fya86k4" Name="Maximum Bundle Size" Kind="InputPin" DefaultValue="1024">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
@@ -462,18 +462,18 @@
             <Pin Id="AvgU9W6lQlZPXt3oyY6UmD" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
           <Pad Id="BaUZ3NaG8Z7OUbO0mlm1z3" Comment="Bundle Size Exceeded" Bounds="252,948,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="323,879,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="NdV3HG4juTQN9ewL5OPYVE" Comment="Apply" Bounds="323,879,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="DXozrM656sYOFvBHIsXieU" Bounds="322,479,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="612,905,86,26" Id="TzgmVlzynrGLkcXxzJdRfB">
-            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastSymbolSource="VL.IO.OSC.vl">
+            <p:NodeReference LastCategoryFullName="IO.OSC.OSCClient" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage (Empty)" />
             </p:NodeReference>
@@ -481,7 +481,7 @@
             <Pin Id="DBTjEJyzdglMiF75hcsyMM" Name="Input" Kind="StateInputPin" />
             <Pin Id="B5oGgX1uHqHMxIC1sW73EJ" Name="Address" Kind="InputPin" />
             <Pin Id="JLmTNUK5TL8PBUhOackoQu" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
@@ -489,17 +489,17 @@
             <Pin Id="Tdd8Gieig4tOvorTZtmJXE" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="FOEjsCLqs1oNxPZ1tFqtmO" Comment="Address" Bounds="640,851,36,15" ShowValueBox="true" isIOBox="true" Value="/bang">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="SJFe1iL5YISMeXxuNN6qEs" Comment="Apply" Bounds="695,873,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="SJFe1iL5YISMeXxuNN6qEs" Comment="Apply" Bounds="695,873,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UTgaCJhunK9OJGGSpccTv2" Bounds="577,806,289,24" ShowValueBox="true" isIOBox="true" Value="Send message without arguments">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="UTgaCJhunK9OJGGSpccTv2" Bounds="577,806,289,25" ShowValueBox="true" isIOBox="true" Value="Send message without arguments">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -508,7 +508,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="JCsRTMRDVFLNjxOBxyIO9e" Bounds="698,922,151,19" ShowValueBox="true" isIOBox="true" Value="&lt; SendMessage (Empty)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -517,7 +517,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="IYltejl07QnOqbP4CmdiPI" Bounds="776,98,504,270" ShowValueBox="true" isIOBox="true" Value="The following wildcards can be used in addresses to send to multiple receivers:&#xD;&#xA;&#xD;&#xA;- '?’ matches any single character&#xD;&#xA;- '*’ matches any sequence of zero or more characters&#xD;&#xA;- A string of characters in square brackets (e.g., “[string]”) imatches any character in the string. Inside square brackets, the minus sign (-) and exclamation point (!) have special meanings:&#xD;&#xA;    - Two characters separated by a minus sign indicate the range of characters between the given two in ASCII collating sequence. (A minus sign at the end of the string has no special meaning.)&#xD;&#xA;    - An exclamation point at the beginning of a bracketed string negates the sense of the list, meaning that the list matches any character not in the list. (An exclamation point anywhere besides the first character after the open bracket has no special meaning.)&#xD;&#xA;    - A comma-separated list of strings enclosed in curly braces (e.g., “{foo,bar}”) matches any of the strings in the list.&#xD;&#xA; ">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -525,6 +525,18 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Node Bounds="461,426,45,19" Id="Jjb6YOgo1zbQXAgeRl4KO8">
+            <p:NodeReference LastCategoryFullName="Animation" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="LFO" />
+            </p:NodeReference>
+            <Pin Id="Kp8HqTVAznaNz31SmGHKBL" Name="Period" Kind="InputPin" />
+            <Pin Id="CUzfQHTUi8DMxnoUhiUV4g" Name="Pause" Kind="InputPin" />
+            <Pin Id="J0DMMaE6NtFOOcQEPVDWhr" Name="Reset" Kind="ApplyPin" />
+            <Pin Id="INFaplb8ADWNl87udjALZ2" Name="Phase" Kind="OutputPin" />
+            <Pin Id="Txfb03y0U9RLmXiqor5TLd" Name="On New Cycle" Kind="OutputPin" />
+            <Pin Id="EmrMT08jjYJN2z4B3fOoY9" Name="Cycles" Kind="OutputPin" />
+          </Node>
         </Canvas>
         <Patch Id="FAMMem6QIRwL8X1AH9hBnB" Name="Create" />
         <Patch Id="FfkjD7adBn3Mmnz9bzbyqp" Name="Update" />
@@ -567,7 +579,8 @@
         <Link Id="SEqcjxpFUo7NWgfU38ClLP" Ids="Ltgif7DrweHMYI7Ozxc7Qf,DBTjEJyzdglMiF75hcsyMM" />
         <Link Id="AzlIfkDIyBOOR1iuAOySoT" Ids="FOEjsCLqs1oNxPZ1tFqtmO,B5oGgX1uHqHMxIC1sW73EJ" />
         <Link Id="BqApCZMIPjzOGDGB1Yao32" Ids="SJFe1iL5YISMeXxuNN6qEs,BjT9VRIcfCLN8xy3Wpgzdi" />
-        <Link Id="K1KLofg2FuePdyMFOBIy0p" Ids="NW9IN8HKWU4QKFRiQwJGAk,M8ZnuLDcoC8NthSu2MzFwo" />
+        <Link Id="QWFxqPbalTgNtvum7tsINx" Ids="NHcJ4JxCpeBLq3NEOV7CW9,M8ZnuLDcoC8NthSu2MzFwo" />
+        <Link Id="ISKYb79FsS0QMInxt2gkMF" Ids="INFaplb8ADWNl87udjALZ2,ODRmZL4cCHMNl6dJUIa9J3" />
       </Patch>
     </Node>
   </Patch>
