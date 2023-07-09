@@ -467,7 +467,7 @@
                 <Node Bounds="73,204,330,26" Id="T3XVuBsR7NcNm5F3F1luKo">
                   <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="OSCBinding" />
+                    <CategoryReference Kind="ClassType" Name="OSCBinding (Runtime)" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
                   </p:NodeReference>
                   <Pin Id="LG3ECV5nVwjP6YgRmOflrI" Name="Input" Kind="StateInputPin" />
@@ -989,7 +989,7 @@
               <Patch Id="I1Orbt7YSzcLQ3mnNNZTGV" ManuallySortedPins="true">
                 <Patch Id="EHU9TwdGGy1MzDkjPH34Bf" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="DALGeLjR7noNEjynXoyhxQ" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="203,716,58,26" Id="Sx3riKCvmuqPfHoO6x39lY">
+                <Node Bounds="203,716,95,26" Id="Sx3riKCvmuqPfHoO6x39lY">
                   <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="Model" />
@@ -1062,7 +1062,7 @@
               <Pin Id="IqoFVbZplENLB8sgUFJIqz" Name="Instance" Kind="OutputPin" />
             </Node>
             <ControlPoint Id="Mpj9VeG9HsTLmyfZ166dR1" Bounds="1200,740" />
-            <Node Bounds="1198,811,58,26" Id="CLLLqq8gaN2LQZXSZ09x9S">
+            <Node Bounds="1198,811,95,26" Id="CLLLqq8gaN2LQZXSZ09x9S">
               <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="Model" />
@@ -1123,7 +1123,7 @@
             <Node Bounds="496,682,243,26" Id="FFrdiizLTqyNPmrJQmTNNj">
               <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBindingModel" LastDependency="OSCModule.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                <CategoryReference Kind="RecordType" Name="OSCBindingModel" />
+                <CategoryReference Kind="RecordType" Name="OSCBinding" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
               </p:NodeReference>
               <Pin Id="FKEEPUjinytOpKWHiTTcb3" Name="Binding Type" Kind="InputPin" />
