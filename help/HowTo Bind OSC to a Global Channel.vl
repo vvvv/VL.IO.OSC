@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0043-g9a167bc1d8" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0043-g9a167bc1d8" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0064-gf9ca48858b" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0059-gc01610d6fc" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -113,17 +113,20 @@
           <Overlay Id="NOZgcZXzu05N3POzTqFB6O" Name="" Bounds="89,911,607,161">
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
-          <Node Bounds="171,545,69,19" Id="Akl1uvwclm8MENyXoAUIZG">
+          <Node Bounds="236,523,85,19" Id="Akl1uvwclm8MENyXoAUIZG">
             <p:NodeReference LastCategoryFullName="IO.Midi.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCModule" />
             </p:NodeReference>
-            <Pin Id="SspjUeSYNtHPZTnO5lmJFi" Name="Bindings" Kind="InputPin" />
+            <Pin Id="SspjUeSYNtHPZTnO5lmJFi" Name="Bindings" Kind="InputPin">
+              <p:DefaultValue>
+                <Item Address="/foo" Binding_Type="Receive" Channel_Path="a" Configuration_Name="In2" />
+              </p:DefaultValue>
+            </Pin>
             <Pin Id="UiEYLjRBEgPOcZW8mqg8X4" Name="Configuration" Kind="InputPin" />
+            <Pin Id="ALN7iXCy9XQMd4ToV7ax0E" Name="Output" Kind="OutputPin" />
             <Pin Id="MfqNwtAXRkdLt2bmY7J5qS" Name="In Configs" Kind="OutputPin" />
             <Pin Id="DQmKhE1F2GNN7Q5RG9Y76O" Name="In Runtimes" Kind="OutputPin" />
-            <Pin Id="Ova9HZnraXaNffIQVDH4mY" Name="Value 2" Kind="OutputPin" />
-            <Pin Id="VMIhCf3trKMN6EcmXNMrjh" Name="Configuration Name" Kind="OutputPin" />
           </Node>
           <Node Bounds="537,700,82,19" Id="RuuV6FdRLKMOU9dY75kmoP">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
@@ -271,6 +274,34 @@
             <Pin Id="FijwTuSz4L5NGaTtVQxcaM" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="To7bKaO2vntL34vCmazLPJ" Name="Cycles" Kind="OutputPin" />
           </Node>
+          <Node Bounds="236,559,70,26" Id="MeU0EsjIa3dOK22YdYN2uk">
+            <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="OperationCallFlag" Name="GetReceiver" />
+            </p:NodeReference>
+            <Pin Id="AanG7jYQu2VOkZ3jcU7Wlo" Name="Input" Kind="StateInputPin" />
+            <Pin Id="JB5AoOjDtuQMeiuLOxKsc3" Name="Configuration Name" Kind="InputPin" DefaultValue="In2" />
+            <Pin Id="FRXYnjtKQlxQWS8YOQJNwK" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="HmgX0s3zF7PN4PtKHSJAZn" Name="Value" Kind="OutputPin" />
+          </Node>
+          <Pad Id="BdBxq7JeCpVNbpXktqKiPO" Bounds="120,789,167,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Send OSC messages.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JRz5TXMsaEuOLRPIyKQuci" Bounds="132,808,128,19" ShowValueBox="true" isIOBox="true" Value="sends on 4446 /foo">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CPjqaGO113jPocorJ7hdE9" Name="Create" />
         <Patch Id="F4CiIuwbKLVQCMVruCdLWc" Name="Update" ParticipatingElements="GTj9PMhhRuQL3PqmakSxkg" />
@@ -297,6 +328,7 @@
         <Link Id="GICO9lqDRYRMoDEJK91fHx" Ids="MkX4v5dMz3YN1aKMCUN2qe,PRjsQ94W62iLx5c6ZMPmRt" />
         <Link Id="TccB0eKZp14NPlZ51uNL1T" Ids="HtpPPjD4LDMMffTlHUv1qC,HgKV3prcjoZNfagaP6OwMn" />
         <Link Id="AWkVRrDYCSTMJNm5WyNYU3" Ids="JqB8C1oGpnCMwux7LAiY8h,OJcnujMw8zhLc6ujjydCy2" />
+        <Link Id="Bh2ugbfDE0oNG2RgxzqPVH" Ids="ALN7iXCy9XQMd4ToV7ax0E,AanG7jYQu2VOkZ3jcU7Wlo" />
       </Patch>
     </Node>
   </Patch>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TVCy2DpIMPNPlhJ0Te85t9" LanguageVersion="2023.5.3-0019-g04bfa216f7" Version="0.128">
-  <NugetDependency Id="O5DMcKNaA76LrQmyETISd4" Location="VL.CoreLib" Version="2023.5.3-0019-g04bfa216f7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TVCy2DpIMPNPlhJ0Te85t9" LanguageVersion="2023.5.3-0059-gc01610d6fc" Version="0.128">
+  <NugetDependency Id="O5DMcKNaA76LrQmyETISd4" Location="VL.CoreLib" Version="2023.5.3-0059-gc01610d6fc" />
   <Patch Id="EXRyUrZM1juM6R6I2G9mPt">
     <Canvas Id="MRC1COchxCQLFYX8X6IfW4" DefaultCategory="Modules.Utils" CanvasType="FullCategory">
       <!--
@@ -94,11 +94,6 @@
               <Pin Id="JGPF3rYiKwtOeD7m1qIsTS" Name="Value" Kind="InputPin" />
               <Pin Id="J4Ad3IE3rcKPwlbIq5xvS6" Name="Solution Update Kind" Kind="InputPin" />
             </Node>
-            <Pad Id="DhrRY1vnnx1PWwwjCFrYw1" Comment="Pin Name" Bounds="695,291,100,15" ShowValueBox="true" isIOBox="true" Value="Model">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-            </Pad>
             <Pad Id="RmFvuvr6g43NeOfGcrWUgP" Comment="" Bounds="735,270,132,15" ShowValueBox="true" isIOBox="true" Value="Default">
               <p:TypeAnnotation LastCategoryFullName="VL.Model" LastDependency="VL.Core.dll">
                 <Choice Kind="TypeFlag" Name="SolutionUpdateKind" />
@@ -173,6 +168,8 @@
               <Pin Id="J7q4FApCHvKNW0EpBTEwjh" Name="Input 2" Kind="InputPin" DefaultValue="&#xD;&#xA;&#xD;&#xA;" />
               <Pin Id="KX0eHK1aXkxLNIqfXIvbS4" Name="Output" Kind="OutputPin" />
             </Node>
+            <ControlPoint Id="MMezACSpymzP0EzwBeIDcX" Bounds="695,183" />
+            <Pad Id="BWoFOBORfO0LKHHEyQ6QYj" Bounds="694,208" />
           </Canvas>
           <ProcessDefinition Aspects="Advanced" Id="MjwBcVmYYu8Oyh8eLcOxUV">
             <Fragment Id="QdEf1MWpwVTPNTBJgmY0Cu" Patch="K38TyhWWQrNLfmoQAZOJiA" Enabled="true" />
@@ -192,12 +189,12 @@
             </Pin>
             <Pin Id="UaUKsHQE3rIMs59G3LMua0" Name="Node Context" Kind="InputPin" Bounds="78,605" />
             <Pin Id="TYcG7i4WjF5O7NrAfLhVZR" Name="Enabled" Kind="InputPin" Bounds="221,502" DefaultValue="True" />
+            <Pin Id="KoxjrhIBTq8OAatTPaGCXH" Name="Pin Name" Kind="InputPin" DefaultValue="Model" />
           </Patch>
           <Link Id="UDhis5UpZtpOOSrcF12CUs" Ids="TYcG7i4WjF5O7NrAfLhVZR,PIgx8ZHVhTCMuEbPwt99xO" IsHidden="true" />
           <Patch Id="LlYduGj4ESqNLQQSmFipv5" Name="Dispose" />
           <Link Id="DNUZVEw0JKRN4RUJAjG03x" Ids="K081NABbv38MVLFvyKTmsA,TcQWEkHQkqUO6SgWLDHNBv" />
           <Link Id="TJRMQ0U5I2dP0f0i6ZDXmO" Ids="BRwDqRqaxwwLbzliyoz8yc,NcyS7iz8T6dLNQJ0C0AE4r" />
-          <Link Id="R8u4HE9flnlORmsMLedkRZ" Ids="DhrRY1vnnx1PWwwjCFrYw1,OzHsinaQ6GuQXwRLIdC09D" />
           <Link Id="HOlu6fg6XQ7N01iXTOA6Ko" Ids="RmFvuvr6g43NeOfGcrWUgP,J4Ad3IE3rcKPwlbIq5xvS6" />
           <Patch Id="ANEHWIkVOzhPOorW8wzIyw" Name="Write (Internal)" ParticipatingElements="R04JoRIQdnDND9PDer9FOk,OXU0EOxLrwJLNwTfjIVyX3" />
           <Link Id="HzvgASuTR95Pi6h3M5z8dt" Ids="UaUKsHQE3rIMs59G3LMua0,VtRzcFne0ptMGlE0w5ORs4" IsHidden="true" />
@@ -223,6 +220,9 @@
           <Link Id="Lr2jkdt44OZLbMR7wmmuw9" Ids="TwtOpZ3ofKJPlZSzmGe9Xw,EoQQbTWZ6KBQV2GaAyCosx" />
           <Link Id="H6nYXCTXrwKLxLy02AxfFz" Ids="JOtATt6jKKHNbi52JYyion,EVtgMIdcRZLK9huNIpIQ1W" />
           <Link Id="F1GsdJdDK22LvjH9uKT1j4" Ids="KX0eHK1aXkxLNIqfXIvbS4,COG4YZTbEtYNJohW0ih8Px" />
+          <Link Id="FVjKAS3JXxqOZzruKAvUfE" Ids="MMezACSpymzP0EzwBeIDcX,BWoFOBORfO0LKHHEyQ6QYj" />
+          <Link Id="PETy3cwHS91QDfHNgTQaJM" Ids="KoxjrhIBTq8OAatTPaGCXH,MMezACSpymzP0EzwBeIDcX" IsHidden="true" />
+          <Link Id="KSWjieRNGiSLxyRYAwj8t6" Ids="BWoFOBORfO0LKHHEyQ6QYj,OzHsinaQ6GuQXwRLIdC09D" />
         </Patch>
       </Node>
       <!--
