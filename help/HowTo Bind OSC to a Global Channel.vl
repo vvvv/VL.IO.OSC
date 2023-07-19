@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0064-gf9ca48858b" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0080-gdd7983ae1d" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0059-gc01610d6fc" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -30,6 +30,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
             </p:NodeReference>
+            <Pin Id="Pp6WULz2dsMM3pKQ3F3XeA" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="RdhBSl7XiBkNd3tyVya2KE" Name="Path" Kind="InputPin" />
             <Pin Id="SBXvG7LXE4IOBmwau2gEaU" Name="Value" Kind="InputPin" />
             <Pin Id="NTR4jp6PhMRLH3YPRWmTEk" Name="Channel" Kind="OutputPin" />
@@ -55,6 +56,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
             </p:NodeReference>
+            <Pin Id="Lb2YEJF81ZRPZEnWk0g86U" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="DrZTIJ3avnfL8TS4sDEftM" Name="Path" Kind="InputPin" />
             <Pin Id="RPuuknmbvP7PChSjIqHNdG" Name="Value" Kind="InputPin" />
             <Pin Id="CZThKGElJgHLXKc9NJHLQw" Name="Channel" Kind="OutputPin" />
@@ -113,26 +115,26 @@
           <Overlay Id="NOZgcZXzu05N3POzTqFB6O" Name="" Bounds="89,911,607,161">
             <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
           </Overlay>
-          <Node Bounds="236,523,85,19" Id="Akl1uvwclm8MENyXoAUIZG">
+          <Node Bounds="235,523,85,19" Id="Akl1uvwclm8MENyXoAUIZG">
             <p:NodeReference LastCategoryFullName="IO.Midi.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCModule" />
             </p:NodeReference>
-            <Pin Id="SspjUeSYNtHPZTnO5lmJFi" Name="Bindings" Kind="InputPin">
+            <Pin Id="SspjUeSYNtHPZTnO5lmJFi" Name="Bindings" Kind="InputPin" IsHidden="true">
               <p:DefaultValue>
                 <Item Address="/foo" Binding_Type="Receive" Channel_Path="a" Configuration_Name="In2" />
               </p:DefaultValue>
             </Pin>
+            <Pin Id="Ntn6wwfvdu9PPYsab4xuH9" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UiEYLjRBEgPOcZW8mqg8X4" Name="Configuration" Kind="InputPin" />
             <Pin Id="ALN7iXCy9XQMd4ToV7ax0E" Name="Output" Kind="OutputPin" />
-            <Pin Id="MfqNwtAXRkdLt2bmY7J5qS" Name="In Configs" Kind="OutputPin" />
-            <Pin Id="DQmKhE1F2GNN7Q5RG9Y76O" Name="In Runtimes" Kind="OutputPin" />
           </Node>
           <Node Bounds="537,700,82,19" Id="RuuV6FdRLKMOU9dY75kmoP">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
             </p:NodeReference>
+            <Pin Id="LImnpHddXt3OWeLE1MqhNO" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="NZWXZniEQ2YPmZ9BOjKD0X" Name="Path" Kind="InputPin" />
             <Pin Id="OJcnujMw8zhLc6ujjydCy2" Name="Value" Kind="InputPin" />
             <Pin Id="QTXG0ibrVLtMuUv2KMuozj" Name="Channel" Kind="OutputPin" />
@@ -158,6 +160,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
             </p:NodeReference>
+            <Pin Id="DwROiI4VLsUN5QtFjKLBWp" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="FTY7qCIP3PFL2B2zwdbr4Y" Name="Path" Kind="InputPin" />
             <Pin Id="RQp7NxEh7COQRdWZUz5xyb" Name="Value" Kind="InputPin" />
             <Pin Id="SNtzIRqucmWMSzwT4kydqu" Name="Channel" Kind="OutputPin" />
@@ -236,6 +239,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCInConfig" />
             </p:NodeReference>
+            <Pin Id="FTmkEVInJvdPzMUVDswZ8a" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EuWQgVsRug4NYkVbC4l6qu" Name="Name" Kind="InputPin" />
             <Pin Id="ANcuOx6YPT2QFl8d7a9p6k" Name="Listening IP" Kind="InputPin" />
             <Pin Id="Kh6woCcGBg1OcCksANGmk3" Name="Server Port" Kind="InputPin" />
@@ -246,6 +250,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCInConfig" />
             </p:NodeReference>
+            <Pin Id="VV0nOGjxfULL0C0nbL5fRb" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="T3OLntZHg1BN8vOD4ZhEjg" Name="Name" Kind="InputPin" />
             <Pin Id="SbVwGgN7rZQNM8OfOsEybC" Name="Listening IP" Kind="InputPin" />
             <Pin Id="LERfZAYJjTiOVeh3Y4BZ8a" Name="Server Port" Kind="InputPin" />
@@ -256,6 +261,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCOutConfig" />
             </p:NodeReference>
+            <Pin Id="L3sxf9Y3Sz5O2dAPuBtx9w" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="VhQYOOnnUYoLTWYgkS47SJ" Name="Name" Kind="InputPin" />
             <Pin Id="P8cB8Pr7GweL36D1JaW0NU" Name="Server IP" Kind="InputPin" />
             <Pin Id="PRjsQ94W62iLx5c6ZMPmRt" Name="Sender Port" Kind="InputPin" />
@@ -267,6 +273,9 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="LFO" />
             </p:NodeReference>
+            <Pin Id="PR4xCaJE7AqNZEW7DKWszI" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="LyRO7mrvyBNLKGPNahtVm9" Name="Clock" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CZRQuNmCQHpNXHe6aKHcAk" Name="New Clock" Kind="InputPin" IsHidden="true" />
             <Pin Id="K4d1BpzXPD9LJ1OEVDTtF6" Name="Period" Kind="InputPin" />
             <Pin Id="S5nqe7qqYSYLExA0oP1hVR" Name="Pause" Kind="InputPin" />
             <Pin Id="SDTl4lNQqKIPVciOXcpOSy" Name="Reset" Kind="ApplyPin" />
@@ -274,7 +283,7 @@
             <Pin Id="FijwTuSz4L5NGaTtVQxcaM" Name="On New Cycle" Kind="OutputPin" />
             <Pin Id="To7bKaO2vntL34vCmazLPJ" Name="Cycles" Kind="OutputPin" />
           </Node>
-          <Node Bounds="236,559,70,26" Id="MeU0EsjIa3dOK22YdYN2uk">
+          <Node Bounds="235,559,70,26" Id="MeU0EsjIa3dOK22YdYN2uk">
             <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="GetReceiver" />

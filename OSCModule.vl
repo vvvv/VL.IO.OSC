@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2023.5.3-0076-g1f076ef29e" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2023.5.3-0080-gdd7983ae1d" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0076-g1f076ef29e" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules" CanvasType="FullCategory">
@@ -998,7 +998,7 @@
           <Link Id="KsJXN2borRSPvNjq7VWPeA" Ids="FcAWXzQUvDWLP5jN0J4yPr,LeWh20o1ee6O7vbtcXv7Su" />
           <Link Id="BiFkN6ArFW4QZsZxTa12jA" Ids="TtuSHYmVITUNYfABqzrSyo,AaZa8BNqHoiPIBkRoi0XNv" />
           <Patch Id="U6246tgGwP9LeJpIERYA7z" Name="Create" ParticipatingElements="Ctcxhrbv3PrQRCAt3xPEnc,RhBEEen4lgFPpcZEQig8hM,RWDIC2UyNfmOOPh5yTBx8O,DdLWVabt56PM07h38MSiNO,RqOZXZZfmMOPO0qEmCiqfJ,LwyBUwgnmOLN1rSBHKaEsT">
-            <Pin Id="D6EwKMdizkFPEkamqP4ozU" Name="Bindings" Kind="InputPin" Bounds="250,221" />
+            <Pin Id="D6EwKMdizkFPEkamqP4ozU" Name="Bindings" Kind="InputPin" Bounds="250,221" Visibility="Optional" />
             <Pin Id="CRuksb1XeCaOAuRAh5Xmxf" Name="Node Context" Kind="InputPin" Bounds="848,266" Visibility="Hidden">
               <p:TypeAnnotation LastCategoryFullName="System.Reflection" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="NodeContext" />
