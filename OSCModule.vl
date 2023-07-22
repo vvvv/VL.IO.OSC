@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2023.5.3-0085-gd2712ed528" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0076-g1f076ef29e" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2023.5.3-0087-gd57c9746eb" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0087-gd57c9746eb" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules" CanvasType="FullCategory">
       <!--
@@ -511,15 +511,6 @@
                 </Node>
               </Patch>
             </Node>
-            <Pad Id="Se8DcrlK7VrLjBCSk2QZrr" Bounds="2161,729,197,77" ShowValueBox="true" isIOBox="true" Value="TODO: Check for duplicate entries before attempting add and warn if duplicate is found">
-              <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-                <Choice Kind="TypeFlag" Name="String" />
-              </p:TypeAnnotation>
-              <p:ValueBoxSettings>
-                <p:fontsize p:Type="Int32">9</p:fontsize>
-                <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-              </p:ValueBoxSettings>
-            </Pad>
             <ControlPoint Id="V0MoXI7cFsDLIpMtnBnDK8" Bounds="1837,610" />
             <Pad Id="H1KGNp0nJxYQOwj6HArvmq" SlotId="ES1K4Mw6HnOLBhyouAPgMc" Bounds="1965,1065" />
             <Pad Id="Mhe2dWMZhRpQSuIjXSPdIG" SlotId="LZI8WAhvpCVO6Pc7hZ6m5U" Bounds="1769,1065" />
