@@ -293,9 +293,13 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CaswhRPMt5dNBXzH5HghEi" Comment="Int" Bounds="947,736,35,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="PhM2y8CAVYELBM95yYzkhx" Comment="Vec" Bounds="1032,736,35,28" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="FQLVVTdGrfbM6jwbGsH9cv" Comment="Col" Bounds="1114,736,136,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="CaswhRPMt5dNBXzH5HghEi" Comment="ID" Bounds="947,736,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="PhM2y8CAVYELBM95yYzkhx" Comment="Position" Bounds="1032,736,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FQLVVTdGrfbM6jwbGsH9cv" Comment="Color" Bounds="1137,736,20,15" ShowValueBox="true" isIOBox="true">
+            <p:ValueBoxSettings>
+              <p:showvalue p:Type="Boolean">false</p:showvalue>
+            </p:ValueBoxSettings>
+          </Pad>
           <Pad Id="DsmKQjrQEOAPFlvc4lJeLW" SlotId="K1wKilBUTsHNVqA5fldDwc" Bounds="1013,554" />
           <Pad Id="LX07uYI4CGLMOHG3bKdEXI" SlotId="K1wKilBUTsHNVqA5fldDwc" Bounds="1013,623" />
           <Node Bounds="943,573,73,19" Id="IDItztlXw7APKRVWl1BnW8">
@@ -309,7 +313,7 @@
             <Pin Id="IZMUw0x6tcKM2k1WUZLafk" Name="Object In" Kind="InputPin" />
             <Pin Id="CfBlVLCPSEFNOOE0Eghk3a" Name="Object Out" Kind="OutputPin" />
           </Node>
-          <Pad Id="VhoIRzLlQr4PKCQqI2BfkT" Bounds="1073,525,252,161" ShowValueBox="true" isIOBox="true" Value="Interpret the addresses of multiple individual messages as the names of a custom datatypes properties:&#xD;&#xA;&#xD;&#xA;For the below case send messages addressed to /ID /Position and /Color (ie. names of the properties the datatype is made up of) with the respective data.">
+          <Pad Id="VhoIRzLlQr4PKCQqI2BfkT" Bounds="1098,576,222,61" ShowValueBox="true" isIOBox="true" Value="Interpret the addresses of multiple individual messages as the names of a custom datatype's properties">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -381,7 +385,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="1011,640,45,26" Id="MiCIxsmCH2MPtXX3XpzzoA">
-            <p:NodeReference LastCategoryFullName="Main.Particle" LastDependency=".HowTo Handle custom data types using property names.vl">
+            <p:NodeReference LastCategoryFullName="Main.Particle" LastDependency="HowTo Handle custom data types using property names.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="RecordType" Name="Particle" NeedsToBeDirectParent="true" />
               <Choice Kind="OperationCallFlag" Name="Split" />
