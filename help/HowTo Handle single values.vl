@@ -15,20 +15,6 @@
       </p:NodeReference>
       <Patch Id="IXaBrl1OaaSP4PQ7JtBSGg">
         <Canvas Id="Tx2bBO1yT6tMWguLlM9fYa" CanvasType="Group">
-          <Pad Id="MZk19sJHqQpLBQ32Uyprxl" Bounds="3055,311,189,76" ShowValueBox="true" isIOBox="true" Value="See all the messages the server received, their typetags and the time past since they were last received">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="NbBXXHHYpS6N4ExdNqEZpI" Comment="Data Preview" Bounds="2866,279,172,103" ShowValueBox="true" isIOBox="true">
-            <p:Value>
-              <Item />
-            </p:Value>
-          </Pad>
           <Pad Id="Rm17ToRMKAqOZYkgwBLApe" Comment="Address" Bounds="227,484,55,15" ShowValueBox="true" isIOBox="true" Value="/speed">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
@@ -74,7 +60,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="KGNOFKSckzbLuGAq61dtgF" Comment="Server" Bounds="207,227,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+          <Pad Id="KGNOFKSckzbLuGAq61dtgF" Comment="Server *" Bounds="207,227,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -89,7 +75,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IAnRKeGPI9yPQGf9QJ9CAp" Bounds="307,228,286,37" ShowValueBox="true" isIOBox="true" Value="Specify the target server by providing target IP (or Hostname) and Port">
+          <Pad Id="IAnRKeGPI9yPQGf9QJ9CAp" Bounds="315,228,286,37" ShowValueBox="true" isIOBox="true" Value="Specify the target server by providing target IP (or Hostname) and Port">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -102,15 +88,6 @@
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="V6OsUMZWmBYM6iDr6pFXeY" Bounds="2861,550,504,270" ShowValueBox="true" isIOBox="true" Value="The following wildcards can be used in addresses to send to multiple receivers:&#xD;&#xA;&#xD;&#xA;- '?’ matches any single character&#xD;&#xA;- '*’ matches any sequence of zero or more characters&#xD;&#xA;- A string of characters in square brackets (e.g., “[string]”) imatches any character in the string. Inside square brackets, the minus sign (-) and exclamation point (!) have special meanings:&#xD;&#xA;    - Two characters separated by a minus sign indicate the range of characters between the given two in ASCII collating sequence. (A minus sign at the end of the string has no special meaning.)&#xD;&#xA;    - An exclamation point at the beginning of a bracketed string negates the sense of the list, meaning that the list matches any character not in the list. (An exclamation point anywhere besides the first character after the open bracket has no special meaning.)&#xD;&#xA;    - A comma-separated list of strings enclosed in curly braces (e.g., “{foo,bar}”) matches any of the strings in the list.&#xD;&#xA; ">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
           </Pad>
           <Overlay Id="PWTdp88D4nGMF2GA5AIPgD" Name="This is how you send" Bounds="130,98,674,819">
             <p:ColorIndex p:Type="Int32">1</p:ColorIndex>
@@ -178,7 +155,7 @@
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Tlelmtr6yZsOB6m7KvxYHZ" Comment="Arguments" Bounds="423,778,20,15" ShowValueBox="true" isIOBox="true" Value="1, 0.64705884, 0, 1">
+          <Pad Id="Tlelmtr6yZsOB6m7KvxYHZ" Comment="Arguments" Bounds="423,778,20,15" ShowValueBox="true" isIOBox="true" Value="1, 0.84313726, 0, 1">
             <p:TypeAnnotation LastCategoryFullName="Color" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="RGBA" />
               <CategoryReference Kind="Category" Name="Color" />
@@ -192,7 +169,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="QDDCW1aDfWPN0JyAXjKKhm" Comment="Address" Bounds="403,746,64,15" ShowValueBox="true" isIOBox="true" Value="/textColor">
+          <Pad Id="QDDCW1aDfWPN0JyAXjKKhm" Comment="Address" Bounds="403,746,64,15" ShowValueBox="true" isIOBox="true" Value="/titleColor">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -202,19 +179,19 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="C79VQyrjkUHNvsiIjwo3Ba" Comment="Arguments" Bounds="599,778,35,28" ShowValueBox="true" isIOBox="true" Value="0, 0">
+          <Pad Id="C79VQyrjkUHNvsiIjwo3Ba" Comment="Arguments" Bounds="599,778,35,28" ShowValueBox="true" isIOBox="true" Value="0.42, 0.42">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
               <CategoryReference Kind="Category" Name="2D" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="UpxJcTetJ33OlqQTy7HvL9" Name="Need more?" Bounds="671,964,338,154">
+          <Overlay Id="UpxJcTetJ33OlqQTy7HvL9" Name="Need more?" Bounds="880,964,338,154">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
           <Overlay Id="LzWwDAw3h8vN0gvyxaz27F" Name="You can of course send any primitve data type" Bounds="175,681,581,198">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Pad Id="LiW9eDUImdKMR6mr9wvxhB" Bounds="730,1023,181,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle spreads of values.vl">
+          <Pad Id="LiW9eDUImdKMR6mr9wvxhB" Bounds="939,1023,181,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle spreads of values.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -223,7 +200,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="DJO74KR6L0CLh5k4fKf5fr" Bounds="730,1049,204,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle message bundles.vl">
+          <Pad Id="DJO74KR6L0CLh5k4fKf5fr" Bounds="939,1049,204,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle message bundles.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -232,7 +209,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="730,1075,192,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle Custom Data Types.vl">
+          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="939,1075,192,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle Custom Data Types.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -256,7 +233,7 @@
           <Overlay Id="OyBpFggvHs7MDFgyUTUS06" Name="First, configure your OSCServer" Bounds="924,157,452,228">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Overlay Id="KEHrZ5BvExaNUOQIO6YrvM" Name="Now get your message" Bounds="924,417,452,234">
+          <Overlay Id="KEHrZ5BvExaNUOQIO6YrvM" Name="Now get your message!" Bounds="924,417,452,234">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
           <Overlay Id="LNrypj8urF8M95AFG0wPAy" Name="You can also listen for other messages" Bounds="924,681,581,198">
@@ -291,7 +268,7 @@
             <Pin Id="Al0cCShbRW1LI0gd63oOqc" Name="Data Preview" Kind="OutputPin" />
             <Pin Id="AMkHlUSvGylPan3HDUKgNh" Name="Is Open" Kind="OutputPin" />
           </Node>
-          <Pad Id="SEv1xr6ed0pLKPCqjUgkmC" Comment="Listening IP" Bounds="956,227,41,15" ShowValueBox="true" isIOBox="true" Value="0.0.0.0">
+          <Pad Id="SEv1xr6ed0pLKPCqjUgkmC" Comment="Listening IP **" Bounds="956,227,41,15" ShowValueBox="true" isIOBox="true" Value="0.0.0.0">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -341,7 +318,7 @@
             <Pin Id="T1xD6HPsw07L5h9BXImMjZ" Name="On Data" Kind="OutputPin" />
             <Pin Id="OizwFMYaL4ZLcGSdlHakvo" Name="Address" Kind="OutputPin" />
           </Node>
-          <Pad Id="VNcLdnwUPofLfYlB9SuTqP" Comment="Address" Bounds="999,758,47,15" ShowValueBox="true" isIOBox="true" Value="/title">
+          <Pad Id="VNcLdnwUPofLfYlB9SuTqP" Comment="Address" Bounds="999,746,47,15" ShowValueBox="true" isIOBox="true" Value="/title">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -361,7 +338,7 @@
             <Pin Id="D8vV6obqC9cOeWryrunpRD" Name="On Data" Kind="OutputPin" />
             <Pin Id="CUlUdm9SvHaP7wZI1kHkuz" Name="Address" Kind="OutputPin" />
           </Node>
-          <Pad Id="LHTa4sMO50CPdvXqjKe3Y0" Comment="Address" Bounds="1183,758,60,15" ShowValueBox="true" isIOBox="true" Value="/textColor">
+          <Pad Id="LHTa4sMO50CPdvXqjKe3Y0" Comment="Address" Bounds="1183,746,60,15" ShowValueBox="true" isIOBox="true" Value="/titleColor">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -381,7 +358,7 @@
             <Pin Id="CkZVlLE0yWtLy1FGOqPE7l" Name="On Data" Kind="OutputPin" />
             <Pin Id="DjeiR3SE91gOfeptfiPIKh" Name="Address" Kind="OutputPin" />
           </Node>
-          <Pad Id="QThoZ6FlQ5NOzGUiBiN9JV" Comment="Address" Bounds="1369,758,57,15" ShowValueBox="true" isIOBox="true" Value="/position">
+          <Pad Id="QThoZ6FlQ5NOzGUiBiN9JV" Comment="Address" Bounds="1369,746,57,15" ShowValueBox="true" isIOBox="true" Value="/position">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -418,8 +395,8 @@
           </Pad>
           <ControlPoint Id="J4DvzK3ebN6Ojc9XMdlQ00" Bounds="957,716" />
           <ControlPoint Id="LJvrc0db6SHNl2eBBoTrvy" Bounds="957,716" />
-          <ControlPoint Id="VDVSE65CSoXMsgBoA51w6p" Bounds="1142,732" />
-          <ControlPoint Id="Dr4CabBUWFsMAGDyclXnj3" Bounds="1327,748" />
+          <ControlPoint Id="VDVSE65CSoXMsgBoA51w6p" Bounds="1142,726" />
+          <ControlPoint Id="Dr4CabBUWFsMAGDyclXnj3" Bounds="1327,735" />
           <Overlay Id="VBYn2YM3orvN8c8kJ0ueiJ" Name="Sending and receiving single values with OSC is easy!" Bounds="74,40,1534,1122">
             <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
           </Overlay>
@@ -429,13 +406,52 @@
               <CategoryReference Kind="Category" Name="Primitive" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="J9IMCdAVinQNHZsb7yFixD" Bounds="1109,511,242,50" ShowValueBox="true" isIOBox="true" Value="Both the address and the data type must match what comes from the client">
+          <Pad Id="J9IMCdAVinQNHZsb7yFixD" Bounds="1109,511,242,50" ShowValueBox="true" isIOBox="true" Value="Address and data type must match what comes from the client">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="PugeMzHT4kzM5Ub3CrnWjR" Name="Notes" Bounds="465,964,338,154">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="E1fDf65T4vGLkduo85oWhN" Bounds="480,1011,258,19" ShowValueBox="true" isIOBox="true" Value="* 127.0.0.1 = sending to your machine">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GJJOpfRy9F6P2kW4veYyXN" Bounds="480,1033,304,19" ShowValueBox="true" isIOBox="true" Value="** 0.0.0.0 = listening to any reachable computer">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Do2lZmO382bNDCHUW6eyCL" Bounds="480,1055,304,34" ShowValueBox="true" isIOBox="true" Value="Check here to see if the ports you picked collide with something else you might be using:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="A0vsNvg6YWENFN1M06w5QC" Bounds="478,1091,297,17" ShowValueBox="true" isIOBox="true" Value="https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
