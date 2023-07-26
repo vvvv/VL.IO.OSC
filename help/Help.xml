@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Pack>
 	<UriItem title="HowTo Send OSC messages" link="https://youtu.be/CSt_39fNonQ" mediaType="video" tags="udp opensoundcontrol"/>
-	<VLDocument link="HowTo Send OSC messages.vl" tags="udp opensoundcontrol"/>
 	<UriItem title="HowTo Receive OSC messages" link="https://youtu.be/i5Yy6DS3Imo" mediaType="video" tags="udp opensoundcontrol"/>
-	<VLDocument link="HowTo Receive OSC messages.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Bind OSC to a Global Channel.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Handle single values.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Handle spreads of values.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Handle message bundles.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Handle custom data types using property names.vl" tags="udp opensoundcontrol"/>
+	<VLDocument link="HowTo Handle custom data types using overrides.vl" tags="udp opensoundcontrol"/>
 </Pack>
