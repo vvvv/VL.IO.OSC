@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MrONzbxGfdGNSlBhRu3HxT" LanguageVersion="2023.5.3-0087-gd57c9746eb" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="KOzRKwRfSkuLfEPsIycbw9" LanguageVersion="2023.5.3-0087-gd57c9746eb" Version="0.128">
   <NugetDependency Id="P811pnl25s0MXPoACnvUg1" Location="VL.CoreLib" Version="2023.5.3-0087-gd57c9746eb" />
   <Patch Id="Q3gKPUdjBJdOfHLi5AQGIy">
     <Canvas Id="KCPeAumC94tPyyjZ5QVp0K" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -87,7 +87,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="869,1104,192,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle custom data types.vl">
+          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="869,1104,252,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle custom data types with overrides.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />

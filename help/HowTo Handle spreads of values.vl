@@ -114,7 +114,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="804,849,192,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle custom data types.vl">
+          <Pad Id="StcPxUJyPcBPtKw3dvBrSF" Bounds="804,849,256,15" ShowValueBox="true" isIOBox="true" Value=".HowTo Handle custom data types using overrides.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
