@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0087-gd57c9746eb" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0087-gd57c9746eb" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MVMBdcLLgJCNJZWQYVJvQc" LanguageVersion="2023.5.3-0118-gacfa8dc258" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0118-gacfa8dc258" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -204,12 +204,12 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Amc98Qjnn6hNPWvS3JpLsl" Comment="Server Port" Bounds="306,362,35,15" ShowValueBox="true" isIOBox="true" Value="4448">
+          <Pad Id="Amc98Qjnn6hNPWvS3JpLsl" Comment="Port" Bounds="306,362,35,15" ShowValueBox="true" isIOBox="true" Value="4448">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UmqhNvVaczZLqNIGwGNxrs" Comment="Server Port" Bounds="506,362,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
+          <Pad Id="UmqhNvVaczZLqNIGwGNxrs" Comment="Port" Bounds="506,362,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -229,7 +229,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MkX4v5dMz3YN1aKMCUN2qe" Comment="Sender Port" Bounds="688,362,35,15" ShowValueBox="true" isIOBox="true" Value="4448">
+          <Pad Id="MkX4v5dMz3YN1aKMCUN2qe" Comment="Port" Bounds="690,362,35,15" ShowValueBox="true" isIOBox="true" Value="4448">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -242,7 +242,7 @@
             <Pin Id="FTmkEVInJvdPzMUVDswZ8a" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="EuWQgVsRug4NYkVbC4l6qu" Name="Name" Kind="InputPin" />
             <Pin Id="ANcuOx6YPT2QFl8d7a9p6k" Name="Listening IP" Kind="InputPin" />
-            <Pin Id="Kh6woCcGBg1OcCksANGmk3" Name="Server Port" Kind="InputPin" />
+            <Pin Id="OcUaQQtOqVlQMjxQHzQe6b" Name="Port" Kind="InputPin" />
             <Pin Id="DMTiH6x4SZnQZYvo3eB6Ck" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Node Bounds="435,385,74,19" Id="IC5xhY7wnbsNhZmOdcfoOb">
@@ -253,10 +253,10 @@
             <Pin Id="VV0nOGjxfULL0C0nbL5fRb" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="T3OLntZHg1BN8vOD4ZhEjg" Name="Name" Kind="InputPin" />
             <Pin Id="SbVwGgN7rZQNM8OfOsEybC" Name="Listening IP" Kind="InputPin" />
-            <Pin Id="LERfZAYJjTiOVeh3Y4BZ8a" Name="Server Port" Kind="InputPin" />
+            <Pin Id="RnwOT7nR4pyNTqhSGjJc8n" Name="Port" Kind="InputPin" />
             <Pin Id="TE8jSgBnCm2Lep2BrO82lD" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="635,385,82,19" Id="GGk3C5PxJ9OPT2Y3QbQuLL">
+          <Node Bounds="635,385,85,19" Id="GGk3C5PxJ9OPT2Y3QbQuLL">
             <p:NodeReference LastCategoryFullName="IO.OSC.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCOutConfig" />
@@ -264,7 +264,7 @@
             <Pin Id="L3sxf9Y3Sz5O2dAPuBtx9w" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="VhQYOOnnUYoLTWYgkS47SJ" Name="Name" Kind="InputPin" />
             <Pin Id="P8cB8Pr7GweL36D1JaW0NU" Name="Server IP" Kind="InputPin" />
-            <Pin Id="PRjsQ94W62iLx5c6ZMPmRt" Name="Sender Port" Kind="InputPin" />
+            <Pin Id="IGGhZuaejhHPMCo5pKYTbx" Name="Port" Kind="InputPin" />
             <Pin Id="GV1mDv0kkf9PIIfpDjzu4A" Name="Maximum Bundle Size" Kind="InputPin" />
             <Pin Id="HtpPPjD4LDMMffTlHUv1qC" Name="Output" Kind="StateOutputPin" />
           </Node>
@@ -318,15 +318,15 @@
         <Link Id="TIjsW3Nc7oaPmOhwXIneDe" Ids="IIlzAZ31zmiQTVe3bU7J7F,SdW8HyirenRLgGcWXNqw2a" />
         <Link Id="SnvRW1PFNYiNcXwUfxlRye" Ids="StN8hxDtGFONHywgJgSyml,UiEYLjRBEgPOcZW8mqg8X4" />
         <Link Id="NhQbb4l9cZkOpOyEozPPfY" Ids="N7tEHXlvVRWNBgfJElosmV,EuWQgVsRug4NYkVbC4l6qu" />
-        <Link Id="L5kqud1FKQzNux9LN238Eg" Ids="Amc98Qjnn6hNPWvS3JpLsl,Kh6woCcGBg1OcCksANGmk3" />
         <Link Id="E2bLCwCl2WrQG7Z4AUijNc" Ids="EutAAAuTMT9MXrueH19LyF,T3OLntZHg1BN8vOD4ZhEjg" />
-        <Link Id="QpD6AnkssjgM7cZjGpmfT0" Ids="UmqhNvVaczZLqNIGwGNxrs,LERfZAYJjTiOVeh3Y4BZ8a" />
         <Link Id="NugvlUimDEWOkyUUNykB3r" Ids="DMTiH6x4SZnQZYvo3eB6Ck,GjXk421dn10NGANw2QfJsc" />
         <Link Id="HHu6eTBvJJ4NaqljJwhUgX" Ids="TE8jSgBnCm2Lep2BrO82lD,GoJhWx4TW6YNflLWxLVFUz" />
         <Link Id="Vuouu4W8YguNQxvgg0fAYh" Ids="Vg1zeZfxZfTP0v2i9dJQhV,VhQYOOnnUYoLTWYgkS47SJ" />
-        <Link Id="GICO9lqDRYRMoDEJK91fHx" Ids="MkX4v5dMz3YN1aKMCUN2qe,PRjsQ94W62iLx5c6ZMPmRt" />
         <Link Id="TccB0eKZp14NPlZ51uNL1T" Ids="HtpPPjD4LDMMffTlHUv1qC,HgKV3prcjoZNfagaP6OwMn" />
         <Link Id="AWkVRrDYCSTMJNm5WyNYU3" Ids="JqB8C1oGpnCMwux7LAiY8h,OJcnujMw8zhLc6ujjydCy2" />
+        <Link Id="CEtr02nTKOiNoOK7WjgKAn" Ids="Amc98Qjnn6hNPWvS3JpLsl,OcUaQQtOqVlQMjxQHzQe6b" />
+        <Link Id="SkN6POczzeIOBnCTvergl3" Ids="UmqhNvVaczZLqNIGwGNxrs,RnwOT7nR4pyNTqhSGjJc8n" />
+        <Link Id="PYg0VMeRBdlMLaVkAPJOcr" Ids="MkX4v5dMz3YN1aKMCUN2qe,IGGhZuaejhHPMCo5pKYTbx" />
       </Patch>
     </Node>
   </Patch>

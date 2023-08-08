@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="D8hgAgQ4xJaMafGZZad20E" LanguageVersion="2023.5.3-0087-gd57c9746eb" Version="0.128">
-  <NugetDependency Id="I8QQd3d6IwrPHKZpya237S" Location="VL.CoreLib" Version="2023.5.3-0087-gd57c9746eb" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="D8hgAgQ4xJaMafGZZad20E" LanguageVersion="2023.5.3-0118-gacfa8dc258" Version="0.128">
+  <NugetDependency Id="I8QQd3d6IwrPHKZpya237S" Location="VL.CoreLib" Version="2023.5.3-0118-gacfa8dc258" />
   <Patch Id="NFmLzJZSFpnQJ1Wsryp0ze">
     <Canvas Id="Sy6K0E9lhbSPdxrL0FnkFq" DefaultCategory="IO.OSC.Modules" CanvasType="FullCategory">
       <!--
@@ -227,7 +227,7 @@
                           </p:NodeReference>
                           <Pin Id="F3fCjrsW2QaNblgoqG3ODG" Name="Context" Kind="InputPin" />
                           <Pin Id="HlLVDE41UmyQd6U3MfZhRv" Name="Channel" Kind="InputPin" />
-                          <Pin Id="VOfjn8GOgpjQMdrppV7KI1" Name="Label" Kind="InputPin" DefaultValue="Server Port" />
+                          <Pin Id="VOfjn8GOgpjQMdrppV7KI1" Name="Label" Kind="InputPin" DefaultValue="Port" />
                           <Pin Id="ENwy1ZC29PiMuQoKd25BMn" Name="Step" Kind="InputPin" />
                           <Pin Id="OkXA6jkTnxHLLhGHbaBgLh" Name="Step Fast" Kind="InputPin" />
                           <Pin Id="FpUegBvu3lWL1s0a8qwoTh" Name="Flags" Kind="InputPin" DefaultValue="None" />
@@ -276,7 +276,7 @@
                           </p:NodeReference>
                           <Pin Id="QnnQvxZDNcsQSDRLf46GM7" Name="Context" Kind="InputPin" />
                           <Pin Id="Gn55Dhicm7NLMaVwn6IV8E" Name="Channel" Kind="InputPin" />
-                          <Pin Id="DhWkCKlF5pIPNzh0VCqUQI" Name="Label" Kind="InputPin" DefaultValue="Sender Port" />
+                          <Pin Id="DhWkCKlF5pIPNzh0VCqUQI" Name="Label" Kind="InputPin" DefaultValue="Port" />
                           <Pin Id="E6UQ4wr3n8zLN6ZPBKK0H7" Name="Step" Kind="InputPin" />
                           <Pin Id="K4Ua6irKch6NN3gfT2MtIY" Name="Step Fast" Kind="InputPin" />
                           <Pin Id="TVZMAmUNJhGLVNWqP7jquV" Name="Flags" Kind="InputPin" DefaultValue="None" />
@@ -590,7 +590,7 @@
                   <Pin Id="MxzwzUeBCyFMoElhaBjROI" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="V5SzaraLPI0OBN7Z7pOohw" Name="Name" Kind="OutputPin" />
                   <Pin Id="Vzjx0zBKQdnPdYILOpfzRS" Name="Listening IP" Kind="OutputPin" />
-                  <Pin Id="CYv6zDmvvueL4etaqAaFaK" Name="Server Port" Kind="OutputPin" />
+                  <Pin Id="CYv6zDmvvueL4etaqAaFaK" Name="Port" Kind="OutputPin" />
                 </Node>
                 <Patch Id="K0sbU2XxViKLdD7To1z44K" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="M5wRm56uhsRN8bar5mJkta" Name="Then" ManuallySortedPins="true" />
@@ -628,7 +628,7 @@
                   <Pin Id="Fcxo9x21lHrPSC66QVsTgv" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="Pd1eFsHhCx8NYvv2iW4ErC" Name="Name" Kind="OutputPin" />
                   <Pin Id="As6lLusYIbaLwxNMkYkdCQ" Name="Server IP" Kind="OutputPin" />
-                  <Pin Id="SsyMnCJkooENwNXeMD8M8h" Name="Sender Port" Kind="OutputPin" />
+                  <Pin Id="SsyMnCJkooENwNXeMD8M8h" Name="Port" Kind="OutputPin" />
                   <Pin Id="DRdXnuMOqX2OiTJ8eH8i53" Name="Maximum Bundle Size" Kind="OutputPin" />
                 </Node>
                 <Patch Id="HMZ3PzIrYUEPnEHFhJf2sR" Name="Create" ManuallySortedPins="true" />
@@ -1349,10 +1349,10 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="IaD8CO9JXbTMoxMRscHwdg" Location="VL.ImGui" Version="2023.5.3-0087-gd57c9746eb" />
+  <NugetDependency Id="IaD8CO9JXbTMoxMRscHwdg" Location="VL.ImGui" Version="2023.5.3-0118-gacfa8dc258" />
   <DocumentDependency Id="AWEgoJBGvTsMAjN0XIrgWl" Location="./OSCModule.vl" IsFriend="true" />
   <NugetDependency Id="D3MdXV0XTLnMsZmVOxw34K" Location="VL.IO.OSC" Version="0.0.0" />
-  <NugetDependency Id="GfEl6qUCUpZMc4jwWA6iyO" Location="VL.ImGui.Skia" Version="2023.5.3-0087-gd57c9746eb" />
-  <NugetDependency Id="BjMuUQAoahdLcHfbJ3zXJ8" Location="VL.Skia" Version="2023.5.3-0087-gd57c9746eb" />
-  <NugetDependency Id="FYig4Yd8B3BL2WCqQcesUp" Location="VL.HDE" Version="2023.5.3-0087-gd57c9746eb" />
+  <NugetDependency Id="GfEl6qUCUpZMc4jwWA6iyO" Location="VL.ImGui.Skia" Version="2023.5.3-0118-gacfa8dc258" />
+  <NugetDependency Id="BjMuUQAoahdLcHfbJ3zXJ8" Location="VL.Skia" Version="2023.5.3-0118-gacfa8dc258" />
+  <NugetDependency Id="FYig4Yd8B3BL2WCqQcesUp" Location="VL.HDE" Version="2023.5.3-0118-gacfa8dc258" />
 </Document>

@@ -346,7 +346,7 @@
                   <Pin Id="OioGz9AdEtfMpS1DRMXfJQ" Name="Output" Kind="OutputPin" />
                   <Pin Id="QXbXURi69CpPLVtJ3UNZqe" Name="Name" Kind="OutputPin" />
                   <Pin Id="P9OwagsEE6EPZI09lhbFQd" Name="Listening IP" Kind="OutputPin" />
-                  <Pin Id="CTtaygoPEsIPyjhEV45thI" Name="Server Port" Kind="OutputPin" />
+                  <Pin Id="CTtaygoPEsIPyjhEV45thI" Name="Port" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1444,762,98,26" Id="DITLFP1JPdWQFLi9AkpTDd">
                   <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCInConfig (Runtime)" LastDependency="OSCModule.vl">
@@ -463,7 +463,7 @@
                   <Pin Id="LR0ieDFsC6gL8i3MskOCdC" Name="Output" Kind="OutputPin" />
                   <Pin Id="KN5tCLv6nMDOs5Fn0h78cG" Name="Name" Kind="OutputPin" />
                   <Pin Id="DXY25ITljWfPZ3s7zM6h5w" Name="Server IP" Kind="OutputPin" />
-                  <Pin Id="GuXrfnvHD2NN90MBMMRlis" Name="Sender Port" Kind="OutputPin" />
+                  <Pin Id="GuXrfnvHD2NN90MBMMRlis" Name="Port" Kind="OutputPin" />
                   <Pin Id="LZSEpRhXi22P4ZfGXjlUor" Name="Maximum Bundle Size" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="2011,762,104,26" Id="H1cYTbalcYoLO6JMI2bFv8">
@@ -1262,7 +1262,7 @@
           <Link Id="SJI00g2pjfgP52hjCRDKJo" Ids="D0tA3xI5wqKL8GT8aw3iJJ,MsCMRbo0wkNPZspP3NqlpJ" />
           <Link Id="QxrDoNqHOodOf1IqwVqbOg" Ids="KYsteJm6imdOzqCiL6yIvw,Par9DGqaBlFQEPdATVh2P7" />
           <Slot Id="RLO4qBKgksPLlhP6eiCZIs" Name="Listening IP" />
-          <Slot Id="TC6WCvp3JCtLXO8S9g4FAI" Name="Server Port" />
+          <Slot Id="TC6WCvp3JCtLXO8S9g4FAI" Name="Port" />
           <Link Id="PIx4sTsqAVoO0YssBsEIoQ" Ids="MsCMRbo0wkNPZspP3NqlpJ,RVoIAqNUKp8NExTJ9TzT8l" />
           <Link Id="HXo1nDgBFu8OLkCB8co8pE" Ids="RVoIAqNUKp8NExTJ9TzT8l,MS2WpTVBqOXLyeJg6LCsnm" IsHidden="true" />
           <Link Id="CA3h1ZaY89RPinUoNqTPfv" Ids="Par9DGqaBlFQEPdATVh2P7,OtMe6MWXoMTNf5iqs66A2D" />
@@ -1282,7 +1282,7 @@
           <Patch Id="ArEBbFksF0XLBALzIrdJk4" Name="Split">
             <Pin Id="K5jtOzBgXudOiWSSEYRchL" Name="Name" Kind="OutputPin" />
             <Pin Id="MS2WpTVBqOXLyeJg6LCsnm" Name="Listening IP" Kind="OutputPin" />
-            <Pin Id="UgIcIuIYrv6Nweag5ZwV6M" Name="Server Port" Kind="OutputPin" />
+            <Pin Id="UgIcIuIYrv6Nweag5ZwV6M" Name="Port" Kind="OutputPin" />
           </Patch>
           <Patch Id="CuaG1RT9yx7NzQFrXIK79g" Name="Update" ParticipatingElements="OclDvqQbMxRQHhuMvyyU5W,QoP25Seou5bNL06Nc6dt3F">
             <Pin Id="E1NuZhzugDqQIbch4Fepqr" Name="Name" Kind="InputPin" />
@@ -1291,7 +1291,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="IYlJWMDvprCQakQcllxErT" Name="Server Port" Kind="InputPin" DefaultValue="4444">
+            <Pin Id="IYlJWMDvprCQakQcllxErT" Name="Port" Kind="InputPin" DefaultValue="4444">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -1361,7 +1361,7 @@
           <Link Id="CQE0qneQBBNN3cSZHpBXpj" Ids="JBY4bJIsfUvN58XMPtVnvZ,SVU35WwwFj4L7Ebgp3fdqk" />
           <Link Id="VoiI307li5xNaFMg7IIDHS" Ids="A5XpPPiSiHWQV0IKYfZTat,A11MI2k0ynvPLkYuSiG8yl" />
           <Slot Id="Rjbva5vsjeOOQl3dAleWoc" Name="Server IP" />
-          <Slot Id="DKxjx7Y8JlmL56kAoyQlkn" Name="Sender Port" />
+          <Slot Id="DKxjx7Y8JlmL56kAoyQlkn" Name="Port" />
           <Slot Id="RtuG8VZzHP3OSGA1cSHk06" Name="Maximum Bundle Size" />
           <Link Id="F5jxpgFHdxlMz3MqbVzKnK" Ids="T2x5wKVjjiNPmYN9uIqHu7,CIyavcWA1gTN5eBJgjBex7" />
           <Link Id="SGNPbmwCUvfLqlFMESZ4GQ" Ids="MAew9ndU9DGNarwnvoAaFA,PpVB4D5nTviPOPw7opQj6R" IsHidden="true" />
@@ -1385,7 +1385,7 @@
           <Patch Id="EwuI1OhJHtEO0gUfZg7FHL" Name="Split">
             <Pin Id="B2d774N7xqdLtxjoV2kjqO" Name="Name" Kind="OutputPin" />
             <Pin Id="IOVZp3YRWhYQBUYNEBUpeO" Name="Server IP" Kind="OutputPin" />
-            <Pin Id="SiSgbQdFfvHPSo6yZjLQdf" Name="Sender Port" Kind="OutputPin" />
+            <Pin Id="SiSgbQdFfvHPSo6yZjLQdf" Name="Port" Kind="OutputPin" />
             <Pin Id="PpVB4D5nTviPOPw7opQj6R" Name="Maximum Bundle Size" Kind="OutputPin" />
           </Patch>
           <Patch Id="UdGQCFk9UsUPZYf0idUC0e" Name="Update" ParticipatingElements="MTC1NlTwubwMlcMp5aLGs6,Aucm1P9eqR8NXoyKGMb1dS">
@@ -1395,7 +1395,7 @@
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="LuCwT32UpxgOECTDDBsY2v" Name="Sender Port" Kind="InputPin" DefaultValue="4444">
+            <Pin Id="LuCwT32UpxgOECTDDBsY2v" Name="Port" Kind="InputPin" DefaultValue="4444">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
@@ -2248,7 +2248,7 @@
                         <Pin Id="QORIHBIzHTENvgsQRsgI8E" Name="Output" Kind="OutputPin" IsHidden="true" />
                         <Pin Id="VuUZVHjTGTWOx4Y642Dltq" Name="Name" Kind="OutputPin" />
                         <Pin Id="Hn3g5gxpCVcQY5KsAIpKzz" Name="Listening IP" Kind="OutputPin" />
-                        <Pin Id="GxbfvE3Sx9lLZkz2CcbDCV" Name="Server Port" Kind="OutputPin" />
+                        <Pin Id="GxbfvE3Sx9lLZkz2CcbDCV" Name="Port" Kind="OutputPin" />
                       </Node>
                     </Patch>
                     <ControlPoint Id="PZ0u7f6juhsPPgzJ8Rk892" Bounds="1717,552" Name="IP" Alignment="Bottom" />
@@ -2311,7 +2311,7 @@
                         <Pin Id="V1IICVhYnKJPb8Kl1CLuRV" Name="Output" Kind="OutputPin" IsHidden="true" />
                         <Pin Id="LAfdwRLGNdtNMckJwoHkmP" Name="Name" Kind="OutputPin" />
                         <Pin Id="SqSXIGZdOXVPndhJyh6iwA" Name="Server IP" Kind="OutputPin" />
-                        <Pin Id="JMn4yZfWmU3PwKaWTfQuzJ" Name="Sender Port" Kind="OutputPin" />
+                        <Pin Id="JMn4yZfWmU3PwKaWTfQuzJ" Name="Port" Kind="OutputPin" />
                         <Pin Id="BxVu19Cer9GLejUpnlaNZl" Name="Maximum Bundle Size" Kind="OutputPin" />
                       </Node>
                     </Patch>
@@ -2368,7 +2368,7 @@
                 <Pin Id="G3ZMsnJ1RYzOSETJquGqeD" Name="Module" Kind="InputPin" />
                 <Pin Id="PavSLpOmBQPPz1NUhzr1ND" Name="Binding Type" Kind="InputPin" />
                 <Pin Id="CNv0nEfGz3qO9SlTTV77EZ" Name="Configuration Name" Kind="InputPin" />
-                <Pin Id="Jrho8pRwJCyPFNrg60uSuf" Name="IP" Kind="OutputPin" />
+                <Pin Id="GjKQzC3WkSjNHT4iRKGAj8" Name="IP" Kind="OutputPin" />
                 <Pin Id="AoXZkKUoSTnNvXtQgTSpc5" Name="Port" Kind="OutputPin" />
               </Node>
               <Pad Id="OpAsRLwdEA9NWchtJzg6iH" SlotId="ET5QPcmy3N6LQb8FDfc8oP" Bounds="485,386" />
