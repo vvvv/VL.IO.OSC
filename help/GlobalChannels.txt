@@ -1,4 +1,0 @@
-a: Float32
-b: Float32
-c: Float32
-zwar: Spread<Vector2>
