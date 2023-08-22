@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TNZGTwv4xruPrn0fl2hpv1" LanguageVersion="2023.5.3-0133-ge9c46603f4" Version="0.128">
-  <NugetDependency Id="P811pnl25s0MXPoACnvUg1" Location="VL.CoreLib" Version="2023.5.3-0133-ge9c46603f4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TNZGTwv4xruPrn0fl2hpv1" LanguageVersion="2023.5.3-0149-gc8990de6a0" Version="0.128">
+  <NugetDependency Id="P811pnl25s0MXPoACnvUg1" Location="VL.CoreLib" Version="2023.5.3-0149-gc8990de6a0" />
   <Patch Id="Q3gKPUdjBJdOfHLi5AQGIy">
     <Canvas Id="KCPeAumC94tPyyjZ5QVp0K" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -29,12 +29,12 @@
             <Pin Id="AZmd47r3hXfPPGqFoZm17C" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UK7jRyZTWSaLbz5B7MQ2x1" Name="Server" Kind="InputPin" />
             <Pin Id="HDsYe4ZoPNWLs2WC9ZLIcz" Name="Port" Kind="InputPin" />
-            <Pin Id="Lb6M0JWT4XqOvrzEgV575B" Name="Servers" Kind="InputPin" />
-            <Pin Id="GMe2cS6R24AO4xz47szYqK" Name="Ports" Kind="InputPin" />
+            <Pin Id="TZObMMo5TeHNmeMCyxtrx5" Name="Servers" Kind="InputPin" IsHidden="true" />
+            <Pin Id="BcbQwUdybyGPefBVZnM3Wl" Name="Ports" Kind="InputPin" IsHidden="true" />
             <Pin Id="ERJIVR1RA7YLRngVukjqAY" Name="Maximum Bundle Size" Kind="InputPin" />
             <Pin Id="Oo44kUep6NcMsubl22mUbS" Name="Enabled" Kind="InputPin" />
             <Pin Id="UKvMYy0nSA5O9hChTmw0Fw" Name="Output" Kind="OutputPin" />
-            <Pin Id="HOqRdjgw0CjQYJf3LQB8sd" Name="Data" Kind="OutputPin" />
+            <Pin Id="EAo0BKcA0oMQUf1Rsn6L2b" Name="Data" Kind="OutputPin" IsHidden="true" />
             <Pin Id="De4BvmndaYEQDYBXwzZaE5" Name="Is Open" Kind="OutputPin" />
             <Pin Id="GVOR2whzey0LZTTLfVF9qE" Name="Bundle Size Exceeded" Kind="OutputPin" />
           </Node>
@@ -65,7 +65,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FJKif175egJLINkxITNPgI" Comment="Port" Bounds="148,181,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
+          <Pad Id="FJKif175egJLINkxITNPgI" Comment="Port" Bounds="161,181,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -100,7 +100,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="RV6hDnWj00xK9tqDl9wppV" Name="Input" Kind="StateInputPin" />
             <Pin Id="FjAtEZYhVQ1OBYSWo6uZ3Z" Name="Address" Kind="InputPin" />
             <Pin Id="UExMtP4rG8lOr43d9QF5rG" Name="Arguments" Kind="InputPin" />
@@ -117,7 +116,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="Nm0tiYPnnguK97KxtXqRm3" Name="Input" Kind="StateInputPin" />
             <Pin Id="DFRkQBH9eF3LpKxy7zBSzS" Name="Address" Kind="InputPin" />
             <Pin Id="JxieABxb2BSLOlQVEEvvlf" Name="Arguments" Kind="InputPin" />
@@ -134,7 +132,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="OLi1MA5IHu5MJqqXCjH5HW" Name="Input" Kind="StateInputPin" />
             <Pin Id="NEWLWKo5r6UNjBS4q8nNNY" Name="Address" Kind="InputPin" />
             <Pin Id="Q3ZhmHCPBB3NYyon0ou8Vs" Name="Arguments" Kind="InputPin" />
@@ -182,10 +179,10 @@
               <CategoryReference Kind="Category" Name="2D" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="UpxJcTetJ33OlqQTy7HvL9" Name="Need more?" Bounds="566,261,413,134">
+          <Overlay Id="UpxJcTetJ33OlqQTy7HvL9" Name="See also" Bounds="566,261,413,134">
             <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
           </Overlay>
-          <Overlay Id="LzWwDAw3h8vN0gvyxaz27F" Name="You can of course send any primitve data type" Bounds="96,604,550,198">
+          <Overlay Id="LzWwDAw3h8vN0gvyxaz27F" Name="You can send any primitve data type ..." Bounds="96,604,550,198">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
           <Pad Id="LiW9eDUImdKMR6mr9wvxhB" Bounds="579,333,360,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using overrides.vl">
@@ -267,7 +264,6 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendMessage" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="QT5ABS7DYiWQVWvVSPg32G" Name="Input" Kind="StateInputPin" />
             <Pin Id="DFfOnEsb0BVLrGlkvJikH6" Name="Address" Kind="InputPin" />
             <Pin Id="Q6Rtxkrq3wvNzSkVSljWoV" Name="Arguments" Kind="InputPin" />
@@ -284,7 +280,7 @@
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="IyB8xwKZJxvOLIUKdb7xVu" Name="As well as spreads!" Bounds="96,835,452,263">
+          <Overlay Id="IyB8xwKZJxvOLIUKdb7xVu" Name="... as well as spreads!" Bounds="96,835,452,263">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
           <Node Bounds="166,963,85,19" Id="DTQ4itTs4fwMQHFD0QKO1Y">
