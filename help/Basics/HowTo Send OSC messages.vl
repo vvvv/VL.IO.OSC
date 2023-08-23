@@ -408,7 +408,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="TVRLdbNcfSYQdAAbMrccPT" Comment="Position" Bounds="270,1247,35,28" ShowValueBox="true" isIOBox="true" Value="0, 0">
+          <Pad Id="TVRLdbNcfSYQdAAbMrccPT" Comment="Position" Bounds="270,1247,35,28" ShowValueBox="true" isIOBox="true" Value="0.42, 0.42">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
