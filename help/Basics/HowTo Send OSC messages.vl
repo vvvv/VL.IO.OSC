@@ -364,7 +364,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GHmUgMgdhRRMSgwG2vZiSe" Comment="Apply" Bounds="209,1552,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="GHmUgMgdhRRMSgwG2vZiSe" Comment="Apply" Bounds="209,1552,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
