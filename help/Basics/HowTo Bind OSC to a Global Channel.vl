@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TqqBGEcjoa7MEe48YvyayR" LanguageVersion="2023.5.3-0133-ge9c46603f4" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0133-ge9c46603f4" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TqqBGEcjoa7MEe48YvyayR" LanguageVersion="2023.5.3-0152-g5b4be7a44f" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0152-g5b4be7a44f" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,17 +15,7 @@
       </p:NodeReference>
       <Patch Id="NPrUYr3Vn65OhJGgmHk8kP">
         <Canvas Id="GKBMbDDvoCROlCfLe71JUT" CanvasType="Group">
-          <Pad Id="MpjaxZLS26dNVHreKCGIwf" Comment="" Bounds="100,735,82,27" ShowValueBox="true" isIOBox="true">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Float32" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">13</p:fontsize>
-              <p:precision p:Type="Int32">4</p:precision>
-              <p:stepsize p:Type="Single">0.01</p:stepsize>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Node Bounds="98,692,82,19" Id="Ht7jmtkzfsaOnZHMw6mEgy">
+          <Node Bounds="135,969,82,19" Id="Ht7jmtkzfsaOnZHMw6mEgy">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
@@ -36,74 +26,27 @@
             <Pin Id="NTR4jp6PhMRLH3YPRWmTEk" Name="Channel" Kind="OutputPin" />
             <Pin Id="JzEDMQ8aOK0N4v5RYUijZK" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="SIdRjU51khSQCoXY3UQOso" Comment="Path" Bounds="100,669,35,15" ShowValueBox="true" isIOBox="true" Value="speed">
+          <Pad Id="SIdRjU51khSQCoXY3UQOso" Comment="Path" Bounds="137,946,35,15" ShowValueBox="true" isIOBox="true" Value="speed">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EiHhls296K1MGTSBabnrW1" Bounds="102,99,305,21" ShowValueBox="true" isIOBox="true" Value="1) Add a Reference to VL.IO.OSC package">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="GK5vvXAgrVfNizGIk1pUQ3" Bounds="102,157,291,24" ShowValueBox="true" isIOBox="true" Value="2) Add OSCModule to your patch:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="ICfVTqEqJI9Og9rkABypLu" Bounds="102,613,376,19" ShowValueBox="true" isIOBox="true" Value="4) Add Global Channels (via Global Channel Browser)">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="JuH4UHLPgvJOam9X387oAf" Bounds="102,1017,771,25" ShowValueBox="true" isIOBox="true" Value="5) Use Global Channel nodes (make sure that you saved your channels by hitting save button in Global Channel Browser)">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="NDTQgiU9AhqMi1orgCf9iF" Bounds="109,1074,549,131" ShowValueBox="true" isIOBox="true" Value="All of those channels are set to Receive currently. &#xD;&#xA;So we get the values from the &quot;Send OSC Messages&quot; help patch and use them in our patch.&#xD;&#xA;&#xD;&#xA;But you can also send to some OSC messages...&#xD;&#xA;You can edit an OSC Binding by clicking it. &#xD;&#xA;Use Send and adjust your Output Configuration.">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Overlay Id="NOZgcZXzu05N3POzTqFB6O" Name="" Bounds="89,1051,607,161">
-            <p:ColorIndex p:Type="Int32">5</p:ColorIndex>
-          </Overlay>
-          <Node Bounds="235,523,80,19" Id="Akl1uvwclm8MENyXoAUIZG">
+          <Node Bounds="118,514,80,19" Id="Akl1uvwclm8MENyXoAUIZG">
             <p:NodeReference LastCategoryFullName="IO.Midi.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCModule" />
             </p:NodeReference>
-            <Pin Id="QCRqNH3FSqoPDgxrgZ1Q7M" Name="Bindings" Kind="InputPin">
+            <Pin Id="UrLIyDzFLYgLjZ1CmJb3Ry" Name="Bindings" Kind="InputPin" IsHidden="true">
               <p:DefaultValue>
                 <Item Address="/speed" Binding_Type="Receive" Channel_Path="speed" Configuration_Name="MyIn1" />
+                <Item Address="/position" Binding_Type="Send" Channel_Path="positionOut" Configuration_Name="MyTarget" />
+                <Item Address="/position" Binding_Type="Receive" Channel_Path="position" Configuration_Name="MyIn2" />
               </p:DefaultValue>
             </Pin>
             <Pin Id="Ntn6wwfvdu9PPYsab4xuH9" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UiEYLjRBEgPOcZW8mqg8X4" Name="Configuration" Kind="InputPin" />
-            <Pin Id="ALN7iXCy9XQMd4ToV7ax0E" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="235,461,405,19" Id="GTj9PMhhRuQL3PqmakSxkg">
+          <Node Bounds="118,374,405,19" Id="GTj9PMhhRuQL3PqmakSxkg">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="ClassType" Name="Spread" NeedsToBeDirectParent="true" />
@@ -114,49 +57,43 @@
             <Pin Id="StN8hxDtGFONHywgJgSyml" Name="Result" Kind="OutputPin" />
             <Pin Id="HgKV3prcjoZNfagaP6OwMn" Name="Input 3" Kind="InputPin" />
           </Node>
-          <Overlay Id="GOHhEfdIoWfLWkrzsp05OW" Name="Out" Bounds="614,298,182,123" />
-          <Overlay Id="IjaM8xYHhv2NrtOGa9ggC1" Name="In" Bounds="226,298,335,123" />
-          <Overlay Id="J9wlS7JXUvfNGNN2TK5qej" Name="Configurations" Bounds="206,261,611,238" />
-          <Pad Id="AOMUTttIPaPMs2pxtRTH8E" Bounds="102,197,445,48" ShowValueBox="true" isIOBox="true" Value="3) Define your input and output OSC configurations. You can later choose from these in the Global Channel Browser (Ctrl+G)">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Amc98Qjnn6hNPWvS3JpLsl" Comment="Port" Bounds="306,362,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
+          <Overlay Id="GOHhEfdIoWfLWkrzsp05OW" Name="... and your OSC outs" Bounds="487,196,216,138">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="IjaM8xYHhv2NrtOGa9ggC1" Name="Then, configure your OSC ins..." Bounds="97,196,347,138">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="Amc98Qjnn6hNPWvS3JpLsl" Comment="Port" Bounds="189,275,35,15" ShowValueBox="true" isIOBox="true" Value="4446">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="UmqhNvVaczZLqNIGwGNxrs" Comment="" Bounds="506,362,35,15" ShowValueBox="true" isIOBox="true" Value="4447">
+          <Pad Id="UmqhNvVaczZLqNIGwGNxrs" Comment="" Bounds="389,275,35,15" ShowValueBox="true" isIOBox="true" Value="4447">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="N7tEHXlvVRWNBgfJElosmV" Comment="Name" Bounds="237,339,38,15" ShowValueBox="true" isIOBox="true" Value="MyIn1">
+          <Pad Id="N7tEHXlvVRWNBgfJElosmV" Comment="Name" Bounds="120,252,38,15" ShowValueBox="true" isIOBox="true" Value="MyIn1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="EutAAAuTMT9MXrueH19LyF" Comment="" Bounds="437,339,35,15" ShowValueBox="true" isIOBox="true" Value="MyIn2">
+          <Pad Id="EutAAAuTMT9MXrueH19LyF" Comment="" Bounds="320,252,35,15" ShowValueBox="true" isIOBox="true" Value="MyIn2">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Vg1zeZfxZfTP0v2i9dJQhV" Comment="Name" Bounds="637,339,57,15" ShowValueBox="true" isIOBox="true" Value="MyTarget">
+          <Pad Id="Vg1zeZfxZfTP0v2i9dJQhV" Comment="Name" Bounds="520,252,57,15" ShowValueBox="true" isIOBox="true" Value="MyTarget">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MkX4v5dMz3YN1aKMCUN2qe" Comment="Port" Bounds="688,362,35,15" ShowValueBox="true" isIOBox="true" Value="4447">
+          <Pad Id="MkX4v5dMz3YN1aKMCUN2qe" Comment="Port" Bounds="571,275,35,15" ShowValueBox="true" isIOBox="true" Value="4447">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="235,385,74,19" Id="PmUqlwERdYEPF2oaUO0zKt">
+          <Node Bounds="118,298,74,19" Id="PmUqlwERdYEPF2oaUO0zKt">
             <p:NodeReference LastCategoryFullName="IO.OSC.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCInConfig" />
@@ -167,7 +104,7 @@
             <Pin Id="V1aAzLar340PQLO5BfGBX2" Name="Port" Kind="InputPin" />
             <Pin Id="DMTiH6x4SZnQZYvo3eB6Ck" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="435,385,74,19" Id="IC5xhY7wnbsNhZmOdcfoOb">
+          <Node Bounds="318,298,74,19" Id="IC5xhY7wnbsNhZmOdcfoOb">
             <p:NodeReference LastCategoryFullName="IO.OSC.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCInConfig" />
@@ -178,7 +115,7 @@
             <Pin Id="Jpyan8sMoxtObxMs26uhMY" Name="Port" Kind="InputPin" />
             <Pin Id="TE8jSgBnCm2Lep2BrO82lD" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="635,385,82,19" Id="GGk3C5PxJ9OPT2Y3QbQuLL">
+          <Node Bounds="518,298,82,19" Id="GGk3C5PxJ9OPT2Y3QbQuLL">
             <p:NodeReference LastCategoryFullName="IO.OSC.Modules" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSCOutConfig" />
@@ -190,7 +127,7 @@
             <Pin Id="GV1mDv0kkf9PIIfpDjzu4A" Name="Maximum Bundle Size" Kind="InputPin" />
             <Pin Id="HtpPPjD4LDMMffTlHUv1qC" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Pad Id="BdBxq7JeCpVNbpXktqKiPO" Bounds="52,781,167,15" ShowValueBox="true" isIOBox="true" Value="HowTo Send OSC messages.vl">
+          <Pad Id="BdBxq7JeCpVNbpXktqKiPO" Bounds="110,1056,167,15" ShowValueBox="true" isIOBox="true" Value="HowTo Send OSC messages.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -199,7 +136,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JRz5TXMsaEuOLRPIyKQuci" Bounds="54,800,160,19" ShowValueBox="true" isIOBox="true" Value="sends /speed on 4446">
+          <Pad Id="JRz5TXMsaEuOLRPIyKQuci" Bounds="112,1075,160,19" ShowValueBox="true" isIOBox="true" Value="sends /speed on 4446">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -208,7 +145,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="575,659,82,19" Id="VoXK7NqZkXyO8tWmy8BwIF">
+          <Node Bounds="881,1019,82,19" Id="VoXK7NqZkXyO8tWmy8BwIF">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
@@ -219,12 +156,12 @@
             <Pin Id="LiJdpGOR2U7NbznY61cdgu" Name="Channel" Kind="OutputPin" />
             <Pin Id="QEgM6Byjdm7M76kFKNK88c" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="AW8GCuBQqmZLKvspAkyHh6" Comment="Path" Bounds="577,595,52,15" ShowValueBox="true" isIOBox="true" Value="position">
+          <Pad Id="AW8GCuBQqmZLKvspAkyHh6" Comment="" Bounds="883,955,52,15" ShowValueBox="true" isIOBox="true" Value="position">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="840,659,82,19" Id="KPiuskVYfPTPsWPLlSBj7e">
+          <Node Bounds="476,1019,82,19" Id="KPiuskVYfPTPsWPLlSBj7e">
             <p:NodeReference LastCategoryFullName="Reactive.ChannelHub" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="GlobalChannel" />
@@ -235,12 +172,12 @@
             <Pin Id="ADENtZgrWTUL7O2caZpdXH" Name="Channel" Kind="OutputPin" />
             <Pin Id="VpTCgbSY9qtPyonXrfRoCa" Name="Value" Kind="OutputPin" />
           </Node>
-          <Pad Id="Sxux9U8C9BgLs0Rqso8s6w" Comment="Path" Bounds="842,595,79,15" ShowValueBox="true" isIOBox="true" Value="positionOut">
+          <Pad Id="Sxux9U8C9BgLs0Rqso8s6w" Comment="" Bounds="478,955,71,15" ShowValueBox="true" isIOBox="true" Value="positionOut">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="917,624,205,19" Id="K0x1V4NxV9ePgdNDAD0MVg">
+          <Node Bounds="553,984,205,19" Id="K0x1V4NxV9ePgdNDAD0MVg">
             <p:NodeReference LastCategoryFullName="Animation.FrameBased" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Wanderer (2D)" />
@@ -261,12 +198,204 @@
             <Pin Id="RIjK13SedVyNNrU8kCpQsA" Name="Walk" Kind="InputPin" />
             <Pin Id="MHwRsy1cXJMMxtgZ6wq2DT" Name="Position" Kind="OutputPin" />
           </Node>
-          <Pad Id="UOBlUALCQ5TOBDk8MCEVZn" Bounds="654,704,35,28" ShowValueBox="true" isIOBox="true" Value="0, 0">
+          <Pad Id="UOBlUALCQ5TOBDk8MCEVZn" Bounds="960,1064,35,28" ShowValueBox="true" isIOBox="true" Value="0, 0">
             <p:TypeAnnotation LastCategoryFullName="2D" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Vector2" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="NNfy4yIELYkNCiDr8G1pod" Comment="" Bounds="919,704,35,28" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="NNfy4yIELYkNCiDr8G1pod" Comment="" Bounds="555,1064,35,28" ShowValueBox="true" isIOBox="true" />
+          <Overlay Id="MI03UZkZAzOLYPEpzsY8Wn" Name="See also" Bounds="766,240,413,164">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+          <Pad Id="FaExj9Gxc3TPdydQSnewcR" Bounds="779,339,360,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using overrides.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F9i4KyNt0DdNwtI3uoHdvI" Bounds="779,287,204,17" ShowValueBox="true" isIOBox="true" Value="HowTo Send OSC messages.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LcrJl4WkBFTL9s4rNNRf4Q" Bounds="779,365,388,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using property names.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="RsCQJ9AdCOgMIViGNyjwj5" Name="Notes" Bounds="766,79,555,131">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+          <Pad Id="LiAfFwvva0WMTRGIanbVak" Bounds="781,126,507,17" ShowValueBox="true" isIOBox="true" Value="* Defined OSC ins and outs will be available in a list within the Global Channel Browser (Ctrl+G)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Pq1cEPfLK7bNdU1vhKKr44" Bounds="598,1068,219,19" ShowValueBox="true" isIOBox="true" Value="&lt; Value sent out via OSC /position">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Px9Hu8t068nNpAhCSlWzYM" Bounds="1001,1068,215,19" ShowValueBox="true" isIOBox="true" Value="&lt; Value received via OSC /position">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IIGjgpuT98lNIcUqhRZZH6" Comment="" Bounds="214,1015,35,15" ShowValueBox="true" isIOBox="true" Value="0">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="Float32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Bw0fj7edi9iONsKrp3y0ge" Bounds="252,1013,157,19" ShowValueBox="true" isIOBox="true" Value="&lt; Value received via OSC">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="QmaJmk8fIozMLeLHGmkNCN" Bounds="779,313,204,17" ShowValueBox="true" isIOBox="true" Value="HowTo Receive OSC messages.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="KYHLLZxKZ92OQUzIDCIZM6" Name="First, add a reference to VL.IO.OSC" Bounds="96,80,607,80">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="AtmxiQRZzycP6tHI4DaEP7" Bounds="109,127,529,19" ShowValueBox="true" isIOBox="true" Value="https://thegraybook.vvvv.org/reference/libraries/referencing.html#referencing-libraries">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="TCEqNW7gDc8Pae450jnQSi" Name="Now, add an OSCModule node and connect your configuration" Bounds="97,432,355,133">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Overlay Id="D2lTrgTzlkhPBluqkThutM" Name="Next, add your Global Channels in the Global Channel Browser" Bounds="97,596,601,108">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="Ly6kLQJmZ45LYe5owdRfJI" Bounds="382,208,22,19" ShowValueBox="true" isIOBox="true" Value="*">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OmTnU1Q6fTdL2XT9sgKROb" Bounds="680,208,22,19" ShowValueBox="true" isIOBox="true" Value="*">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KFvFmXRagODPPpEhsIEzxo" Bounds="781,153,507,17" ShowValueBox="true" isIOBox="true" Value="** Your bindings are saved with your patch">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="PC3732dTxgRMMIawChS0H8" Name="Also add your bindings in the Global Channel Browser" Bounds="97,735,578,112">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="EJKECBzEDgHP33BGFIu5xo" Bounds="603,750,22,19" ShowValueBox="true" isIOBox="true" Value="**">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Overlay Id="TM5hFGo8YeBMoQyzOvnRO7" Name="You are now ready to use Global Channels to send and receive OSC!" Bounds="97,878,1155,262">
+            <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
+          </Overlay>
+          <Pad Id="T6pV2Apy8mhPMm1dPJwiUu" Bounds="153,802,258,19" ShowValueBox="true" isIOBox="true" Value="Link to explanation on how that is done?">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="B3TuVfBiwdkNoar3KYsU11" Bounds="159,662,258,19" ShowValueBox="true" isIOBox="true" Value="Link to explanation on how that is done?">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="G6HdZPnFFxsLZPxTFULEg4" Bounds="736,891,22,19" ShowValueBox="true" isIOBox="true" Value="**">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PkRENi6QFpiPigc534a5TN" Bounds="781,180,500,19" ShowValueBox="true" isIOBox="true" Value="*** Make sure that you saved your channels by hitting save button in Global Channel Browser">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FuoSGvJhaoGONaSCjjMrNi" Bounds="89,45,475,29" ShowValueBox="true" isIOBox="true" Value="Bind your OSC data to Global Channels in no time!">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="CPjqaGO113jPocorJ7hdE9" Name="Create" />
         <Patch Id="F4CiIuwbKLVQCMVruCdLWc" Name="Update" ParticipatingElements="GTj9PMhhRuQL3PqmakSxkg" />
@@ -274,7 +403,6 @@
           <Fragment Id="QnPcOd9JcelQYXBWyDr9LW" Patch="CPjqaGO113jPocorJ7hdE9" Enabled="true" />
           <Fragment Id="SfdQURNO3h0MgIRVlEPkmP" Patch="F4CiIuwbKLVQCMVruCdLWc" Enabled="true" />
         </ProcessDefinition>
-        <Link Id="HxgbfxO72JdLhX9aJSN1O4" Ids="JzEDMQ8aOK0N4v5RYUijZK,MpjaxZLS26dNVHreKCGIwf" />
         <Link Id="PD67XiY8s91LburoSKfFv8" Ids="SIdRjU51khSQCoXY3UQOso,RdhBSl7XiBkNd3tyVya2KE" />
         <Link Id="SnvRW1PFNYiNcXwUfxlRye" Ids="StN8hxDtGFONHywgJgSyml,UiEYLjRBEgPOcZW8mqg8X4" />
         <Link Id="NhQbb4l9cZkOpOyEozPPfY" Ids="N7tEHXlvVRWNBgfJElosmV,EuWQgVsRug4NYkVbC4l6qu" />
@@ -291,6 +419,7 @@
         <Link Id="GxAOqb9n9O6QH2bJ8V0aby" Ids="MHwRsy1cXJMMxtgZ6wq2DT,Jstm5eOToxEQX1uXP3p55r" />
         <Link Id="KaH45yHVjQMOE03jR1XFH6" Ids="QEgM6Byjdm7M76kFKNK88c,UOBlUALCQ5TOBDk8MCEVZn" />
         <Link Id="BeujRxbsxKuPdtSta19V2t" Ids="VpTCgbSY9qtPyonXrfRoCa,NNfy4yIELYkNCiDr8G1pod" />
+        <Link Id="ARneTHm74lDPPLg5fF0WcU" Ids="JzEDMQ8aOK0N4v5RYUijZK,IIGjgpuT98lNIcUqhRZZH6" />
       </Patch>
     </Node>
   </Patch>
