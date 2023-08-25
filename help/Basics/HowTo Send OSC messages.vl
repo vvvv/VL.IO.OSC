@@ -310,7 +310,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="C9UYL2JXM2vMGPHXTiUoEQ" Bounds="87,43,305,29" ShowValueBox="true" isIOBox="true" Value="Sending data with OSC is easy!">
+          <Pad Id="C9UYL2JXM2vMGPHXTiUoEQ" Bounds="87,44,305,29" ShowValueBox="true" isIOBox="true" Value="Sending data with OSC is easy!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>

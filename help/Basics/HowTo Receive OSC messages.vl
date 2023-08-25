@@ -252,7 +252,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Rlvl5HbddRVOGh6sjXAx3d" Bounds="87,43,305,29" ShowValueBox="true" isIOBox="true" Value="Receiving data with OSC is easy!">
+          <Pad Id="Rlvl5HbddRVOGh6sjXAx3d" Bounds="87,44,305,29" ShowValueBox="true" isIOBox="true" Value="Receiving data with OSC is easy!">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
