@@ -450,10 +450,10 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Overlay Id="MUMTfwHtLwzPNIyiDh214L" Name="See also" Bounds="503,1084,303,133">
+          <Overlay Id="GIRuWFkMmg2NnxJdj6tn8p" Name="See also" Bounds="503,1082,366,133">
             <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
           </Overlay>
-          <Pad Id="KwDtloHmSYzN6wyb6H0Wby" Bounds="516,1131,238,17" ShowValueBox="true" isIOBox="true" Value="..\Basics\HowTo Receive OSC messages.vl">
+          <Pad Id="TDT0kQ3hA1CQbwvi1NhsJh" Bounds="516,1182,238,17" ShowValueBox="true" isIOBox="true" Value="..\Basics\HowTo Receive OSC messages.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -463,7 +463,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="BLAz7q2y8W4QJfalFr3KUA" Bounds="516,1157,238,17" ShowValueBox="true" isIOBox="true" Value="..\Basics\HowTo Send OSC messages.vl">
+          <Pad Id="BJfmhif9OEONWjnXeWVUIs" Bounds="516,1156,238,17" ShowValueBox="true" isIOBox="true" Value="..\Basics\HowTo Send OSC messages.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -473,7 +473,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="S0zpEOfAP7MPSvEGbqd35w" Bounds="516,1183,267,17" ShowValueBox="true" isIOBox="true" Value="..\Basics\HowTo Bind OSC to a Global Channel.vl">
+          <Pad Id="Bic8KzCtZY9OGOtTlB0EF3" Bounds="516,1130,316,17" ShowValueBox="true" isIOBox="true" Value="HowTo Handle custom data types using property names.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="String" />
               <CategoryReference Kind="Category" Name="Primitive" />
