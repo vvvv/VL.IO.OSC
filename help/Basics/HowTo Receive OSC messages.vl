@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="KfH5x3FWu1zLVrHgrQoNOo" LanguageVersion="2023.5.3-0149-gc8990de6a0" Version="0.128">
-  <NugetDependency Id="P811pnl25s0MXPoACnvUg1" Location="VL.CoreLib" Version="2023.5.3-0149-gc8990de6a0" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="KfH5x3FWu1zLVrHgrQoNOo" LanguageVersion="2023.5.3-0157-gcbac65ecd1" Version="0.128">
+  <NugetDependency Id="P811pnl25s0MXPoACnvUg1" Location="VL.CoreLib" Version="2023.5.3-0157-gcbac65ecd1" />
   <Patch Id="Q3gKPUdjBJdOfHLi5AQGIy">
     <Canvas Id="KCPeAumC94tPyyjZ5QVp0K" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -222,39 +222,6 @@
               <Choice Kind="TypeFlag" Name="Float32" />
             </p:TypeAnnotation>
           </Pad>
-          <Overlay Id="C9dHmRqyNyOLo6pYO4nqnG" Name="See also" Bounds="552,261,413,134">
-            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
-          </Overlay>
-          <Pad Id="RY74QE14FhjLgKbsXCTovQ" Bounds="565,333,360,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using overrides.vl">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">8</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Lr7mOkSvnlNPg3YL9aX5BM" Bounds="565,308,204,17" ShowValueBox="true" isIOBox="true" Value="HowTo Send OSC messages.vl">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">8</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="Fmg48P7TqrCLehQvGkD27t" Bounds="565,358,388,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using property names.vl">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="ImmutableTypeFlag" Name="String" />
-              <CategoryReference Kind="Category" Name="Primitive" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">8</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
           <Overlay Id="UJ3f6ya5VFnP2Mq0egmGBQ" Name="Notes" Bounds="552,80,413,148">
             <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
           </Overlay>
@@ -380,6 +347,49 @@
           </Node>
           <Pad Id="O3IJtldust2Ma1xeaBZG1r" Comment="On Data" Bounds="126,1514,35,35" ShowValueBox="true" isIOBox="true" />
           <ControlPoint Id="GbVD0heExaSMb15lgoHN5r" Bounds="141,1099" />
+          <Overlay Id="BY3VH8ccVFcMQcnNq6lwd5" Name="See also" Bounds="552,258,421,167">
+            <p:ColorIndex p:Type="Int32">0</p:ColorIndex>
+          </Overlay>
+          <Pad Id="QestjksYxX1MpKZBcgC1wq" Bounds="565,361,360,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using overrides.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F5mgDWLcV2NM0ziSoLvFLk" Bounds="565,305,204,17" ShowValueBox="true" isIOBox="true" Value="HowTo Send OSC messages.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="O0IKZUel7o7OtS58FNW2h0" Bounds="565,389,388,17" ShowValueBox="true" isIOBox="true" Value="..\Advanced\HowTo Handle custom data types using property names.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JmaMNi9fRRVNMim8kJZO1r" Bounds="565,333,220,17" ShowValueBox="true" isIOBox="true" Value="HowTo Bind OSC to a Global Channel.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="ImmutableTypeFlag" Name="String" />
+              <CategoryReference Kind="Category" Name="Primitive" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">8</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="NoVrrVjHFjdPjhOEvltXfb" Name="Create" />
         <Patch Id="HbuLCCrB1UtMag7fZgE4Dh" Name="Update" />

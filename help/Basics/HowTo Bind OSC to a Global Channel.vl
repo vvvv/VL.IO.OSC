@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="TqqBGEcjoa7MEe48YvyayR" LanguageVersion="2023.5.3-0152-g5b4be7a44f" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0152-g5b4be7a44f" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="TqqBGEcjoa7MEe48YvyayR" LanguageVersion="2023.5.3-0157-gcbac65ecd1" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0157-gcbac65ecd1" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -45,6 +45,7 @@
             </Pin>
             <Pin Id="Ntn6wwfvdu9PPYsab4xuH9" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UiEYLjRBEgPOcZW8mqg8X4" Name="Configuration" Kind="InputPin" />
+            <Pin Id="Pj3yKKhOAWbOMuQ1PMKahd" Name="Output" Kind="OutputPin" />
           </Node>
           <Node Bounds="118,374,405,19" Id="GTj9PMhhRuQL3PqmakSxkg">
             <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
