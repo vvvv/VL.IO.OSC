@@ -155,7 +155,7 @@
           <Overlay Id="BAwnpHTqgU3PTbNiqen8Ly" Name="Configure your OSCClient" Bounds="95,80,452,336">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
-          <Overlay Id="Ri64nRvSKyEOuzWEoR4K5l" Name="And send them as a bundle!" Bounds="95,447,282,214">
+          <Overlay Id="Ri64nRvSKyEOuzWEoR4K5l" Name="Now send your messages!" Bounds="95,447,282,214">
             <p:ColorIndex p:Type="Int32">10</p:ColorIndex>
           </Overlay>
           <Pad Id="LJb8vJjZfwqPgvOeEgKZQ6" Bounds="89,44,471,29" ShowValueBox="true" isIOBox="true" Value="This is how you send messages to multiple servers">
