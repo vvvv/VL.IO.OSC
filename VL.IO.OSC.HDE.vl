@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="D8hgAgQ4xJaMafGZZad20E" LanguageVersion="2023.5.3-0133-ge9c46603f4" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="D8hgAgQ4xJaMafGZZad20E" LanguageVersion="2023.5.3-0158-g87e4ee264c" Version="0.128">
   <NugetDependency Id="I8QQd3d6IwrPHKZpya237S" Location="VL.CoreLib" Version="2023.5.3-0133-ge9c46603f4" />
   <Patch Id="NFmLzJZSFpnQJ1Wsryp0ze">
     <Canvas Id="Sy6K0E9lhbSPdxrL0FnkFq" DefaultCategory="IO.OSC.Modules" CanvasType="FullCategory">
@@ -441,6 +441,7 @@
                   </p:NodeReference>
                   <Pin Id="IT1XICWvdj4P6LFGa7ymWt" Name="Input" Kind="StateInputPin" />
                   <Pin Id="UN5iSiM0TKzMOoIFs0Q1HR" Name="Key" Kind="InputPin" />
+                  <Pin Id="OK0d2jj3EAnN0wB49G3PKr" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="VpeCXkFp02dOfNs35zmkS5" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="608,993,42,19" Id="GeRSUwS4qylPfRtiftR0vy">
@@ -479,6 +480,7 @@
                   </p:NodeReference>
                   <Pin Id="MJlA9EK319EQCpmOhQqdJt" Name="Input" Kind="StateInputPin" />
                   <Pin Id="EeuEqojCLOQNI3H3d5s5hX" Name="Key" Kind="InputPin" />
+                  <Pin Id="PXtuMxhSM8tQauZdWkrsiT" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="Vt9sKlMIDs2L76GK8M8RYY" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Pad Id="KlnlnsIxVh3NudDmh0UbL0" Comment="Allow Both" Bounds="704,738,35,35" ShowValueBox="true" isIOBox="true" Value="False">
@@ -509,11 +511,13 @@
               <ControlPoint Id="MVz80Ii8j74PUa3pkrynX3" Bounds="243,236" Name="Binding Type" Alignment="Top" />
               <ControlPoint Id="Mawa4uSoboNL3wLC1xrwRs" Bounds="491,312" Name="Address" Alignment="Bottom" />
               <ControlPoint Id="AkUk6zb2i4QNJj5TA9vU3t" Bounds="491,236" Name="Address" Alignment="Top" />
+              <ControlPoint Id="UFVxdM0nBpUMZOVVSW2jAM" Bounds="383,312" Name="Config Name" Alignment="Bottom" />
+              <ControlPoint Id="JpjUhrv07hxLQVMHXuXvrq" Bounds="383,236" Name="Config Name" Alignment="Top" />
               <Patch Id="CHa1v6ynUEbMOJdkZTvirx" ManuallySortedPins="true">
                 <Patch Id="EiXkv9VBs6oQD6HOwPAvBB" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="D40FEkoGerXOLC1XOaPzy4" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="164,254,330,26" Id="T3XVuBsR7NcNm5F3F1luKo">
-                  <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCBinding (Runtime)" LastDependency="VL.IO.OSC.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OSCBinding (Runtime)" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -525,8 +529,6 @@
                   <Pin Id="E37emrhHfcPPk8jvoJ5G8v" Name="Address" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="UFVxdM0nBpUMZOVVSW2jAM" Bounds="383,312" Name="Config Name" Alignment="Bottom" />
-              <ControlPoint Id="JpjUhrv07hxLQVMHXuXvrq" Bounds="383,236" Name="Config Name" Alignment="Top" />
             </Node>
             <Node Bounds="153,93,65,19" Id="Q0OOroNwIhTN6MYY1Kvzow">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
@@ -569,6 +571,10 @@
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="E9bbeMP5jQ2O18TTVIQz4m" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="BPCEXnPFUBPQaIiDUvHZxx" Bounds="1081,652" Alignment="Bottom" />
+              <ControlPoint Id="SLTN2AjKeMCL5rENrId9g6" Bounds="1081,553" Alignment="Top" />
+              <ControlPoint Id="AaAZTZr7tbWP5km35wAufe" Bounds="1101,652" Alignment="Bottom" />
+              <ControlPoint Id="RIDHo5SOZwtNVdPPqICwUD" Bounds="1102,553" Alignment="Top" />
               <Patch Id="Opo6x5WJcbbM02mn5vtvi0" ManuallySortedPins="true">
                 <Node Bounds="1039,570,53,26" Id="U8oGPn7kG0kNguA5wH6DyD">
                   <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
@@ -578,10 +584,11 @@
                   </p:NodeReference>
                   <Pin Id="IjGU4c3dTtMM03Is0yMHFW" Name="Input" Kind="StateInputPin" />
                   <Pin Id="I9v2muH3VzoLrOqwB3au3W" Name="Key" Kind="InputPin" />
+                  <Pin Id="G2PQ0XVx5arMApz5JDsedJ" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="JfEeoiUzAs0PdU7apNBX7e" Name="Item" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1039,612,65,26" Id="JFxRgZks4EqNhqwEJDlejB">
-                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCInConfig" LastDependency="OSCModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCInConfig" LastDependency="VL.IO.OSC.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OSCInConfig" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -595,10 +602,6 @@
                 <Patch Id="K0sbU2XxViKLdD7To1z44K" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="M5wRm56uhsRN8bar5mJkta" Name="Then" ManuallySortedPins="true" />
               </Patch>
-              <ControlPoint Id="BPCEXnPFUBPQaIiDUvHZxx" Bounds="1081,652" Alignment="Bottom" />
-              <ControlPoint Id="SLTN2AjKeMCL5rENrId9g6" Bounds="1081,553" Alignment="Top" />
-              <ControlPoint Id="AaAZTZr7tbWP5km35wAufe" Bounds="1101,652" Alignment="Bottom" />
-              <ControlPoint Id="RIDHo5SOZwtNVdPPqICwUD" Bounds="1102,553" Alignment="Top" />
             </Node>
             <Node Bounds="1301,547,113,111" Id="Sr83UjAUrAjOXOa8JDDPbz">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
@@ -607,6 +610,12 @@
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="CEXgiyvmIROLKVydsSbGeq" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="StohKsuNGRgONESIv5wvTP" Bounds="1355,652" Alignment="Bottom" />
+              <ControlPoint Id="OuBwMuBuac9Owro3GvNDgJ" Bounds="1355,553" Alignment="Top" />
+              <ControlPoint Id="GaKyZ3g2HnHO0Em49hGSgo" Bounds="1375,652" Alignment="Bottom" />
+              <ControlPoint Id="IPBTT7gs191Mq5rigdc1Po" Bounds="1375,553" Alignment="Top" />
+              <ControlPoint Id="Kag2hgZcfw1Pc2iYoXmM7u" Bounds="1395,652" Alignment="Bottom" />
+              <ControlPoint Id="HuF01UUJauGPg3aUaB4SQy" Bounds="1395,553" Alignment="Top" />
               <Patch Id="VeNJ8axIE2PLh52YebPMoh" ManuallySortedPins="true">
                 <Node Bounds="1313,570,53,26" Id="UaeNTd8DXGzLW0JOlpxrJt">
                   <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
@@ -616,10 +625,11 @@
                   </p:NodeReference>
                   <Pin Id="Tjk2sFiGExKP2PclYB9DC3" Name="Input" Kind="StateInputPin" />
                   <Pin Id="JvpxIMHFP45NZRDDzybNmv" Name="Key" Kind="InputPin" />
+                  <Pin Id="N8RItt8slsKPDwFieLIH1B" Name="Output" Kind="OutputPin" IsHidden="true" />
                   <Pin Id="PoahHmxGj7YO6DIlsX6664" Name="Item" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1313,612,85,26" Id="GhUifECwHBRP8iYRvnZwBz">
-                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig" LastDependency="OSCModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig" LastDependency="VL.IO.OSC.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="OSCOutConfig" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Split" />
@@ -634,16 +644,10 @@
                 <Patch Id="HMZ3PzIrYUEPnEHFhJf2sR" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="PdHHQdIoClrPBDzyL7Pz6d" Name="Then" ManuallySortedPins="true" />
               </Patch>
-              <ControlPoint Id="StohKsuNGRgONESIv5wvTP" Bounds="1355,652" Alignment="Bottom" />
-              <ControlPoint Id="OuBwMuBuac9Owro3GvNDgJ" Bounds="1355,553" Alignment="Top" />
-              <ControlPoint Id="GaKyZ3g2HnHO0Em49hGSgo" Bounds="1375,652" Alignment="Bottom" />
-              <ControlPoint Id="IPBTT7gs191Mq5rigdc1Po" Bounds="1375,553" Alignment="Top" />
-              <ControlPoint Id="Kag2hgZcfw1Pc2iYoXmM7u" Bounds="1395,652" Alignment="Bottom" />
-              <ControlPoint Id="HuF01UUJauGPg3aUaB4SQy" Bounds="1395,553" Alignment="Top" />
             </Node>
             <Pad Id="G7bLnSGp8FENIIVFOfNGvN" SlotId="MXpZNmEu2flPY8R1kosL79" Bounds="383,349" Value="" />
             <Node Bounds="1249,337,68,26" Id="UX24i3o1kRlPXkcAtm1jMe">
-              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OSCModule" />
                 <Choice Kind="OperationCallFlag" Name="OutConfigs" />
@@ -653,7 +657,7 @@
               <Pin Id="RaiHot4OPM0N7enZO3QXm9" Name="Out Configs" Kind="OutputPin" />
             </Node>
             <Node Bounds="986,337,60,26" Id="BbsNRYfyfG7OcbLbF6BnyR">
-              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="OSCModule" />
                 <Choice Kind="OperationCallFlag" Name="InConfigs" />
@@ -669,6 +673,7 @@
                 <Choice Kind="OperationCallFlag" Name="Keys" />
               </p:NodeReference>
               <Pin Id="KXi8Gg3l6TAOgeMwbnm20m" Name="Input" Kind="StateInputPin" />
+              <Pin Id="PQ3YSxIiPFDOVR75oCQD4k" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="Ttxe1eg1ONMOxFAtrM0BaP" Name="Keys" Kind="OutputPin" />
             </Node>
             <Node Bounds="1238,432,53,26" Id="SA9rhnHn5qmMx2o77xP9m2">
@@ -678,6 +683,7 @@
                 <Choice Kind="OperationCallFlag" Name="Keys" />
               </p:NodeReference>
               <Pin Id="L1pF3X6iXUiQW7O3hOybBa" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NKzprF4TLbGOf8edtzSINR" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="D2tDpqyOjW0M91o5BUtQKN" Name="Keys" Kind="OutputPin" />
             </Node>
             <Node Bounds="1027,506,37,19" Id="NfuDUGPrrVzMW2XQJ89e1Y">
@@ -697,6 +703,7 @@
               </p:NodeReference>
               <Pin Id="NrKO8svDXOyNpI4kHKT7Vf" Name="Input" Kind="StateInputPin" />
               <Pin Id="Ut1R8XrOr0hN43TprpTaSw" Name="Key" Kind="InputPin" />
+              <Pin Id="HIiwGHmNNzbN847agQlz22" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="HYuFTGpTudYNEdSmdXYPn4" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="1301,506,37,19" Id="GaxDfZvAiwOQAYoHXNBebf">
@@ -716,6 +723,7 @@
               </p:NodeReference>
               <Pin Id="EEDLjJQMskbP0ddUNhTI4L" Name="Input" Kind="StateInputPin" />
               <Pin Id="SKYbvVGKAv8QP1FC9XZBlN" Name="Key" Kind="InputPin" />
+              <Pin Id="JOmbj7OxM9aNekIDDwZWJ2" Name="Output" Kind="OutputPin" IsHidden="true" />
               <Pin Id="MrbF5YhFkMtNthYow6SF1r" Name="Result" Kind="OutputPin" />
             </Node>
             <Pad Id="BUjgOkaEv14QOQTzILBsPX" SlotId="KsQPn0BoCbqP75lbeet211" Bounds="838,1924" Value="None" />
@@ -1138,8 +1146,9 @@
                 <Patch Id="EHU9TwdGGy1MzDkjPH34Bf" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="DALGeLjR7noNEjynXoyhxQ" Name="Then" ManuallySortedPins="true" />
                 <Node Bounds="203,716,95,26" Id="Sx3riKCvmuqPfHoO6x39lY">
-                  <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
+                  <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCBinding (Runtime)" LastDependency="VL.IO.OSC.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="ClassType" Name="OSCBinding (Runtime)" NeedsToBeDirectParent="true" />
                     <Choice Kind="OperationCallFlag" Name="Model" />
                   </p:NodeReference>
                   <Pin Id="STJ2bJZDQYbMr73x3o3pAf" Name="Input" Kind="StateInputPin" />
@@ -1159,8 +1168,9 @@
               </Patch>
             </Node>
             <Node Bounds="340,560,75,26" Id="LkTlPJjX90gNzjtx8ESrck">
-              <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCModule" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="OSCModule" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="ModelStream" />
               </p:NodeReference>
               <Pin Id="FDToyLrGAG5MElLRTvLY4S" Name="Input" Kind="StateInputPin" />
@@ -1212,8 +1222,9 @@
             </Node>
             <ControlPoint Id="Mpj9VeG9HsTLmyfZ166dR1" Bounds="1200,740" />
             <Node Bounds="1198,811,95,26" Id="CLLLqq8gaN2LQZXSZ09x9S">
-              <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBinding" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCBinding (Runtime)" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="OSCBinding (Runtime)" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="Model" />
               </p:NodeReference>
               <Pin Id="OOemvTqiySsO7RbUA8Udbb" Name="Input" Kind="StateInputPin" />
@@ -1239,8 +1250,9 @@
               <Pin Id="EQyqjxhJnucLf05tWVbM9l" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="1059,790,75,26" Id="CiaPHMOKcGSOZo6OxlWeJm">
-              <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCModule" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="ClassType" Name="OSCModule" NeedsToBeDirectParent="true" />
                 <Choice Kind="OperationCallFlag" Name="ModelStream" />
               </p:NodeReference>
               <Pin Id="Bizyt6NubKTNZLUx5l2HD2" Name="Input" Kind="StateInputPin" />
@@ -1271,7 +1283,7 @@
               <Pin Id="Axqs3aecVatMFs38jfxb69" Name="Output" Kind="StateOutputPin" />
             </Node>
             <Node Bounds="496,682,243,26" Id="FFrdiizLTqyNPmrJQmTNNj">
-              <p:NodeReference LastCategoryFullName="IO.Midi.Modules.OSCBindingModel" LastDependency="OSCModule.vl">
+              <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCBinding" LastDependency="VL.IO.OSC.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="RecordType" Name="OSCBinding" />
                 <Choice Kind="OperationCallFlag" Name="Create" />
