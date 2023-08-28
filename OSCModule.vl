@@ -1763,7 +1763,7 @@
           <Patch Id="Mfh8IS5w4rwLU1iM1I7BPY">
             <Canvas Id="Jpc38sI2nkkNyHpKRiimJd" CanvasType="Group">
               <ControlPoint Id="MXx7yxDS9kWL9b7OCzKwTd" Bounds="570,530" />
-              <Pad Id="AXdRmDLGyzIOh8zNhXMzfV" Comment="Description" Bounds="569,277,131,49" ShowValueBox="true" isIOBox="true" Value="{0} {2}&#xD;&#xA;configuration: {1}">
+              <Pad Id="AXdRmDLGyzIOh8zNhXMzfV" Comment="Description" Bounds="571,268,131,57" ShowValueBox="true" isIOBox="true" Value="{0} &#xD;&#xA;{2}&#xD;&#xA;&#xD;&#xA;{1}">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="String" />
                 </p:TypeAnnotation>
