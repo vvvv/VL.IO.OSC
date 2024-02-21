@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2023.5.3-0158-g87e4ee264c" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2024.6.0-0166-gf4293d3464" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2023.5.3-0158-g87e4ee264c" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules" CanvasType="FullCategory">
@@ -782,7 +782,7 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="LUmJVUk1MBCMwmsLlvlcC1" Bounds="1049,-96" />
+            <ControlPoint Id="LUmJVUk1MBCMwmsLlvlcC1" Bounds="984,-152" />
             <Pad Id="SWbT0bgpMeCNqjnN8PFkzC" SlotId="MazKDnzF2SqNVNd5jkB63w" Bounds="1600,511" />
             <Node Bounds="1598,541,41,26" Id="L7n3cTzchaEQL9mOAVCmJl">
               <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -802,6 +802,8 @@
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
               </p:NodeReference>
               <Pin Id="PjYiqIUThO1NiPgcdvNiOq" Name="Condition" Kind="InputPin" />
+              <ControlPoint Id="EOgKg90VlXxML9DuIL01n5" Bounds="2291,1033" Alignment="Top" />
+              <ControlPoint Id="SBRGqsJXuHDLPsSMSRtyC8" Bounds="2275,1124" Alignment="Bottom" />
               <Patch Id="MSdlrQq1z2oLCfSyRbWtEt" ManuallySortedPins="true">
                 <Patch Id="MW0Y5RHmNoFQHuON2L4GQQ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="VwHISWyZbbzOiUez7EoEsN" Name="Then" ManuallySortedPins="true" />
@@ -814,7 +816,7 @@
                   <Pin Id="RRaSwIdRKHhL2dWgxxD2Ab" Name="Warning" Kind="InputPin" DefaultValue="Multiple OSC Receivers configured on the same port." />
                   <Pin Id="P4TyFwcY2EwPgAwRzRNIKo" Name="Why" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Qt9lnN3JuPqPIqxxI1LJDc" Name="How" Kind="InputPin" IsHidden="true" />
-                  <Pin Id="VKq9IN6Ai2nPNZGNqvgv6Y" Name="Ignore" Kind="InputPin" IsHidden="true" />
+                  <Pin Id="Du5lVVBpxv5LA3tdi4m0CL" Name="Severity" Kind="InputPin" IsHidden="true" />
                   <Pin Id="Eze2aFT5wmQMQLAy5OVTrJ" Name="Depth" Kind="InputPin" />
                   <Pin Id="PyuTJzTaGzQPghUegeKTqM" Name="WARN" Kind="InputPin" DefaultValue="True" />
                 </Node>
@@ -832,8 +834,6 @@
                   <Pin Id="OfTPHCjdj7tM7ypfcawATf" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="EOgKg90VlXxML9DuIL01n5" Bounds="2291,1033" Alignment="Top" />
-              <ControlPoint Id="SBRGqsJXuHDLPsSMSRtyC8" Bounds="2275,1124" Alignment="Bottom" />
             </Node>
             <Pad Id="LTWMvJbb2UZQVdDyqtb5nV" SlotId="H2uV9wRcvbXOJwB2u022HU" Bounds="2291,965" />
             <Node Bounds="2237,993,27,19" Id="A2iCzLZO79bO5D7HnxLeDa">
@@ -851,6 +851,15 @@
                 <CategoryReference Kind="Category" Name="Primitive" />
               </p:TypeAnnotation>
             </Pad>
+            <Node Bounds="1024,-104,106,19" Id="GXKNKcPsPtPOvESn2Qd2LR">
+              <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="EnsureValidChannel" />
+              </p:NodeReference>
+              <Pin Id="CaNkN69kY2lQN9UTY9tk3h" Name="Node Context" Kind="InputPin" IsHidden="true" />
+              <Pin Id="UFK9OAHG9EYLealqh1UWk7" Name="Input" Kind="InputPin" />
+              <Pin Id="Gq7ETfEWCsoPkMnsfACrjr" Name="Output" Kind="OutputPin" />
+            </Node>
           </Canvas>
           <ProcessDefinition Id="DuWgcBdZY90M8OLmaiSHIj" HasStateOut="true">
             <Fragment Id="AXDFRu7NH9WNsH1wmdRFRy" Patch="U6246tgGwP9LeJpIERYA7z" Enabled="true" />
@@ -1075,7 +1084,6 @@
           <Link Id="P6aSTigHIQCL2HO3zvdKzh" Ids="OIH1DTIT8CMMtU7Kt3K4Kc,RKw4EBP2i0GPU6GGcHKXIc" />
           <Link Id="RCML1VpkMSoLAOhy6nExyv" Ids="D35Dvd1452dPJazcBVgsSa,NR0nkmzKO3dPrLB8oNgjjN" />
           <Link Id="Vl4unCooiQbMggt6fsisuv" Ids="Mtrh0IEvEpDNh0TXQKEAch,LUmJVUk1MBCMwmsLlvlcC1" IsHidden="true" />
-          <Link Id="Jaw4fDb5djWL4Msf5wdK7z" Ids="LUmJVUk1MBCMwmsLlvlcC1,TtuSHYmVITUNYfABqzrSyo" />
           <Link Id="RM3XTiCPwosMtLN15iHi0s" Ids="EQvZteAMEXKOglBZ7FtHdi,NDndTB7Ipx6LPmUuo2mVr6" />
           <Link Id="NFo8na2e3nHQVgNI8Ue3ca" Ids="OJ9VKljNOo8N128pcSBu2q,I3CTANkdRwtO8MoLceyxps" />
           <Slot Id="MazKDnzF2SqNVNd5jkB63w" Name="Used Ports">
@@ -1116,6 +1124,8 @@
           <Link Id="AwUtQL5brXwMSwkwB9peFF" Ids="LTWMvJbb2UZQVdDyqtb5nV,EOgKg90VlXxML9DuIL01n5" />
           <Link Id="GUOZ3Ceg7CAObkTAKnKGPx" Ids="CTtaygoPEsIPyjhEV45thI,Orh6OR630doNc2O05UoFvg" />
           <Link Id="Be0aQjuX20WMS9Vj1k0QH4" Ids="MtpOLwCmxUBLuTu78mOXFy,ELAXF1Da0gxQEiC5Z9pDgG" />
+          <Link Id="UMMnkxb956sMwrFmHGKDqu" Ids="LUmJVUk1MBCMwmsLlvlcC1,UFK9OAHG9EYLealqh1UWk7" />
+          <Link Id="Ia2PBPp9EG7Mog8s45sr7H" Ids="Gq7ETfEWCsoPkMnsfACrjr,TtuSHYmVITUNYfABqzrSyo" />
         </Patch>
       </Node>
       <!--
@@ -1452,7 +1462,7 @@
                     <Pin Id="SV7ZArn90cCL79Qu1QU7zw" Name="Warning" Kind="InputPin" />
                     <Pin Id="DZjk7T4hEu8NGMm4uXuoJz" Name="Why" Kind="InputPin" IsHidden="true" />
                     <Pin Id="BXAP5PvsrExOOVJq5sBkr9" Name="How" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="MUat9ZaVTFnO54WUHj70LL" Name="Ignore" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="C5zKtpPzx6BMHij3TNgOvc" Name="Severity" Kind="InputPin" IsHidden="true" />
                     <Pin Id="HYFcyzTPblROBuynDZyXkI" Name="Depth" Kind="InputPin" />
                     <Pin Id="JhTXhIx7TMXPehZxsAD8Hd" Name="WARN" Kind="InputPin" DefaultValue="True" />
                   </Node>
@@ -1611,7 +1621,7 @@
                     <Pin Id="P0hbusFGJ75LuLeKqFhoyT" Name="Warning" Kind="InputPin" />
                     <Pin Id="RPypAhoOwAdOUItrYUPGp7" Name="Why" Kind="InputPin" IsHidden="true" />
                     <Pin Id="Mn3DWIboJHHPCmF3vC5Siv" Name="How" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="IWKJEBX23Z9QTTB6rwid1V" Name="Ignore" Kind="InputPin" IsHidden="true" />
+                    <Pin Id="HhqIyh80X7hNFLqfOq1VHf" Name="Severity" Kind="InputPin" IsHidden="true" />
                     <Pin Id="SauQancQVIqNwXXmVyT4N8" Name="Depth" Kind="InputPin" />
                     <Pin Id="OKoaXQY1mlkOrd4qPtKTPS" Name="WARN" Kind="InputPin" DefaultValue="True" />
                   </Node>
@@ -2079,6 +2089,7 @@
                     <Pin Id="AfIGaC1WIucOmWvVxC0uBG" Name="Key" Kind="InputPin" />
                     <Pin Id="GBgPkYdnlnoPlqke7nN2y8" Name="Type Of Values" Kind="InputPin" />
                     <Pin Id="RZmynfrH6IaMaS6n1k3dYz" Name="Result" Kind="OutputPin" />
+                    <Pin Id="Q6vgUqNbjxlLnRRfV7WIqP" Name="Got Created" Kind="OutputPin" />
                   </Node>
                   <ControlPoint Id="OYOJIO9QdoSLLHWmp81P7L" Bounds="1027,397" />
                   <Link Id="UnTNrKDpOAkO59cIh0Ka9H" Ids="FLSFFdTDyRjQI0NOrofKfA,OYOJIO9QdoSLLHWmp81P7L" IsHidden="true" />
