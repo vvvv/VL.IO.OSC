@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2024.6.0-0244-ga4b76baedd" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.0-0244-ga4b76baedd" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2024.6.3" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.3" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules.Experimental" CanvasType="FullCategory">
       <!--
@@ -151,7 +151,7 @@
                   <Pin Id="BwGYbHr2HBMLSjhpgTPStO" Name="Module" Kind="InputPin" />
                   <Pin Id="O15plamjs48O90JwipIFU8" Name="Model" Kind="InputPin" />
                   <Pin Id="OHcYBIsTvhoPVeyqwlg20P" Name="Type Of Values If Channel Is New" Kind="InputPin" />
-                  <Pin Id="P1XZcq8sVBdOyt3w8P587C" Name="Channel" Kind="OutputPin" />
+                  <Pin Id="FYkbxm5cIapOIWirFtNEAw" Name="Channel" Kind="OutputPin" />
                   <Pin Id="JN8a13flR9WPvKIC8lWSdk" Name="Binding" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -232,6 +232,7 @@
                 </Node>
                 <Patch Id="D12ciuQAPeBL2EOkyntoGU" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Nb5w7LnaFuOQTL9stXL7BR" Name="Update" ManuallySortedPins="true" />
+                <Patch Id="UQj0pbKUKNgNvtz4TDUPeZ" Name="Dispose" />
               </Patch>
               <Pin Id="LGy6BEYVjNFPpWNkpKcA4Z" Name="Node Context" Kind="InputPin" IsHidden="true" />
               <Pin Id="MSHtztdfoAwPAaNAQO27H2" Name="At Least Run Once" Kind="InputPin" />
@@ -445,7 +446,7 @@
                 <Patch Id="LXjOfSRsZj8NeOSrYFxKU6" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="DGO2lfVLKPpPJVyCdLbXww" Name="Update" ManuallySortedPins="true" />
                 <Patch Id="P6eNVHhvPGnN37IlD8X01M" Name="Dispose" ManuallySortedPins="true" />
-                <Node Bounds="1835,714,104,26" Id="Baa5jj9ECPGLZ9SnoEXhAC">
+                <Node Bounds="1835,714,105,26" Id="Baa5jj9ECPGLZ9SnoEXhAC">
                   <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig" LastDependency="OSCModule.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="RecordType" Name="OSCOutConfig" NeedsToBeDirectParent="true" />
@@ -457,6 +458,7 @@
                   <Pin Id="DXY25ITljWfPZ3s7zM6h5w" Name="Server IP" Kind="OutputPin" />
                   <Pin Id="GuXrfnvHD2NN90MBMMRlis" Name="Port" Kind="OutputPin" />
                   <Pin Id="LZSEpRhXi22P4ZfGXjlUor" Name="Maximum Bundle Size" Kind="OutputPin" />
+                  <Pin Id="TNakN4ehvWnPyLplgBzWkM" Name="Send Bundles" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="2011,762,104,26" Id="H1cYTbalcYoLO6JMI2bFv8">
                   <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig (Runtime)" LastDependency="OSCModule.vl">
@@ -469,6 +471,7 @@
                   <Pin Id="NCCnAm9lz6IQYEv1Tzuedz" Name="Port" Kind="InputPin" />
                   <Pin Id="NqWHxviQZaeMxtqAaz7QS8" Name="Maximum Bundle Size" Kind="InputPin" />
                   <Pin Id="EQvZteAMEXKOglBZ7FtHdi" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="OlwUyFw7L6LQGeE56p6Flf" Name="Send Bundles" Kind="InputPin" />
                 </Node>
                 <Node Bounds="1963,804,53,26" Id="FgGQQ6x4cHXLNS0SzjuJRz">
                   <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
@@ -1116,6 +1119,7 @@
           <Link Id="Be0aQjuX20WMS9Vj1k0QH4" Ids="MtpOLwCmxUBLuTu78mOXFy,ELAXF1Da0gxQEiC5Z9pDgG" />
           <Link Id="UMMnkxb956sMwrFmHGKDqu" Ids="LUmJVUk1MBCMwmsLlvlcC1,UFK9OAHG9EYLealqh1UWk7" />
           <Link Id="Ia2PBPp9EG7Mog8s45sr7H" Ids="Gq7ETfEWCsoPkMnsfACrjr,TtuSHYmVITUNYfABqzrSyo" />
+          <Link Id="VWhmagppOymPlvzYir4o1y" Ids="TNakN4ehvWnPyLplgBzWkM,OlwUyFw7L6LQGeE56p6Flf" />
         </Patch>
       </Node>
       <!--
@@ -1278,6 +1282,9 @@
             <ControlPoint Id="SCdiGi22ujoLIDP96d7rn6" Bounds="218,139" />
             <Pad Id="OK6tv3ogLNWN84NBSTk37P" SlotId="N9a6tdhDzDpMPUzo7qFQsL" Bounds="218,184" />
             <ControlPoint Id="REunZMwk4V1NV4Q4e5P8GD" Bounds="265,231" />
+            <Pad Id="M0KVCJMYKuhMAP1eSgLwfj" SlotId="MqJPrWipsuhMwuqOEgfzL4" Bounds="1296,177" />
+            <ControlPoint Id="OasamAllQiqM2JTkKAIqLV" Bounds="1296,147" />
+            <ControlPoint Id="Lim7dO0E9duQdDUBUpBVEi" Bounds="1296,207" />
           </Canvas>
           <ProcessDefinition Id="NtDeIiIFhbmNEuODoaB76i" HasStateOut="true">
             <Fragment Id="IHrc2G13geuNy1axvzYtiw" Patch="FUHq5VvzF2nOGRZRVUqeSm" Enabled="true" />
@@ -1316,6 +1323,7 @@
             <Pin Id="IOVZp3YRWhYQBUYNEBUpeO" Name="Server IP" Kind="OutputPin" />
             <Pin Id="SiSgbQdFfvHPSo6yZjLQdf" Name="Port" Kind="OutputPin" />
             <Pin Id="PpVB4D5nTviPOPw7opQj6R" Name="Maximum Bundle Size" Kind="OutputPin" />
+            <Pin Id="AoqoFT2tSE3NyeZMeizvhk" Name="Send Bundles" Kind="OutputPin" />
           </Patch>
           <Patch Id="UdGQCFk9UsUPZYf0idUC0e" Name="Update" ParticipatingElements="MTC1NlTwubwMlcMp5aLGs6,Aucm1P9eqR8NXoyKGMb1dS">
             <Pin Id="Rwy2hrxfnLFO4b6RxN2YuQ" Name="Name" Kind="InputPin" />
@@ -1334,7 +1342,17 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
+            <Pin Id="UkzhK7lJHnPOBzpJjwedJo" Name="Send Bundles" Kind="InputPin" DefaultValue="True" />
           </Patch>
+          <Slot Id="MqJPrWipsuhMwuqOEgfzL4" Name="Send Bundles">
+            <p:TypeAnnotation p:Type="TypeReference">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+          </Slot>
+          <Link Id="R8vbtnXNwfYNed80fA6HGS" Ids="UkzhK7lJHnPOBzpJjwedJo,OasamAllQiqM2JTkKAIqLV" IsHidden="true" />
+          <Link Id="PPq2wRIJDddQamgWUIZlH4" Ids="OasamAllQiqM2JTkKAIqLV,M0KVCJMYKuhMAP1eSgLwfj" />
+          <Link Id="CvVGY4tSNDePnlC3cWMEg4" Ids="Lim7dO0E9duQdDUBUpBVEi,AoqoFT2tSE3NyeZMeizvhk" IsHidden="true" />
+          <Link Id="K54UDAwUjTJPKk730ElXmi" Ids="M0KVCJMYKuhMAP1eSgLwfj,Lim7dO0E9duQdDUBUpBVEi" />
         </Patch>
       </Node>
       <Canvas Id="UBo3b4G8QunOASTCOrCZcu" Name="Internal" Position="655,222">
@@ -1378,6 +1396,7 @@
                     <Pin Id="HYFcyzTPblROBuynDZyXkI" Name="Depth" Kind="InputPin" />
                     <Pin Id="JhTXhIx7TMXPehZxsAD8Hd" Name="WARN" Kind="InputPin" DefaultValue="True" />
                   </Node>
+                  <Patch Id="KAr9fTueHFeM26Qk4PclM3" Name="Dispose" />
                 </Patch>
               </Node>
               <Node Bounds="259,136,856,216" Id="OVloXRnRA0kLZyY0leYiIh">
@@ -1537,6 +1556,7 @@
                     <Pin Id="SauQancQVIqNwXXmVyT4N8" Name="Depth" Kind="InputPin" />
                     <Pin Id="OKoaXQY1mlkOrd4qPtKTPS" Name="WARN" Kind="InputPin" DefaultValue="True" />
                   </Node>
+                  <Patch Id="GSpUVrzJgIPOfbZzhoJyHA" Name="Dispose" />
                 </Patch>
               </Node>
               <Node Bounds="160,471,37,19" Id="GDIzGLJVLnaNF6TM0gvFaA">
@@ -1778,7 +1798,9 @@
                         <Pin Id="GtzYQOXJomHQZ6DsRMXoEQ" Name="Output" Kind="OutputPin" />
                         <Pin Id="DK9H0GPqod6PrhOwYH4cMX" Name="Is Open" Kind="OutputPin" />
                         <Pin Id="DcBlDorDMVkPVBdwg3GmPi" Name="Bundle Size Exceeded" Kind="OutputPin" />
+                        <Pin Id="UfmhfheiO2HOnoiuZUgy0b" Name="Send Bundles" Kind="OutputPin" />
                       </Node>
+                      <Patch Id="OfjT2ofqxcZMLjyTIC4Pou" Name="Dispose" />
                     </Patch>
                   </Node>
                   <Node Bounds="1028,811,63,26" Id="BK9jydmc0bUQQQlyIQyS3i">
@@ -2197,7 +2219,7 @@
                   <Link Id="EmE3X5dBKA0ObCMgk4D1PI" Ids="RBcGvuyOuotPRrHAQ9Ktg3,G85TAiVKfroPtUqvNm6ovI" />
                   <Link Id="Gc5EcbxhZVtM9VfkTaZrTF" Ids="DoFmjBiGamhLG9JXarrMT0,TE0QrLH3yzGMF0QlyfHcay" />
                   <Link Id="LlpA7bdQB8GNZfcABc6vWd" Ids="N7yu0pXmqSpNPW1IDnWspz,Jqg7hzFxF57OYfxbSo51fq" />
-                  <Node Bounds="1618,632,163,173" Id="Nzw0Gdo8QfINh4Zj2qOSYO">
+                  <Node Bounds="1618,632,172,173" Id="Nzw0Gdo8QfINh4Zj2qOSYO">
                     <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="Category" Name="Primitive" />
@@ -2232,7 +2254,7 @@
                         <Pin Id="FSN9HOohBJdQK3pLoaqB2o" Name="Output" Kind="OutputPin" IsHidden="true" />
                         <Pin Id="EUYW9WZmowtLUYFhJultQa" Name="Item" Kind="OutputPin" />
                       </Node>
-                      <Node Bounds="1693,759,68,26" Id="SbYnZfYuiTuNcRXpWkKkRs">
+                      <Node Bounds="1693,759,85,26" Id="SbYnZfYuiTuNcRXpWkKkRs">
                         <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig" LastDependency="OSCModule.vl">
                           <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                           <CategoryReference Kind="RecordType" Name="OSCOutConfig" NeedsToBeDirectParent="true" />
@@ -2244,6 +2266,7 @@
                         <Pin Id="SqSXIGZdOXVPndhJyh6iwA" Name="Server IP" Kind="OutputPin" />
                         <Pin Id="JMn4yZfWmU3PwKaWTfQuzJ" Name="Port" Kind="OutputPin" />
                         <Pin Id="BxVu19Cer9GLejUpnlaNZl" Name="Maximum Bundle Size" Kind="OutputPin" />
+                        <Pin Id="Pj2zMdX5LS9QLumJTu3qw0" Name="Send Bundles" Kind="OutputPin" />
                       </Node>
                     </Patch>
                   </Node>
@@ -2566,6 +2589,7 @@
             <Link Id="Qg34dbvTEISLsmqn2GPO7m" Ids="NYym0wa92HLPtdXH0Kxuqj,K7GwpCDKIBMONJNAP9YS2J" />
             <Link Id="OfgBVfHYSGDOrkxPf4wH5r" Ids="Ti2QIxIhOC1MEibTA1nxRE,NYym0wa92HLPtdXH0Kxuqj" />
             <Link Id="D8mqJkGi8RlQCjyvTOhkdq" Ids="U5M5K52lxB0Neh7nGiM4ee,Ti2QIxIhOC1MEibTA1nxRE" IsHidden="true" />
+            <Link Id="Un8s28mCDckMPffjH7Ffdv" Ids="UfmhfheiO2HOnoiuZUgy0b,DoNdcdgJVSEM8ufG8QRcPl" />
           </Patch>
         </Node>
         <!--
@@ -2695,11 +2719,19 @@
               <ControlPoint Id="KKpA2AP8GCcQFBuLFAe7Yr" Bounds="426,461" />
               <Pad Id="U1Aptud4QUmNiOagvamlPx" SlotId="KDUk3b24znNN9WsBg3StQl" Bounds="545,366" Value="False" />
               <ControlPoint Id="CjyZlu2bzQSNk1Fnt14rvc" Bounds="545,461" />
+              <ControlPoint Id="MqKpHQCrq8KOhWjRRZw4nb" Bounds="654,125" />
+              <Pad Id="BczHBU7O6oyL6CMSggUILw" SlotId="UAfwfVy5dN6NeMNkqnNNxR" Bounds="654,204" />
+              <ControlPoint Id="PuL6Pwl8HpVMyADhku3ppk" Bounds="654,234" />
             </Canvas>
             <Patch Id="LaPO0ZTi53YN4hyX8SKiOS" Name="Create">
               <Pin Id="LDurA64nAC8LiLUJqfTmll" Name="Server" Kind="InputPin" Bounds="254,129" />
               <Pin Id="TtTijJ6cXfCNtZfW00BHiZ" Name="Port" Kind="InputPin" Bounds="341,129" />
               <Pin Id="DZTq9dkMaqwQSfUxSrBjSD" Name="Maximum Bundle Size" Kind="InputPin" Bounds="474,131" />
+              <Pin Id="OGYxQ48YOjTPYMBfWHFAWp" Name="Send Bundles" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
             </Patch>
             <ProcessDefinition Id="SfIvjMxm1smLkDZE3w3y5f" IsHidden="true">
               <Fragment Id="FkljZ6xX1jnMAMyNiGR81g" Patch="LaPO0ZTi53YN4hyX8SKiOS" Enabled="true" />
@@ -2734,8 +2766,14 @@
               <Pin Id="RCsdrDCVU4QLBT0nV6H3KI" Name="Output" Kind="OutputPin" />
               <Pin Id="VjL85d5cPf9QXU32p9Fz1X" Name="Is Open" Kind="OutputPin" />
               <Pin Id="GluuaklkQs0PBCPBoyWsSy" Name="Bundle Size Exceeded" Kind="OutputPin" />
+              <Pin Id="OhR2wVcvhpwPQ6bOGYjEyK" Name="Send Bundles" Kind="OutputPin" />
             </Patch>
             <Patch Id="EBhGgqeZ0XGLsj6sGfPjFL" Name="Update" ParticipatingElements="QN3hZ7abMDvOoHQdDNPwGC,BQJelg8mkxLPAh1pDVdxFH,G1fcEg3hObYLvw2LobHU1M" />
+            <Link Id="I2eEQgx8c4TLk0JpQM7p8F" Ids="OGYxQ48YOjTPYMBfWHFAWp,MqKpHQCrq8KOhWjRRZw4nb" IsHidden="true" />
+            <Slot Id="UAfwfVy5dN6NeMNkqnNNxR" Name="Send Bundles" />
+            <Link Id="PD3hY0FpEJCOQj6PygRKxu" Ids="MqKpHQCrq8KOhWjRRZw4nb,BczHBU7O6oyL6CMSggUILw" />
+            <Link Id="Dr6OEVBAslzORwluwb1DPn" Ids="PuL6Pwl8HpVMyADhku3ppk,OhR2wVcvhpwPQ6bOGYjEyK" IsHidden="true" />
+            <Link Id="H8T97zC78JFNlmlzh7qVfZ" Ids="BczHBU7O6oyL6CMSggUILw,PuL6Pwl8HpVMyADhku3ppk" />
           </Patch>
         </Node>
         <!--
