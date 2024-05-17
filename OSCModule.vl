@@ -151,7 +151,7 @@
                   <Pin Id="BwGYbHr2HBMLSjhpgTPStO" Name="Module" Kind="InputPin" />
                   <Pin Id="O15plamjs48O90JwipIFU8" Name="Model" Kind="InputPin" />
                   <Pin Id="OHcYBIsTvhoPVeyqwlg20P" Name="Type Of Values If Channel Is New" Kind="InputPin" />
-                  <Pin Id="FYkbxm5cIapOIWirFtNEAw" Name="Channel" Kind="OutputPin" />
+                  <Pin Id="Mo12k7XxbeXMzVJCwqkF9G" Name="Channel" Kind="OutputPin" />
                   <Pin Id="JN8a13flR9WPvKIC8lWSdk" Name="Binding" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -430,7 +430,7 @@
               <Pin Id="BIMPzKMZM2SO5pndzrxeRt" Name="Input" Kind="InputPin" />
               <Pin Id="BJ2qRMsX44TLqNM2EfOPf4" Name="Result" Kind="OutputPin" />
             </Node>
-            <Node Bounds="1755,684,390,181" Id="UfilyHn6eImM8pUWLEQhP4">
+            <Node Bounds="1755,684,390,245" Id="UfilyHn6eImM8pUWLEQhP4">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <CategoryReference Kind="Category" Name="Primitive" />
@@ -439,8 +439,8 @@
               <Pin Id="MEFmn4c2EioMnsa66NeIKd" Name="Break" Kind="OutputPin" />
               <ControlPoint Id="FSXm0xQjbplPsvXVQ7soXD" Bounds="1837,690" Alignment="Top" />
               <ControlPoint Id="F6thy6CmKm8OX66WvrMsXW" Bounds="1965,690" Alignment="Top" />
-              <ControlPoint Id="BoFzMAAqvqsOHJirbNHka2" Bounds="1965,859" Alignment="Bottom" />
-              <ControlPoint Id="M7kHWQ0JyjLM2Dy8pdeRjM" Bounds="1769,859" Alignment="Bottom" />
+              <ControlPoint Id="BoFzMAAqvqsOHJirbNHka2" Bounds="1965,923" Alignment="Bottom" />
+              <ControlPoint Id="M7kHWQ0JyjLM2Dy8pdeRjM" Bounds="1769,923" Alignment="Bottom" />
               <ControlPoint Id="Lx9fpTgaEwALznd3OuS70i" Bounds="1769,690" Alignment="Top" />
               <Patch Id="OSt7nTd31nOLPeJwS9pB5F" ManuallySortedPins="true">
                 <Patch Id="LXjOfSRsZj8NeOSrYFxKU6" Name="Create" ManuallySortedPins="true" />
@@ -458,7 +458,7 @@
                   <Pin Id="DXY25ITljWfPZ3s7zM6h5w" Name="Server IP" Kind="OutputPin" />
                   <Pin Id="GuXrfnvHD2NN90MBMMRlis" Name="Port" Kind="OutputPin" />
                   <Pin Id="LZSEpRhXi22P4ZfGXjlUor" Name="Maximum Bundle Size" Kind="OutputPin" />
-                  <Pin Id="TNakN4ehvWnPyLplgBzWkM" Name="Send Bundles" Kind="OutputPin" />
+                  <Pin Id="TNakN4ehvWnPyLplgBzWkM" Name="Bundled Per Frame" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="2011,762,104,26" Id="H1cYTbalcYoLO6JMI2bFv8">
                   <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCOutConfig (Runtime)" LastDependency="OSCModule.vl">
@@ -471,7 +471,7 @@
                   <Pin Id="NCCnAm9lz6IQYEv1Tzuedz" Name="Port" Kind="InputPin" />
                   <Pin Id="NqWHxviQZaeMxtqAaz7QS8" Name="Maximum Bundle Size" Kind="InputPin" />
                   <Pin Id="EQvZteAMEXKOglBZ7FtHdi" Name="Output" Kind="StateOutputPin" />
-                  <Pin Id="OlwUyFw7L6LQGeE56p6Flf" Name="Send Bundles" Kind="InputPin" />
+                  <Pin Id="OlwUyFw7L6LQGeE56p6Flf" Name="Bundled Per Frame" Kind="InputPin" />
                 </Node>
                 <Node Bounds="1963,804,53,26" Id="FgGQQ6x4cHXLNS0SzjuJRz">
                   <p:NodeReference LastCategoryFullName="Collections.Dictionary" LastDependency="VL.CoreLib.vl">
@@ -1323,7 +1323,7 @@
             <Pin Id="IOVZp3YRWhYQBUYNEBUpeO" Name="Server IP" Kind="OutputPin" />
             <Pin Id="SiSgbQdFfvHPSo6yZjLQdf" Name="Port" Kind="OutputPin" />
             <Pin Id="PpVB4D5nTviPOPw7opQj6R" Name="Maximum Bundle Size" Kind="OutputPin" />
-            <Pin Id="AoqoFT2tSE3NyeZMeizvhk" Name="Send Bundles" Kind="OutputPin" />
+            <Pin Id="AoqoFT2tSE3NyeZMeizvhk" Name="Bundled Per Frame" Kind="OutputPin" />
           </Patch>
           <Patch Id="UdGQCFk9UsUPZYf0idUC0e" Name="Update" ParticipatingElements="MTC1NlTwubwMlcMp5aLGs6,Aucm1P9eqR8NXoyKGMb1dS">
             <Pin Id="Rwy2hrxfnLFO4b6RxN2YuQ" Name="Name" Kind="InputPin" />
@@ -1342,9 +1342,9 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="UkzhK7lJHnPOBzpJjwedJo" Name="Send Bundles" Kind="InputPin" DefaultValue="True" />
+            <Pin Id="UkzhK7lJHnPOBzpJjwedJo" Name="Bundled Per Frame" Kind="InputPin" DefaultValue="True" />
           </Patch>
-          <Slot Id="MqJPrWipsuhMwuqOEgfzL4" Name="Send Bundles">
+          <Slot Id="MqJPrWipsuhMwuqOEgfzL4" Name="Bundled Per Frame">
             <p:TypeAnnotation p:Type="TypeReference">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -1736,7 +1736,7 @@
               </Pad>
               <ControlPoint Id="HA8cdRQWt6bP0xDLfH5BAk" Bounds="569,75" />
               <ControlPoint Id="GVtoX1eK9TPLLqn0W8LZ5V" Bounds="1237,729" />
-              <Node Bounds="1016,778,350,340" Id="OqVJPHI6lflLS0vi5T8sOC">
+              <Node Bounds="977,778,389,340" Id="OqVJPHI6lflLS0vi5T8sOC">
                 <p:NodeReference LastCategoryFullName="Primitive" LastDependency="Builtin">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Primitive" />
@@ -1756,12 +1756,12 @@
                   </Node>
                   <Patch Id="VLkTrKHdnyJPH7c9yg691h" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="G6cEz3gyV4MMCKteTQFnbl" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="1068,932,246,166" Id="OVN5KhOlBbhLbl7TKFAISr">
+                  <Node Bounds="1029,881,285,217" Id="OVN5KhOlBbhLbl7TKFAISr">
                     <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <Choice Kind="ProcessAppFlag" Name="ForEach (Channel)" />
                     </p:NodeReference>
-                    <ControlPoint Id="CAQhV48iZavLRWAIrbjNji" Bounds="1297,938" Alignment="Top" />
+                    <ControlPoint Id="CAQhV48iZavLRWAIrbjNji" Bounds="1297,887" Alignment="Top" />
                     <Pin Id="Odc37OeCUfnN7Wf5xDAyac" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="RXDblresB3UPhjMlpk24Fq" Name="At Least Run Once" Kind="InputPin" />
                     <Pin Id="SZZ4bzpzQ8vNWVYqAY8oVK" Name="Force Push" Kind="InputPin" IsHidden="true" />
@@ -1798,20 +1798,20 @@
                         <Pin Id="GtzYQOXJomHQZ6DsRMXoEQ" Name="Output" Kind="OutputPin" />
                         <Pin Id="DK9H0GPqod6PrhOwYH4cMX" Name="Is Open" Kind="OutputPin" />
                         <Pin Id="DcBlDorDMVkPVBdwg3GmPi" Name="Bundle Size Exceeded" Kind="OutputPin" />
-                        <Pin Id="UfmhfheiO2HOnoiuZUgy0b" Name="Send Bundles" Kind="OutputPin" />
+                        <Pin Id="UfmhfheiO2HOnoiuZUgy0b" Name="Bundled Per Frame" Kind="OutputPin" />
                       </Node>
                       <Patch Id="OfjT2ofqxcZMLjyTIC4Pou" Name="Dispose" />
+                      <Node Bounds="1041,904,63,19" Id="BK9jydmc0bUQQQlyIQyS3i">
+                        <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
+                          <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                          <Choice Kind="OperationCallFlag" Name="GetSender" />
+                        </p:NodeReference>
+                        <Pin Id="UN2yrQKIBM8PYj3UF8G9P6" Name="Input" Kind="StateInputPin" />
+                        <Pin Id="T1RLKTh46ivLMb38a2mcXm" Name="Configuration Name" Kind="InputPin" />
+                        <Pin Id="BLdrEOV5xyiMuwyNVpoYv4" Name="Output" Kind="StateOutputPin" />
+                        <Pin Id="BIeUVBYtDhBO1JX6wATP4Z" Name="Value" Kind="OutputPin" />
+                      </Node>
                     </Patch>
-                  </Node>
-                  <Node Bounds="1028,811,63,26" Id="BK9jydmc0bUQQQlyIQyS3i">
-                    <p:NodeReference LastCategoryFullName="IO.OSC.Modules.OSCModule" LastDependency="OSCModule.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <Choice Kind="OperationCallFlag" Name="GetSender" />
-                    </p:NodeReference>
-                    <Pin Id="UN2yrQKIBM8PYj3UF8G9P6" Name="Input" Kind="StateInputPin" />
-                    <Pin Id="T1RLKTh46ivLMb38a2mcXm" Name="Configuration Name" Kind="InputPin" />
-                    <Pin Id="BLdrEOV5xyiMuwyNVpoYv4" Name="Output" Kind="StateOutputPin" />
-                    <Pin Id="BIeUVBYtDhBO1JX6wATP4Z" Name="Value" Kind="OutputPin" />
                   </Node>
                 </Patch>
               </Node>
@@ -2266,7 +2266,7 @@
                         <Pin Id="SqSXIGZdOXVPndhJyh6iwA" Name="Server IP" Kind="OutputPin" />
                         <Pin Id="JMn4yZfWmU3PwKaWTfQuzJ" Name="Port" Kind="OutputPin" />
                         <Pin Id="BxVu19Cer9GLejUpnlaNZl" Name="Maximum Bundle Size" Kind="OutputPin" />
-                        <Pin Id="Pj2zMdX5LS9QLumJTu3qw0" Name="Send Bundles" Kind="OutputPin" />
+                        <Pin Id="Pj2zMdX5LS9QLumJTu3qw0" Name="Bundled Per Frame" Kind="OutputPin" />
                       </Node>
                     </Patch>
                   </Node>
@@ -2727,7 +2727,7 @@
               <Pin Id="LDurA64nAC8LiLUJqfTmll" Name="Server" Kind="InputPin" Bounds="254,129" />
               <Pin Id="TtTijJ6cXfCNtZfW00BHiZ" Name="Port" Kind="InputPin" Bounds="341,129" />
               <Pin Id="DZTq9dkMaqwQSfUxSrBjSD" Name="Maximum Bundle Size" Kind="InputPin" Bounds="474,131" />
-              <Pin Id="OGYxQ48YOjTPYMBfWHFAWp" Name="Send Bundles" Kind="InputPin">
+              <Pin Id="OGYxQ48YOjTPYMBfWHFAWp" Name="Bundled Per Frame" Kind="InputPin">
                 <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="TypeFlag" Name="Boolean" />
                 </p:TypeAnnotation>
@@ -2766,11 +2766,11 @@
               <Pin Id="RCsdrDCVU4QLBT0nV6H3KI" Name="Output" Kind="OutputPin" />
               <Pin Id="VjL85d5cPf9QXU32p9Fz1X" Name="Is Open" Kind="OutputPin" />
               <Pin Id="GluuaklkQs0PBCPBoyWsSy" Name="Bundle Size Exceeded" Kind="OutputPin" />
-              <Pin Id="OhR2wVcvhpwPQ6bOGYjEyK" Name="Send Bundles" Kind="OutputPin" />
+              <Pin Id="OhR2wVcvhpwPQ6bOGYjEyK" Name="Bundled Per Frame" Kind="OutputPin" />
             </Patch>
             <Patch Id="EBhGgqeZ0XGLsj6sGfPjFL" Name="Update" ParticipatingElements="QN3hZ7abMDvOoHQdDNPwGC,BQJelg8mkxLPAh1pDVdxFH,G1fcEg3hObYLvw2LobHU1M" />
             <Link Id="I2eEQgx8c4TLk0JpQM7p8F" Ids="OGYxQ48YOjTPYMBfWHFAWp,MqKpHQCrq8KOhWjRRZw4nb" IsHidden="true" />
-            <Slot Id="UAfwfVy5dN6NeMNkqnNNxR" Name="Send Bundles" />
+            <Slot Id="UAfwfVy5dN6NeMNkqnNNxR" Name="Bundled Per Frame" />
             <Link Id="PD3hY0FpEJCOQj6PygRKxu" Ids="MqKpHQCrq8KOhWjRRZw4nb,BczHBU7O6oyL6CMSggUILw" />
             <Link Id="Dr6OEVBAslzORwluwb1DPn" Ids="PuL6Pwl8HpVMyADhku3ppk,OhR2wVcvhpwPQ6bOGYjEyK" IsHidden="true" />
             <Link Id="H8T97zC78JFNlmlzh7qVfZ" Ids="BczHBU7O6oyL6CMSggUILw,PuL6Pwl8HpVMyADhku3ppk" />
