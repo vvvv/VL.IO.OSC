@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2024.6.7-0106-gb19c285ff6" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2024.6.7-0181-gdf16f593e1" Version="0.128">
   <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2024.6.2" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
@@ -10273,6 +10273,105 @@
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="UWgrKRL7ihMOq15w9Y8zWY" Name="Next Byte Index" Kind="OutputPin" />
+            </Patch>
+          </Node>
+          <!--
+
+    ************************ DataToArgs (Generic) ************************
+
+-->
+          <Node Name="DataToArgs (Generic)" Bounds="636,95,310,154" Id="AAqAWW5VwUPM4fRHnmriST">
+            <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
+              <Choice Kind="OperationDefinition" Name="Operation" />
+            </p:NodeReference>
+            <Patch Id="Gc9L76vcp8LMOoFzCSJ0mB" IsGeneric="true">
+              <ControlPoint Id="C7Os5uEYAJXOKJcjig8Zoq" Bounds="650,114" />
+              <Link Id="EoEQsU8x4fmQOQKuHHyk2j" Ids="OehwwZzXlmnL8zqUOCmv1s,C7Os5uEYAJXOKJcjig8Zoq" IsHidden="true" />
+              <ControlPoint Id="C1fKNOdxSqLQZaEn0f8pFs" Bounds="694,114" />
+              <Link Id="JYXqRF8YAPBPIahikWVfth" Ids="T99L2ZRNJfbPT1LUKLfYuA,C1fKNOdxSqLQZaEn0f8pFs" IsHidden="true" />
+              <ControlPoint Id="Pw272ahCs07OA7MqawoQlK" Bounds="738,214" />
+              <Link Id="JFNsaOLb05KOJaNOt4ZlCh" Ids="Pw272ahCs07OA7MqawoQlK,LIajBVO6yFSMzwnQPebbrs" IsHidden="true" />
+              <ControlPoint Id="Arw7dKRdzohNGBIyr8WPKu" Bounds="652,232" />
+              <Link Id="VIFu5vHB9z2M8dYlRfETVd" Ids="Arw7dKRdzohNGBIyr8WPKu,GZCezsJCQJbM4hqZ2riU0U" IsHidden="true" />
+              <ControlPoint Id="UWHMNy9EG70Lzt0k8SOWv2" Bounds="762,115" />
+              <Link Id="HkzTcuKNRMpL5BS4Y7d70k" Ids="MzpB8FYJ6yoLVxKJkuBbHv,UWHMNy9EG70Lzt0k8SOWv2" IsHidden="true" />
+              <ControlPoint Id="NLBo2HagKs2O44A2KUcUvp" Bounds="830,113" />
+              <Link Id="G03mUzw87bMPfonLou1a4k" Ids="AGero4H7HhSPwSBYIl3uAK,NLBo2HagKs2O44A2KUcUvp" IsHidden="true" />
+              <ControlPoint Id="M8COb83lg62OvCQoQbIPAb" Bounds="831,214" />
+              <Link Id="GbUZ1p2qGnPL5Wf5OgWfT2" Ids="M8COb83lg62OvCQoQbIPAb,TWhZZSYd1JzPnrobpWlmkv" IsHidden="true" />
+              <Pin Id="OehwwZzXlmnL8zqUOCmv1s" Name="Data" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Collections" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Spread" />
+                  <p:TypeArguments>
+                    <TypeReference>
+                      <Choice Kind="TypeFlag" Name="Byte" />
+                    </TypeReference>
+                  </p:TypeArguments>
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="T99L2ZRNJfbPT1LUKLfYuA" Name="Byte Index" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="GZCezsJCQJbM4hqZ2riU0U" Name="Args" Kind="OutputPin" />
+              <Pin Id="LIajBVO6yFSMzwnQPebbrs" Name="Next Byte Index" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Node Bounds="651,177,55,19" Id="HgEr59ITPxgPBu026lTknc">
+                <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="TryParse" />
+                </p:NodeReference>
+                <Pin Id="PHJccs3JwHoNc3heN6wBMw" Name="String" Kind="InputPin" />
+                <Pin Id="Mtzr08vxFHdLiif9UCEYjd" Name="Value" Kind="OutputPin" />
+                <Pin Id="HTvq7vgg7CCOrLdYqAlXpw" Name="Success" Kind="OutputPin" />
+              </Node>
+              <Link Id="BJGkic1EVoZLpR0KvXL8uS" Ids="Mtzr08vxFHdLiif9UCEYjd,Arw7dKRdzohNGBIyr8WPKu" />
+              <Node Bounds="652,138,70,19" Id="EEqiQtlhjldN2dWGtMG7wX">
+                <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="Category" Name="OSC" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="DataToArgs" />
+                  <PinReference Kind="OutputPin" Name="Args">
+                    <p:DataTypeReference p:Type="TypeReference" LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                      <Choice Kind="TypeFlag" Name="String" />
+                    </p:DataTypeReference>
+                  </PinReference>
+                </p:NodeReference>
+                <Pin Id="BNBuNURQgB8QMO3Gx0KZVm" Name="Data" Kind="InputPin" />
+                <Pin Id="NWbJFAPy6ycMpgOjgPG3P8" Name="Byte Index" Kind="InputPin" />
+                <Pin Id="VkNEPu7v9AeM4jiAlSGV7x" Name="TypeTags" Kind="InputPin" />
+                <Pin Id="LUvprxxYGPZNLBQHg1SLIL" Name="TypeTag Index" Kind="InputPin" />
+                <Pin Id="BKzX2gUeXO4PorxGadILYu" Name="Args" Kind="OutputPin" />
+                <Pin Id="FbwGtYVPcHROJ0TyukA7nN" Name="Next Byte Index" Kind="OutputPin" />
+                <Pin Id="KPxtVg1mP6iLAOwpNoiYVR" Name="Next TypeTag Index" Kind="OutputPin" />
+              </Node>
+              <Link Id="RoGqsNmAh54PHSyWqt4vba" Ids="BKzX2gUeXO4PorxGadILYu,PHJccs3JwHoNc3heN6wBMw" />
+              <Link Id="QlymK2coJxDNgBmjrKezZo" Ids="C7Os5uEYAJXOKJcjig8Zoq,BNBuNURQgB8QMO3Gx0KZVm" />
+              <Link Id="I2lW6Ga7JS4PME1Er9E3eX" Ids="C1fKNOdxSqLQZaEn0f8pFs,NWbJFAPy6ycMpgOjgPG3P8" />
+              <Link Id="OIgE0pgBOuTOqKQS65D336" Ids="UWHMNy9EG70Lzt0k8SOWv2,VkNEPu7v9AeM4jiAlSGV7x" />
+              <Link Id="LrVTW8jFYq0L9nDahJ58O1" Ids="NLBo2HagKs2O44A2KUcUvp,LUvprxxYGPZNLBQHg1SLIL" />
+              <Link Id="T6Zgbcbt5ouMVl0c3zGhSM" Ids="KPxtVg1mP6iLAOwpNoiYVR,M8COb83lg62OvCQoQbIPAb" />
+              <Link Id="DKrMelekGbNPozP9KjF8LN" Ids="FbwGtYVPcHROJ0TyukA7nN,Pw272ahCs07OA7MqawoQlK" />
+              <Pin Id="MzpB8FYJ6yoLVxKJkuBbHv" Name="TypeTags" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="AGero4H7HhSPwSBYIl3uAK" Name="TypeTag Index" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="TWhZZSYd1JzPnrobpWlmkv" Name="Next TypeTag Index" Kind="OutputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="Integer32" />
+                </p:TypeAnnotation>
+              </Pin>
             </Patch>
           </Node>
         </Canvas>
