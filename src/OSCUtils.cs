@@ -18,7 +18,7 @@ namespace VL.IO.OSC
             {
                 fixed (byte* x = s)
                 {
-                    value = Encoding.ASCII.GetString(x, length);
+                    value = Encoding.UTF8.GetString(x, length);
                 }
             }
             else
