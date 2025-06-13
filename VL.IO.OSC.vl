@@ -13363,6 +13363,8 @@
                   <Choice Kind="ImmutableTypeFlag" Name="String" />
                 </p:TypeAnnotation>
               </Pad>
+              <ControlPoint Id="BzcOwuEtoKlPJTaK07JWgk" Bounds="223,310" />
+              <ControlPoint Id="UuNEN8Pr8c3PP7LXBEVyih" Bounds="629,380" />
             </Canvas>
             <Patch Id="U78SPY5iveOQVaE84xnjsH" Name="Create" ParticipatingElements="AUMyyOzyGkZNfDxbEvuKPk,SxGwRAitW9wLupugxDBYHU">
               <Pin Id="V0bNUH5njDEOTKhQzni2BO" Name="Show Binding Column" Kind="InputPin" DefaultValue="True" Visibility="Optional" />
@@ -13379,6 +13381,8 @@
               <Pin Id="EIPD4XqmBl9Lzh54VveZVM" Name="Listening Port" Kind="InputPin" />
               <Pin Id="RWrdRNH2gowOhxeP5crr0W" Name="Server Enabled" Kind="InputPin" />
               <Pin Id="GFpJCy3bm7HM3uFuwRUIXh" Name="Direction" Kind="InputPin" DefaultValue="SendAndReceive" />
+              <Pin Id="UuUSdSwsW25MPGGNu11aPs" Name="Client Is Open" Kind="OutputPin" />
+              <Pin Id="JL81zwFqaK3MVPhmSeG1Ja" Name="Server Is Open" Kind="OutputPin" />
             </Patch>
             <ProcessDefinition Id="LtZjVQMdwtEPkWqe08WIWe" HasStateOut="true">
               <Fragment Id="QKHmSYggm6oOmoHpW84QJH" Patch="U78SPY5iveOQVaE84xnjsH" Enabled="true" />
@@ -13573,6 +13577,10 @@
             <Link Id="NzfPCTSB9z7LHmKIOWIHWk" Ids="P7LHfsZlCpiQIq0YjNV63s,FjV5LqITuTLOq7YYVKIi75" />
             <Link Id="UABiQogesfANXzZJbV3nep" Ids="EPgKfxUh97vOueUlvX8Jbq,UVtSypGmkyNMpW5JomZg3P" />
             <Link Id="OBufN3gMdaJPd4PiRYvuDA" Ids="SHLGGjVBo2yO1maO6Fz6rb,H367W2Pn6BwM65ci7Uszk7" />
+            <Link Id="MMGONSMYx77Pv4OeCr59LH" Ids="RhS2eEgRg3DOMr5AV9OUCP,BzcOwuEtoKlPJTaK07JWgk" />
+            <Link Id="UYwyp80xxY4MCN8szLurDt" Ids="BzcOwuEtoKlPJTaK07JWgk,UuUSdSwsW25MPGGNu11aPs" IsHidden="true" />
+            <Link Id="P34o8mCxkDsLRji8DdK01i" Ids="Ocgd6QHu9V5OK80hZt02D7,UuNEN8Pr8c3PP7LXBEVyih" />
+            <Link Id="BkZwsGeQLKSMQCOLZsJxx9" Ids="UuNEN8Pr8c3PP7LXBEVyih,JL81zwFqaK3MVPhmSeG1Ja" IsHidden="true" />
           </Patch>
         </Node>
         <Overlay Id="IHzWdyUdm7GPrEZnk98V9C" Name="For UI" Bounds="159,239,505,186">
