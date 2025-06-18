@@ -14530,7 +14530,7 @@
           </p:NodeReference>
           <Patch Id="I3Q28Bh6K5vLz0o0frjgqq">
             <Canvas Id="NFdWnTp5bPRLJXj7wlHzMU" CanvasType="Group">
-              <ControlPoint Id="GBuUwAxHcc3OWbTrqjwy9V" Bounds="324,191" />
+              <ControlPoint Id="GBuUwAxHcc3OWbTrqjwy9V" Bounds="323,171" />
               <ControlPoint Id="CRNcUxDaYsDLiGGGgGtq5d" Bounds="355,210" />
               <Node Bounds="322,466,67,19" Id="VATg5owLXc7M4NgCmOGzQs">
                 <p:NodeReference LastCategoryFullName="IO.OSCQuery" LastDependency="VL.IO.OSCQuery.vl">
@@ -14595,9 +14595,22 @@
                 <ControlPoint Id="LujJjKsrOG3Ot8BYhFmi1y" Bounds="415,311" Alignment="Top" />
                 <ControlPoint Id="Ai9F8ArJ8rNNfQfZLtEZUU" Bounds="393,311" Alignment="Top" />
                 <ControlPoint Id="AmAFBZV6vixNsShn9hnGXQ" Bounds="427,311" Alignment="Top" />
+                <ControlPoint Id="DhYq87sHOYaOwVUFUpJ7DX" Bounds="558,311" Alignment="Top" />
               </Node>
               <ControlPoint Id="RXGs8PCqwGnQbsKiUrYk6e" Bounds="447,271" />
               <ControlPoint Id="Lqoii6jCvEwPe1eWPtMhSV" Bounds="427,240" />
+              <Node Bounds="503,230,58,26" Id="TARWsGQEkXJPPhsmzvoeGS">
+                <p:NodeReference LastCategoryFullName="IO.OSC.OSC" LastDependency="VL.IO.OSC.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="OSC" NeedsToBeDirectParent="true">
+                    <p:OuterCategoryReference Kind="Category" Name="OSC" NeedsToBeDirectParent="true" />
+                  </CategoryReference>
+                  <Choice Kind="OperationCallFlag" Name="Direction" />
+                </p:NodeReference>
+                <Pin Id="LHqMSJCdzs4LXBkaXUHvsq" Name="Input" Kind="StateInputPin" />
+                <Pin Id="IGdIyiKK3HwLQ0BpvX15R5" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="EP4GfjJMwcvQOz88KgkBH1" Name="Direction" Kind="OutputPin" />
+              </Node>
             </Canvas>
             <ProcessDefinition Id="P7L8G4bDqa9M1E0GRWQ2n5">
               <Fragment Id="LytBumkLfG3MU4L7hVaQxE" Patch="OTIyuEdNBw2MrZlgsQ8ggo" Enabled="true" />
@@ -14629,6 +14642,8 @@
             <Link Id="Oj6t2OOhxq4P0kf370JmVM" Ids="ENX9pNPPsECNjnKwfO4MzE,Lqoii6jCvEwPe1eWPtMhSV" IsHidden="true" />
             <Link Id="J3jIPZ2BiLXPeYgUBzUkdh" Ids="Vpk4jOh6VTSMmbQYGnB72V,HE0OF91QVfAN6Cx6gBNbCI" />
             <Link Id="A7MiZuxeMGDN2LfALBjc3K" Ids="LujJjKsrOG3Ot8BYhFmi1y,CqXpIj8qVzRNIN5F8tPsoA" />
+            <Link Id="S3Smewad5EvOVl4ipyQ6vV" Ids="GBuUwAxHcc3OWbTrqjwy9V,LHqMSJCdzs4LXBkaXUHvsq" />
+            <Link Id="IHu3LpbV8ZlLgkS1CkdejS" Ids="EP4GfjJMwcvQOz88KgkBH1,DhYq87sHOYaOwVUFUpJ7DX" />
           </Patch>
         </Node>
         <!--
