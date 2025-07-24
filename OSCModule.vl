@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2024.6.3" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2025.7.0-0419-g1e7b9a2adf" Version="0.128">
   <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.3" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
-    <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules.Experimental" CanvasType="FullCategory">
+    <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules.Experimental.Obsolete" CanvasType="FullCategory">
       <!--
 
     ************************ OSCModule ************************
@@ -190,6 +190,7 @@
               <Pin Id="KcBsWPx0OUmLnqcPcJmU0p" Name="Node Context" Kind="InputPin" />
               <Pin Id="VZlHEjoefyCOr6uAjfNx7B" Name="Enabled" Kind="InputPin" />
               <Pin Id="C28TmcaxdqXLzcqUZwtnT2" Name="Pin Name" Kind="InputPin" DefaultValue="Bindings" />
+              <Pin Id="E5KvfWbHmoANYQIIrI7ar9" Name="Output" Kind="OutputPin" IsHidden="true" />
             </Node>
             <ControlPoint Id="JPTWPz25znOPZBzIXrUlyT" Bounds="1224,-216" />
             <ControlPoint Id="TO4LQMA6eO2MLVKuRsHtlu" Bounds="1313,-47" />
@@ -819,7 +820,7 @@
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
-                    <Choice Kind="OperationCallFlag" Name="Format" />
+                    <Choice Kind="OperationNode" Name="Format (Version 1)" />
                   </p:NodeReference>
                   <Pin Id="U6eRKt5W3M8NqUwZrxy3UL" Name="Format" Kind="InputPin" DefaultValue="Multiple OSC Receivers configured on port: {0}." />
                   <Pin Id="Jph1gGYU98xQK3icw3ZS38" Name="Input" Kind="StateInputPin" />
@@ -1446,7 +1447,7 @@
                     <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
-                      <Choice Kind="OperationCallFlag" Name="Format" />
+                      <Choice Kind="OperationNode" Name="Format (Version 1)" />
                     </p:NodeReference>
                     <Pin Id="NyG6W7sfRM2N7x6HH53aHD" Name="Format" Kind="InputPin" />
                     <Pin Id="FtuEoT67h7NOVKCTx0wafj" Name="Input" Kind="StateInputPin" />
@@ -1624,7 +1625,7 @@
                     <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
-                      <Choice Kind="OperationCallFlag" Name="Format" />
+                      <Choice Kind="OperationNode" Name="Format (Version 1)" />
                     </p:NodeReference>
                     <Pin Id="CYRLksiQ4X2NhfDPriJE58" Name="Format" Kind="InputPin" />
                     <Pin Id="OZ6FPtV6lfXOR05Ei1mNLp" Name="Input" Kind="StateInputPin" />
@@ -1838,6 +1839,7 @@
                     <Pin Id="JpRo8lR2SRiNyxFEtAGoCF" Name="Node Context" Kind="InputPin" IsHidden="true" />
                     <Pin Id="Tb0MuMUPuT1ORF0jxGxKXN" Name="Messages" Kind="InputPin" />
                     <Pin Id="ERBWFvTHR4jOHbSxIE7N9D" Name="Reset" Kind="InputPin" />
+                    <Pin Id="Jhkd8CY91S9NxvfjvLSXQq" Name="Output" Kind="OutputPin" IsHidden="true" />
                     <Pin Id="Eoj45NZAtiuPFmAsRwSEp2" Name="Result" Kind="OutputPin" />
                     <Patch Id="MvN9xCe8mAoQZk2x5wQvg1" ManuallySortedPins="true">
                       <ControlPoint Id="Vzpzz81vyDpN1BxT7h8G5F" Bounds="459,941" />
@@ -1993,7 +1995,7 @@
                 <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="StringType" Name="String" />
-                  <Choice Kind="OperationCallFlag" Name="Format" />
+                  <Choice Kind="OperationNode" Name="Format (Version 1)" />
                 </p:NodeReference>
                 <Pin Id="UZEwEFBEuqWNys6pzmshR0" Name="Format" Kind="InputPin" />
                 <Pin Id="PYhIlgVCfFQL7LiocXKyGE" Name="Input" Kind="StateInputPin" />
@@ -2024,6 +2026,7 @@
                     <Pin Id="GBgPkYdnlnoPlqke7nN2y8" Name="Type Of Values" Kind="InputPin" />
                     <Pin Id="RZmynfrH6IaMaS6n1k3dYz" Name="Result" Kind="OutputPin" />
                     <Pin Id="Q6vgUqNbjxlLnRRfV7WIqP" Name="Got Created" Kind="OutputPin" />
+                    <Pin Id="RU7wDaiIwuHNaZ1lAdz0Nx" Name="Type Changed" Kind="OutputPin" />
                   </Node>
                   <ControlPoint Id="OYOJIO9QdoSLLHWmp81P7L" Bounds="1027,397" />
                   <Link Id="UnTNrKDpOAkO59cIh0Ka9H" Ids="FLSFFdTDyRjQI0NOrofKfA,OYOJIO9QdoSLLHWmp81P7L" IsHidden="true" />
@@ -2146,8 +2149,9 @@
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="SySyLqU4OhMNbDFvbXIGoz" Name="Binding Type" Kind="InputPin">
-                    <p:TypeAnnotation LastCategoryFullName="Reactive.ChannelHub.Modules" LastDependency="VL.CoreLib.vl">
+                    <p:TypeAnnotation LastCategoryFullName="Application.ChannelHub.Modules" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="BindingType" />
+                      <FullNameCategoryReference ID="Application.ChannelHub.Modules" />
                     </p:TypeAnnotation>
                   </Pin>
                   <Pin Id="UH9wFbbKHk3QLfnYMdUa8J" Name="Configuration Name" Kind="InputPin">
@@ -2363,7 +2367,7 @@
                     <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                       <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
-                      <Choice Kind="OperationCallFlag" Name="Format" />
+                      <Choice Kind="OperationNode" Name="Format (Version 1)" />
                     </p:NodeReference>
                     <Pin Id="BexyNLr6YdhLI05rTMEr6u" Name="Format" Kind="InputPin" DefaultValue="{0} [IP: {1} Port: {2}]" />
                     <Pin Id="I2v0NcTPAwuQL5d0XIi6K1" Name="Input" Kind="StateInputPin" />
@@ -2393,10 +2397,10 @@
                 <Pin Id="VJNs4iKvrn6Lut94H6kSPB" Name="Output" Kind="OutputPin" />
               </Node>
               <Node Bounds="695,364,43,19" Id="LuPCPEEdxD3L49zQxmZteq">
-                <p:NodeReference LastCategoryFullName="Reactive.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
+                <p:NodeReference LastCategoryFullName="Application.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="EnumType" Name="BindingType" NeedsToBeDirectParent="true" />
                   <Choice Kind="OperationCallFlag" Name="Sends" />
+                  <FullNameCategoryReference ID="Application.ChannelHub.Modules.BindingType" />
                 </p:NodeReference>
                 <Pin Id="BidWdKdu8g8P9EfECfrf8Y" Name="Input" Kind="StateInputPin" />
                 <Pin Id="GaKsBxb0uFvNOGO1Pg90UA" Name="Output" Kind="StateOutputPin" />
@@ -2988,6 +2992,7 @@
                     <Pin Id="IcGRuJ4gSTCQG89iiOARd8" Name="Context" Kind="InputPin" />
                     <Pin Id="HvDNJVsDvoSNqat9r5UVkL" Name="Output" Kind="OutputPin" IsHidden="true" />
                     <Pin Id="PTlAp2DvLs3QbHvJuGG5FR" Name="Result" Kind="OutputPin" />
+                    <Pin Id="QD68hlPfzkqOaEWAEidbMD" Name="Arguments" Kind="InputPin" />
                   </Node>
                   <Node Bounds="478,563,58,19" Id="SeVV79btYABLLjf3BGYQic">
                     <p:NodeReference LastCategoryFullName="Primitive.Object" LastDependency="VL.CoreLib.vl">
