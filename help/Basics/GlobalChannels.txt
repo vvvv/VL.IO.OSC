@@ -1,3 +1,0 @@
-position: Vector2
-positionOut: Vector2
-speed: Float32
