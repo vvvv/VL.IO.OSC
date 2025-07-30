@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PublicChannels>
+  <Channel Name="foo/MyBang" Type="Unit [Reactive]" />
+  <Channel Name="speed" Type="Float32 [Primitive]" />
+  <Channel Name="title" Type="String [Primitive]" />
+  <Channel Name="titleColor" Type="RGBA [Color]" />
+</PublicChannels>
