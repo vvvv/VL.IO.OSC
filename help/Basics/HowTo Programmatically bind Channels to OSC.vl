@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="P1hbtZbIQxSMvzGcHzDmaN" LanguageVersion="2025.7.0-0420-gfa71002a1a" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="P1hbtZbIQxSMvzGcHzDmaN" LanguageVersion="2025.7.0-0431-gc935ced47a" Version="0.128">
   <NugetDependency Id="SKxaHpkDACDOeMS1VMa62t" Location="VL.CoreLib" Version="2023.5.2" />
   <Patch Id="J8pKYuHqoBHQFH8vEHFASg">
     <Canvas Id="PXrhVqQYssrPxMm9QW4h77" DefaultCategory="Main" CanvasType="FullCategory" />
@@ -43,16 +43,14 @@
               <CategoryReference Kind="Category" Name="Color" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="144,300,165,19" Id="K9lXmQqlMGuN8mYQ3tNh36">
+          <Node Bounds="144,300,125,19" Id="K9lXmQqlMGuN8mYQ3tNh36">
             <p:NodeReference LastCategoryFullName="IO.OSC" LastDependency="VL.IO.OSC.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="OSC" />
             </p:NodeReference>
             <Pin Id="P4072LGsfyTL3raabiuMcL" Name="Show Binding Column" Kind="InputPin" IsHidden="true" />
             <Pin Id="BP74gJQlFrOPGRwCx3ZxBm" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="QGs6JAg90AhMTgHoi2qFsP" Name="Model" Kind="InputPin" IsHidden="true">
-              <p:DefaultValue r:Type="Spread [Collections]&lt;BindingModel [IO.OSCQuery]&gt;" xmlns:r="reflection" r:Version="2" />
-            </Pin>
+            <Pin Id="Sr9rMTOZsq6QRaF451JdbI" Name="Model" Kind="InputPin" IsHidden="true" />
             <Pin Id="KuByKwmmC8LPDnTg2Y0pUo" Name="Nickname" Kind="InputPin" />
             <Pin Id="Qc2BuUidKeqQS2RYo7moyC" Name="Listening IP" Kind="InputPin" IsHidden="true" />
             <Pin Id="QVky9DBqF8FMsiONSYPPje" Name="Listening Port" Kind="InputPin" />
@@ -63,11 +61,8 @@
             <Pin Id="Le4eucX9hZyNgjZUT5IxlR" Name="Client Enabled" Kind="InputPin" />
             <Pin Id="FHW5fQEOLpjQasOpI23j02" Name="Direction" Kind="InputPin" />
             <Pin Id="At4Fxyx8o9vMIILBtfmWIR" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="KhrUYrGhdT7NGgOGHzguBJ" Name="Data Preview" Kind="OutputPin" />
             <Pin Id="H3tog33xk8vQcFs3b69dH5" Name="Server Socket Open" Kind="OutputPin" />
             <Pin Id="J0CjA7QlS1wOf6vyskIs2Y" Name="Client Socket Open" Kind="OutputPin" />
-            <Pin Id="MjyRlJQiSi4NxmiLVb2gMQ" Name="Enable Data Preview" Kind="InputPin" />
-            <Pin Id="EB87xFSJYQVOtRtghYQby1" Name="Reset Data Preview" Kind="InputPin" />
           </Node>
           <Pad Id="G50ZjmBJKgcOElCqxN4ZYE" Comment="" Bounds="216,642,35,15" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="669,775,71,19" Id="J1bIyd5v6zPOzD2XwrM66n">
@@ -262,14 +257,14 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="VgSDmRIscT6PBgaRm99hFC" Comment="Server Socket Open" Bounds="253,350,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="EqY2EH6bENqOCXxrfQiYCm" Comment="Client Socket Open" Bounds="306,380,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VgSDmRIscT6PBgaRm99hFC" Comment="Server Socket Open" Bounds="206,341,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="EqY2EH6bENqOCXxrfQiYCm" Comment="Client Socket Open" Bounds="266,390,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="FP9EDTNNepZLbTptqBrdqA" Comment="Direction" Bounds="266,280,97,15" ShowValueBox="true" isIOBox="true" Value="SendAndReceive">
             <p:TypeAnnotation LastCategoryFullName="Application.ChannelHub.Modules" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="BindingType" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="GxQdQTLYQpMLWtJFmjdKnD" Comment="Client Enabled" Bounds="246,231,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="GxQdQTLYQpMLWtJFmjdKnD" Comment="Client Enabled" Bounds="246,240,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>

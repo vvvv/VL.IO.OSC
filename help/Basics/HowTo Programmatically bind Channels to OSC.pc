@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PublicChannels>
+  <Channel Name="foo/color" Type="RGBA [Color]" />
+</PublicChannels>
