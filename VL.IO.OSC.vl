@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2025.7.1-0118-geaea4f9e82" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2025.7.1-0118-geaea4f9e82" />
+<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2025.7.4-0012-g4fdb16c510" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2026.8.0-0032-g12bc3bfc79" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -14682,7 +14682,7 @@
                 <Patch Id="Uc6RcVsBwQJLgaKtNg7up1" ManuallySortedPins="true">
                   <Patch Id="OeuxfZgNYuLLa2VCBAmXYf" Name="Create" ManuallySortedPins="true" />
                   <Patch Id="SbL4UAOF9O9OnrEodz2X4C" Name="Then" ManuallySortedPins="true" />
-                  <Node Bounds="660,315,214,321" Id="P8dkFa2tnkAPeyqQSxXkmO">
+                  <Node Bounds="660,315,215,321" Id="P8dkFa2tnkAPeyqQSxXkmO">
                     <p:NodeReference LastCategoryFullName="Reactive.Channel" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                       <CategoryReference Kind="MutableInterfaceType" Name="Channel" />
@@ -14690,7 +14690,7 @@
                     </p:NodeReference>
                     <ControlPoint Id="QAh3poSfjX8OaXqOaXIHLd" Bounds="858,321" Alignment="Top" />
                     <Pin Id="VmuYpx90OkMNWKb1iNJNbX" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="Eo7zip6KT89OsUsrHDJfBj" Name="At Least Run Once" Kind="InputPin" />
+                    <Pin Id="Eo7zip6KT89OsUsrHDJfBj" Name="At Least Run Once" Kind="InputPin" DefaultValue="False" />
                     <Pin Id="QwEh1H9XUlRNk3gyQxQUo2" Name="Force Push" Kind="InputPin" IsHidden="true" />
                     <Patch Id="Fg4etNnzK8cLc5rYFfehcb" ManuallySortedPins="true">
                       <Patch Id="H2ec6yLQKj1LqdaX3EFF6j" Name="Create" ManuallySortedPins="true" />
@@ -15666,7 +15666,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2025.7.1-0118-geaea4f9e82" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2026.8.0-0032-g12bc3bfc79" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
   <DocumentDependency Id="MuhU0meXSvvO7Stf6e4f5W" Location="./OSCModule.vl" IsForward="true" />
 </Document>

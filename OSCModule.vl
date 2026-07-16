@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2025.7.0-0419-g1e7b9a2adf" Version="0.128">
-  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2024.6.3" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="STdokmNqJSEQSjoRA8JegL" LanguageVersion="2025.7.4-0012-g4fdb16c510" Version="0.128">
+  <NugetDependency Id="VAfHYlLhO8AMV1lqIWCZOE" Location="VL.CoreLib" Version="2026.8.0-0032-g12bc3bfc79" />
   <Patch Id="JLHZ1cVYh5tPSBf9kOUon9">
     <Canvas Id="Gv6AOC6DJebQLJLEAg2IuZ" DefaultCategory="IO.OSC.Modules.Experimental.Obsolete" CanvasType="FullCategory">
       <!--
@@ -151,7 +151,7 @@
                   <Pin Id="BwGYbHr2HBMLSjhpgTPStO" Name="Module" Kind="InputPin" />
                   <Pin Id="O15plamjs48O90JwipIFU8" Name="Model" Kind="InputPin" />
                   <Pin Id="OHcYBIsTvhoPVeyqwlg20P" Name="Type Of Values If Channel Is New" Kind="InputPin" />
-                  <Pin Id="Mo12k7XxbeXMzVJCwqkF9G" Name="Channel" Kind="OutputPin" />
+                  <Pin Id="IVHl5T24AueMkgPind13xe" Name="Channel" Kind="OutputPin" />
                   <Pin Id="JN8a13flR9WPvKIC8lWSdk" Name="Binding" Kind="OutputPin" />
                 </Node>
               </Patch>
@@ -1764,7 +1764,7 @@
                     </p:NodeReference>
                     <ControlPoint Id="CAQhV48iZavLRWAIrbjNji" Bounds="1297,887" Alignment="Top" />
                     <Pin Id="Odc37OeCUfnN7Wf5xDAyac" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="RXDblresB3UPhjMlpk24Fq" Name="At Least Run Once" Kind="InputPin" />
+                    <Pin Id="RXDblresB3UPhjMlpk24Fq" Name="At Least Run Once" Kind="InputPin" DefaultValue="False" />
                     <Pin Id="SZZ4bzpzQ8vNWVYqAY8oVK" Name="Force Push" Kind="InputPin" IsHidden="true" />
                     <Patch Id="SsDNeN9f0ZtO4XsiA43nAt" ManuallySortedPins="true">
                       <Patch Id="RfwyagxYOZ0LtF5nEmqccG" Name="Create" ManuallySortedPins="true" />
