@@ -1,7 +1,7 @@
 # VL.IO.OSC
 Provides support for the [OSC](http://opensoundcontrol.org) protocol.
 
-For use with vvvv, the visual live-programming environment for .NET: http://visualprogramming.net
+For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Getting started
 - Ships with vvvv
