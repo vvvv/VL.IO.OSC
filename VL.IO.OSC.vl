@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2025.7.1-0118-geaea4f9e82" Version="0.128">
-  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2025.7.1-0118-geaea4f9e82" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="PYeC1D5pKUjQHdP2zDAMaB" LanguageVersion="2025.7.4" Version="0.128">
+  <NugetDependency Id="PBCBJCsT0oYNNATDI2tfdx" Location="VL.CoreLib" Version="2025.7.4" />
   <Patch Id="FYxfk4baLHQOy21wbW1N8g">
     <Canvas Id="DOx0V0uYW6CLW195bWBBzA" DefaultCategory="IO.OSC" CanvasType="FullCategory">
       <!--
@@ -14602,7 +14602,7 @@
             <Canvas Id="DfKOLKY0em9Pr6FIYxNXBf" CanvasType="Group">
               <ControlPoint Id="BDVjnemj3TRNi7vUNOzKN6" Bounds="112,149" />
               <ControlPoint Id="SEuQkWGI359OyUYjrGiypn" Bounds="9,450" />
-              <Node Bounds="110,392,308,206" Id="JyTenSoJkhBN8i8dnBiQlW">
+              <Node Bounds="110,392,303,206" Id="JyTenSoJkhBN8i8dnBiQlW">
                 <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
                   <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                   <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -14633,22 +14633,6 @@
                     <Pin Id="HueM1V5LwoGOk4eXwrakgZ" Name="Apply" Kind="InputPin" />
                     <Pin Id="CyWFT89znXaNaulO9Q106L" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Node Bounds="281,520,105,19" Id="Jo6IRgdc16xLyS7GXlWXdr">
-                    <p:NodeReference LastCategoryFullName="System.Logging" LastDependency="VL.CoreLib.vl">
-                      <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                      <CategoryReference Kind="Category" Name="Logging" NeedsToBeDirectParent="true" />
-                      <Choice Kind="ProcessAppFlag" Name="Log" />
-                    </p:NodeReference>
-                    <Pin Id="GNNll5OpDc7OHFZ41ZBiBi" Name="Node Context" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="ISmDJuG57sbQEiLiGjHAeW" Name="Message" Kind="InputPin" DefaultValue="midi rcv: {0}  {1}" />
-                    <Pin Id="EqZtR4Pph7PMtoCBfdjaAd" Name="Log Level" Kind="InputPin" />
-                    <Pin Id="HK1pg9Me4fxL9bb1xEWoRU" Name="Event Id" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="H1KryzjfbpTOojqpN7X4Wd" Name="Argument" Kind="InputPin" />
-                    <Pin Id="J8ntin4I3UsOd3lgdV4Mvg" Name="Argument 2" Kind="InputPin" />
-                    <Pin Id="AgRzf6UJNdUMP1L9R0owPv" Name="Category" Kind="InputPin" />
-                    <Pin Id="UN1RAbdFmH0OaQUyELd4mO" Name="Exception" Kind="InputPin" IsHidden="true" />
-                    <Pin Id="GbGeXAEFKiQNlLEn5Ihhg7" Name="Apply" Kind="InputPin" DefaultValue="False" />
-                  </Node>
                   <Node Bounds="215,450,55,19" Id="UTGr22Eh3gxLMcPmXbTtcq">
                     <p:NodeReference LastCategoryFullName="Application.ChannelHub.Modules.BindingType" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -14658,7 +14642,7 @@
                     <Pin Id="EBZbgUMOkJ2PCZCKpoKA3q" Name="Input" Kind="StateInputPin" />
                     <Pin Id="V6Ll5gcfFfvOnQr52jE7UZ" Name="Output" Kind="StateOutputPin" />
                   </Node>
-                  <Pad Id="TsGpsE3WiY3LZ7Hs2LiXxi" Bounds="274,458,125,58" ShowValueBox="true" isIOBox="true" Value="TODO: introduce Log pin like in MIDI">
+                  <Pad Id="TsGpsE3WiY3LZ7Hs2LiXxi" Bounds="269,484,125,41" ShowValueBox="true" isIOBox="true" Value="TODO: introduce Log pin like in MIDI">
                     <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                       <Choice Kind="TypeFlag" Name="String" />
                     </p:TypeAnnotation>
@@ -15376,7 +15360,6 @@
                     <Pin Id="Mfe3PW9QchRL6s4ROAxBYn" Name="Input" Kind="StateInputPin" />
                     <Pin Id="Mb1fCbBRXshM8B8oPUMbki" Name="Arguments" Kind="InputPin" />
                     <Pin Id="CWr1PPYcHyKPby2x67ZFme" Name="Output" Kind="StateOutputPin" />
-                    <Pin Id="OXV0KrldKnePcu8l6SqvfG" Name="Result" Kind="OutputPin" />
                   </Node>
                   <Node Bounds="678,426,45,19" Id="KKwQmuvKPfkNp4MyK0zy2c">
                     <p:NodeReference LastCategoryFullName="Collections.Spread" LastDependency="VL.CoreLib.vl">
@@ -15666,7 +15649,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2025.7.1-0118-geaea4f9e82" />
+  <NugetDependency Id="Tj9pR4jK7PdLUvUwsqAtdc" Location="VL.Core" Version="2025.7.4" />
   <PlatformDependency Id="Jv9kUW4hHexQYv8tqnP27D" Location="./lib/netstandard2.0/VL.IO.OSC.dll" />
   <DocumentDependency Id="MuhU0meXSvvO7Stf6e4f5W" Location="./OSCModule.vl" IsForward="true" />
 </Document>
