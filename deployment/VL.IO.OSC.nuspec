@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.OSC</id>
-    <version>2.0.12</version>
+    <version>2.0.13</version>
     <title>VL.IO.OSC</title>
     <authors>vvvv</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.OSC</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Support for the OSC (OpenSoundControl) protocol</description>
-    <tags>VL, opensoundcontrol</tags>
+    <tags>VL, opensoundcontrol, binding, module</tags>
 	<license type="expression">LGPL-3.0-only</license>
 	<icon>icon\nugeticon.png</icon>
 	<readme>docs\README.md</readme>
